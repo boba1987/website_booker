@@ -1,0 +1,38 @@
+/* Header styles */
+@border-color-1: @gray-4;
+@navigation-color: @gray-3;
+
+header{
+  border-bottom: solid 1px @border-color-1;
+  padding: 30px;
+}
+
+.register-login-nav, .prime-nav{
+  padding: 15px 0;
+
+  li{
+    float: left;
+    width-min: 50px;
+    padding: 0 10px;
+    line-height: 1;
+
+    a{
+      color: @navigation-color;
+      padding: 15px;
+    }
+  }
+}
+
+.prime-nav{
+  margin-right: 30px;
+}
+
+.register-login-nav{
+  margin-right: 10px;
+
+  li{
+    &:first-child{
+      border-right: solid 1px;
+    }
+  }
+}

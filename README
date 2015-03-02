@@ -1,0 +1,15 @@
+Requirements:
+-node
+-npm
+
+Server boilerplate
+============
+
+1.Run 'npm install',
+2.Run 'npm update',
+3.Run server with 'gulp serve',
+4.Server is running on 'localhost:3000';
+
+Notes:
+-use Bower to install third party
+-set third party location for those instaled via Bower in .bowerrc
