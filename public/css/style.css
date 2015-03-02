@@ -743,3 +743,38 @@ footer a:hover {
   margin-top: -20px;
   cursor: pointer;
 }
+.product-listing .product-lisitng-medium .item-description,
+.product-listing .product-lisitng-medium .item-pricing {
+  float: left;
+}
+.product-listing .product-lisitng-medium .item-description {
+  width: 75%;
+}
+.product-listing .product-lisitng-medium .item-pricing {
+  width: 25%;
+}
+.product-listing .product-lisitng-medium .item-desc,
+.product-listing .product-lisitng-medium .item-title {
+  color: #51575e;
+}
+.product-listing .product-lisitng-medium .item-desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.product-listing .product-lisitng-medium .item-title {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+.product-listing .product-lisitng-medium .item-tech-desc,
+.product-listing .product-lisitng-medium .item-tech-cost,
+.product-listing .product-lisitng-medium .item-tech-rev,
+.product-listing .product-lisitng-medium .item-tech-comm {
+  max-width: 25%;
+  margin-right: 30px;
+  float: left;
+  font-size: 12px;
+  color: #a8afba;
+}
