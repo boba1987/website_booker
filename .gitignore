@@ -219,9 +219,3 @@ pip-log.txt
 #############
 
 node_modules/
-
-#############
-## Bower files
-#############
-
-public/bower_components
