@@ -9,6 +9,10 @@
 }
 
 .product-listing{
+  li{
+    margin-bottom: 20px;
+  }
+
   .product-listing-item-large{
     .border-radius(7px);
     padding: 17px 15px;
@@ -107,7 +111,14 @@
     }
   }
 
-  .product-lisitng-medium{
+  .product-listing-medium{
+    .border-radius(7px);
+    position: relative;
+    background: @blue-2;
+    border: solid 1px @blue-3;
+    padding: 25px;
+    padding-right: 15px;
+
     .item-description, .item-pricing{
       float: left;
     }
@@ -117,6 +128,8 @@
     }
     .item-pricing{
       width: 25%;
+      padding: 8px 0;
+      padding-right: 20px;
     }
 
     .item-desc, .item-title{
@@ -140,6 +153,95 @@
       float: left;
       font-size: 12px;
       color: @gray-2;
+      margin-bottom: 0;
+    }
+
+    .item-tech-left{
+      margin-bottom: 0;
+      text-align: center;
+    }
+
+    .item-tech-price{
+      width: 100%;
+      color: @blue-1;
+      font-size: 22px;
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    .website-link{
+      .border-radius(5px);
+      background-image: url('../img/browser_gray.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      position: absolute;
+      border: solid 1px @gray-6;
+      border-right: 0;
+      height: 40px;
+      width: 50px;
+      background-color: white;
+      right: 0;
+      top: 50%;
+      margin-top: -20px;
+      cursor: pointer;
+    }
+  }
+
+  .product-lisitng-small{
+    .border-radius(7px);
+    height: 55px;
+    position: relative;
+    background: @blue-2;
+    border: solid 1px @blue-3;
+    padding: 20px 25px;
+    padding-right: 15px;
+
+    .website-link{
+      .border-radius(5px);
+      background-image: url('../img/globe_gray.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      position: absolute;
+      border: solid 1px @gray-6;
+      border-right: 0;
+      height: 40px;
+      width: 50px;
+      background-color: white;
+      right: 0;
+      top: 50%;
+      margin-top: -20px;
+      cursor: pointer; 
+    }
+
+    .item-title{
+      width: 55%;
+      text-transform: uppercase;
+      font-size: 12px;
+      color: @gray-3;
+      float: left;
+      margin-bottom: 0px;
+    }
+
+    .item-tech-left{
+      float: left;
+      width: 20%;
+      color: @gray-2;
+      text-transform: capitalize;
+      line-height: 14px;
+    }
+
+    .item-tech-price{
+      width: 25%;
+      text-align: center;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: @blue-1;
+      line-height: 14px;
+      float: left;
     }
   }
 }

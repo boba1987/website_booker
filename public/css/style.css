@@ -640,6 +640,9 @@ footer a:hover {
 #listing-sort-by .chosen-container {
   margin-left: -24px;
 }
+.product-listing li {
+  margin-bottom: 20px;
+}
 .product-listing .product-listing-item-large {
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -743,38 +746,137 @@ footer a:hover {
   margin-top: -20px;
   cursor: pointer;
 }
-.product-listing .product-lisitng-medium .item-description,
-.product-listing .product-lisitng-medium .item-pricing {
+.product-listing .product-listing-medium {
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  position: relative;
+  background: #f2f4f7;
+  border: solid 1px #c9d7d8;
+  padding: 25px;
+  padding-right: 15px;
+}
+.product-listing .product-listing-medium .item-description,
+.product-listing .product-listing-medium .item-pricing {
   float: left;
 }
-.product-listing .product-lisitng-medium .item-description {
+.product-listing .product-listing-medium .item-description {
   width: 75%;
 }
-.product-listing .product-lisitng-medium .item-pricing {
+.product-listing .product-listing-medium .item-pricing {
   width: 25%;
+  padding: 8px 0;
+  padding-right: 20px;
 }
-.product-listing .product-lisitng-medium .item-desc,
-.product-listing .product-lisitng-medium .item-title {
+.product-listing .product-listing-medium .item-desc,
+.product-listing .product-listing-medium .item-title {
   color: #51575e;
 }
-.product-listing .product-lisitng-medium .item-desc {
+.product-listing .product-listing-medium .item-desc {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
 }
-.product-listing .product-lisitng-medium .item-title {
+.product-listing .product-listing-medium .item-title {
   text-transform: uppercase;
   font-size: 12px;
   margin-bottom: 3px;
 }
-.product-listing .product-lisitng-medium .item-tech-desc,
-.product-listing .product-lisitng-medium .item-tech-cost,
-.product-listing .product-lisitng-medium .item-tech-rev,
-.product-listing .product-lisitng-medium .item-tech-comm {
+.product-listing .product-listing-medium .item-tech-desc,
+.product-listing .product-listing-medium .item-tech-cost,
+.product-listing .product-listing-medium .item-tech-rev,
+.product-listing .product-listing-medium .item-tech-comm {
   max-width: 25%;
   margin-right: 30px;
   float: left;
   font-size: 12px;
   color: #a8afba;
+  margin-bottom: 0;
+}
+.product-listing .product-listing-medium .item-tech-left {
+  margin-bottom: 0;
+  text-align: center;
+}
+.product-listing .product-listing-medium .item-tech-price {
+  width: 100%;
+  color: #0084ff;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.product-listing .product-listing-medium .website-link {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-image: url('../img/browser_gray.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  position: absolute;
+  border: solid 1px #c9d7d8;
+  border-right: 0;
+  height: 40px;
+  width: 50px;
+  background-color: white;
+  right: 0;
+  top: 50%;
+  margin-top: -20px;
+  cursor: pointer;
+}
+.product-listing .product-lisitng-small {
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  height: 55px;
+  position: relative;
+  background: #f2f4f7;
+  border: solid 1px #c9d7d8;
+  padding: 20px 25px;
+  padding-right: 15px;
+}
+.product-listing .product-lisitng-small .website-link {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-image: url('../img/globe_gray.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  position: absolute;
+  border: solid 1px #c9d7d8;
+  border-right: 0;
+  height: 40px;
+  width: 50px;
+  background-color: white;
+  right: 0;
+  top: 50%;
+  margin-top: -20px;
+  cursor: pointer;
+}
+.product-listing .product-lisitng-small .item-title {
+  width: 55%;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #51575e;
+  float: left;
+  margin-bottom: 0px;
+}
+.product-listing .product-lisitng-small .item-tech-left {
+  float: left;
+  width: 20%;
+  color: #a8afba;
+  text-transform: capitalize;
+  line-height: 14px;
+}
+.product-listing .product-lisitng-small .item-tech-price {
+  width: 25%;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #0084ff;
+  line-height: 14px;
+  float: left;
 }
