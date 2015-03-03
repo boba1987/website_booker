@@ -245,3 +245,60 @@
     }
   }
 }
+
+.paging-navigation{
+  font-size: 12px;
+  a{
+    color: @gray-3;
+  }
+
+  .paging-prev, .paging-next{
+    float: left;
+    line-height: 25px;
+  }
+
+  .paging-prev{
+    margin-right: 10px;
+    padding-left: 15px;
+    background: url('../img/arrow-prev.png') no-repeat left 7px;
+  }
+
+  .paging-next{
+    margin-left: 10px;
+    padding-right: 15px;
+    background: url('../img/arrow-next.png') no-repeat right 7px;
+  }
+
+  .paging-pages{
+    li{
+      float: left;
+      margin: 0 5px;
+
+      &.active{
+        a{
+          border: solid 1px @blue-1;
+        }
+      }
+
+      &.no-link{
+        a{
+          border: none;
+        }
+      }
+
+      a{
+        .border-radius(3px);
+        padding: 3px;
+        border: solid 1px @blue-4;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        display: inline-block;
+
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
