@@ -39,5 +39,18 @@
     });
     $( ".slider-range-label-min" ).val( "$" + $( ".slider-range-blue" ).slider( "values", 0 ));
     $( ".slider-range-label-max" ).val( "$" + $( ".slider-range-blue" ).slider( "values", 1 ));
+    /** 
+    Rate slider init
+    */
+    $( "#rate-range-slider" ).slider({
+        range: "max",
+        value: 50,
+        min: 1,
+        max: 100,
+        slide: function( event, ui ) {
+            $( "#rate-range-slider-val" ).val( ui.value );
+        }
+    });
+    $( "#rate-range-slider-val" ).val( $( "#rate-range-slider" ).slider( "value" ) );
 }());
 // Place any jQuery/helper plugins in here.
