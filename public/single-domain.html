@@ -92,17 +92,27 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-xs-12">
                             <p class="text-uppercase">asking price</p>
-                            <p class="pull-left h1-white">$2,500</p><p class="currency">usd</p>
+                            <p class="h1-white text-ellipsis">$2,500 <span class="currency">usd</span></p>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-xs-12">
+                        <form action="" id="offering-form">
+                        	<div class="col-lg-4 col-md-4 col-xs-12">
                             <div class="rate-range-slider-holder">
                             	<div class="label-left"><span>Firm</span></div>
                                 <div class="label-right"><span>Flexible</span></div>
                                 <div id="rate-range-slider" class="rate-range-slider"></div>
                                 <input id="rate-range-slider-val" type="text" class="hide">
                             </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-xs-12"></div>
+                        	</div>
+                        	<div class="col-lg-4 col-md-4 col-xs-12">
+                        		<button type="submit" class="button-white-large pull-right">
+                        			place offer
+                        		</button>
+                        		<div class="offer-holder pull-right">
+                        			<span id="currency-offer">$</span>
+                        			<input type="text" id="offering-price" class="input-white pull-left">
+                        		</div>
+                        	</div>
+                        </form>
                     </div>
                 </div>
             </div>

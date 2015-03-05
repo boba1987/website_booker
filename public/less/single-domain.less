@@ -185,7 +185,7 @@
   border-top: solid 1px white;
 
   .row{
-    padding: 25px 30px;
+    padding: 25px 15px;
   }
 
   p{
@@ -194,7 +194,39 @@
     color: white;
   }
   .currency{
-    padding-top: 25px;
-    float: left;
+    font-size: 14px;
   }
+}
+
+.offer-holder{
+	position: relative;
+
+	#currency-offer{
+		color: @blue-1;
+		position: absolute;
+		top: 15px;
+		left: 10px;
+	}
+
+	#offering-price{
+		margin-right: 10px;
+	}
+}
+
+#offering-form{
+	.input-white{
+		width: 135px;
+
+		@media screen and (min-width: 1201px){
+			width: 165px;
+		}
+	}
+
+	.button-white-large{
+		width: 125px;
+
+		@media screen and (min-width: 1201px){
+			width: 160px;
+		}	
+	}
 }
