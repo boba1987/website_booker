@@ -7,7 +7,7 @@ Server boilerplate
 
 1.Run 'npm install',
 2.Run 'npm update',
-3.Run server with 'gulp serve',
+3.Run server with 'gulp start',
 4.Server is running on 'localhost:3000';
 
 Notes:
