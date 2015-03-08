@@ -1368,3 +1368,58 @@ footer a:hover {
   font-size: 18px;
   color: #3e6372;
 }
+.comments-list li {
+  padding-left: 80px;
+  position: relative;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  border-bottom: solid 1px #e5e5e5;
+}
+.comments-list li img {
+  border-radius: 50%;
+  border: solid 1px #51575e;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  height: 60px;
+  width: 60px;
+}
+.comments-list li .user-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 70%;
+  font-size: 14px;
+  color: #0084ff;
+  float: left;
+  text-transform: capitalize;
+  margin-right: 10px;
+}
+.comments-list li .date {
+  font-size: 12px;
+  color: #a8afba;
+  float: left;
+  margin-right: 10px;
+  line-height: 22px;
+}
+.comments-list li .welth {
+  color: #0084ff;
+  padding-left: 30px;
+  background: url('../img/blue-hart.png') no-repeat center right;
+  float: left;
+}
+.comments-list li .quote-link {
+  margin-left: 30px;
+}
+.reply-link,
+.quote-link {
+  padding-left: 30px;
+  color: #3e6372;
+  font-size: 14px;
+}
+.reply-link {
+  background: url('../img/replay-gray.png') no-repeat center left;
+}
+.quote-link {
+  background: url('../img/quote-gray.png') no-repeat center left;
+}
