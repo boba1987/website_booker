@@ -15,6 +15,7 @@ ul {
   padding: 10px;
   min-width: 120px;
   text-align: center;
+  border: none;
 }
 .blue-button:hover {
   text-decoration: none;
@@ -79,6 +80,18 @@ body {
 }
 .domain-desc-asking {
   float: left;
+}
+.comment-box form {
+  padding: 20px 25px;
+  background: #f2f4f7;
+}
+.comment-box textarea {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width: 100%;
+  resize: none;
+  border: solid 1px #c9d7d8;
 }
 /* Inputs styles */
 .input-white {
@@ -1371,8 +1384,8 @@ footer a:hover {
 .comments-list li {
   padding-left: 80px;
   position: relative;
-  padding-bottom: 20px;
-  margin-top: 20px;
+  padding-bottom: 30px;
+  margin-top: 30px;
   border-bottom: solid 1px #e5e5e5;
 }
 .comments-list li img {
@@ -1404,8 +1417,8 @@ footer a:hover {
 }
 .comments-list li .welth {
   color: #0084ff;
-  padding-left: 30px;
-  background: url('../img/blue-hart.png') no-repeat center right;
+  padding-left: 25px;
+  background: url('../img/blue-hart.png') no-repeat center left;
   float: left;
 }
 .comments-list li .quote-link {
@@ -1418,7 +1431,7 @@ footer a:hover {
   font-size: 14px;
 }
 .reply-link {
-  background: url('../img/replay-gray.png') no-repeat center left;
+  background: url('../img/reply-gray.png') no-repeat center left;
 }
 .quote-link {
   background: url('../img/quote-gray.png') no-repeat center left;
