@@ -1,5 +1,25 @@
 /* Single website page styles */
 .website-carusel-preview{
 	background: @gray-5;
-	margin-bottom: -20px;
+	padding: 40px 0;
+}
+
+.carousel{
+	position: relative;
+	width: 73%;
+	margin: 0 auto;
+
+	.blue-button.prev, .blue-button.next{
+		position: absolute;
+		top: 50%;
+		margin-top: -20px;
+	}
+
+	.blue-button.prev{
+		left: -140px;
+	}
+
+	.blue-button.next{
+		right: -140px;
+	}
 }
