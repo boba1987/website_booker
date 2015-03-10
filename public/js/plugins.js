@@ -52,5 +52,9 @@
         }
     });
     $( "#rate-range-slider-val" ).val( $( "#rate-range-slider" ).slider( "value" ) );
+    /**
+    Carousel init
+    */
+    $('.carousel').carousel();
 }());
 // Place any jQuery/helper plugins in here.

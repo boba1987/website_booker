@@ -829,6 +829,7 @@ footer a:hover {
 }
 .footer-secondary {
   background-color: #f2f4f7;
+  margin-top: 20px;
 }
 .footer-secondary li {
   padding: 3px 0;
@@ -845,9 +846,6 @@ footer a:hover {
   }
 }
 /* Page main content styles */
-.main {
-  padding: 20px 0;
-}
 /* Buy page styles */
 #listing-sort-by {
   width: 150px;
@@ -1159,7 +1157,6 @@ footer a:hover {
 .domain-desc {
   background: #eaeef4;
   padding: 20px 0;
-  margin: -20px 0;
 }
 .title-desc span {
   text-transform: uppercase;
@@ -1435,4 +1432,9 @@ footer a:hover {
 }
 .quote-link {
   background: url('../img/quote-gray.png') no-repeat center left;
+}
+/* Single website page styles */
+.website-carusel-preview {
+  background: #f2f4f7;
+  margin-bottom: -20px;
 }
