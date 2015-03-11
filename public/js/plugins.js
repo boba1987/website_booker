@@ -56,5 +56,58 @@
     Carousel init
     */
     $('.carousel').carousel();
+    /**
+    Highcharts init
+    */
+    $(function () {
+    $('#chartContainer-visits').highcharts({
+        chart: {
+            type: 'area'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            type: 'datetime',
+            dateTimeLabelFormats: {
+                day: '%b'
+            }
+        },
+        yAxis: {
+            title: {
+                text: 'Visits'
+            },
+            gridLineColor: 'transparent',
+            labels: {
+                formatter: function () {
+                    return this.value / 1000 + 'k';
+                }
+            }
+        },
+        tooltip: {
+            pointFormat: '${point.y:,.0f}'
+        },
+        plotOptions: {
+            area: {
+                marker: {
+                    enabled: false,
+                    symbol: 'circle',
+                    radius: 2,
+                    states: {
+                        hover: {
+                            enabled: true
+                        }
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Website name',
+            data: [ 11, 32, 110, 235, 369, 640, 1005, 1436, 2063, 3057, 3000, 2600],
+            pointStart: Date.UTC(2014, 0, 1),
+            pointInterval: 30 * 24 * 3600 * 1000 // one month                
+        }]
+    });
+});
 }());
 // Place any jQuery/helper plugins in here.
