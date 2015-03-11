@@ -1438,7 +1438,7 @@ footer a:hover {
 /* Single website page styles */
 .website-carusel-preview {
   background: #f2f4f7;
-  padding: 40px 0;
+  padding: 60px 0;
 }
 .carousel {
   position: relative;
@@ -1450,6 +1450,7 @@ footer a:hover {
   position: absolute;
   top: 50%;
   margin-top: -20px;
+  text-transform: uppercase;
 }
 .carousel .blue-button.prev {
   left: -140px;
