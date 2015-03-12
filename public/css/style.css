@@ -1458,3 +1458,8 @@ footer a:hover {
 .carousel .blue-button.next {
   right: -140px;
 }
+/** Charts styles */
+.highcharts-container {
+  height: 185px;
+  overflow: hidden;
+}

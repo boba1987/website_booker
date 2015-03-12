@@ -62,20 +62,38 @@
     $(function () {
     $('#chartContainer-visits').highcharts({
         chart: {
-            type: 'area'
+            type: 'area',
+            height: 200
         },
         title: {
-            text: ''
+            text: 'Visits',
+            style: {
+                "font-size": "14px",
+                "color": "#51575e"
+            },
+            align: "left",
+            y: 15
+        },
+        legend: {
+            enabled: false,
+            borderColor: 'transparent',
+            layout: 'vertical',
+            itemStyle: {
+                "font-size": "14px",
+                "color": "#51575e"
+            }
         },
         xAxis: {
+            lineColor: 'transparent',
             type: 'datetime',
             dateTimeLabelFormats: {
                 day: '%b'
-            }
+            },
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
         },
         yAxis: {
             title: {
-                text: 'Visits'
+                text: ''
             },
             gridLineColor: 'transparent',
             labels: {
@@ -102,10 +120,10 @@
             }
         },
         series: [{
-            name: 'Website name',
+            name: 'Visits',
             data: [ 11, 32, 110, 235, 369, 640, 1005, 1436, 2063, 3057, 3000, 2600],
-            pointStart: Date.UTC(2014, 0, 1),
-            pointInterval: 30 * 24 * 3600 * 1000 // one month                
+            color: "#e6e9ee",
+            fillOpacity: 1
         }]
     });
 });
