@@ -86,6 +86,9 @@
             xAxis: {
                 lineColor: 'transparent',
                 type: 'datetime',
+                labels: {
+                    y: 15
+                },
                 dateTimeLabelFormats: {
                     day: '%b'
                 },
@@ -94,6 +97,9 @@
             yAxis: {
                 title: {
                     text: ''
+                },
+                labels: {
+                    x: 15
                 },
                 gridLineColor: 'transparent',
                 labels: {
