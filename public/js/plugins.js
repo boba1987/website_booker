@@ -60,72 +60,83 @@
     Highcharts init
     */
     $(function () {
-    $('#chartContainer-visits').highcharts({
-        chart: {
-            type: 'area',
-            height: 200
-        },
-        title: {
-            text: 'Visits',
-            style: {
-                "font-size": "14px",
-                "color": "#51575e"
+        $('#chartContainer-visits').highcharts({
+            chart: {
+                type: 'area',
+                height: 200
             },
-            align: "left",
-            y: 15
-        },
-        legend: {
-            enabled: false,
-            borderColor: 'transparent',
-            layout: 'vertical',
-            itemStyle: {
-                "font-size": "14px",
-                "color": "#51575e"
-            }
-        },
-        xAxis: {
-            lineColor: 'transparent',
-            type: 'datetime',
-            dateTimeLabelFormats: {
-                day: '%b'
-            },
-            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-        },
-        yAxis: {
             title: {
-                text: ''
+                text: 'Visits',
+                style: {
+                    "font-size": "14px",
+                    "color": "#51575e"
+                },
+                align: "left",
+                y: 10
             },
-            gridLineColor: 'transparent',
-            labels: {
-                formatter: function () {
-                    return this.value / 1000 + 'k';
+            legend: {
+                enabled: false,
+                borderColor: 'transparent',
+                layout: 'vertical',
+                itemStyle: {
+                    "font-size": "14px",
+                    "color": "#51575e"
                 }
-            }
-        },
-        tooltip: {
-            pointFormat: '${point.y:,.0f}'
-        },
-        plotOptions: {
-            area: {
-                marker: {
-                    enabled: false,
-                    symbol: 'circle',
-                    radius: 2,
-                    states: {
-                        hover: {
-                            enabled: true
+            },
+            xAxis: {
+                lineColor: 'transparent',
+                type: 'datetime',
+                dateTimeLabelFormats: {
+                    day: '%b'
+                },
+                categories: ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC']
+            },
+            yAxis: {
+                title: {
+                    text: ''
+                },
+                gridLineColor: 'transparent',
+                labels: {
+                    formatter: function () {
+                        return this.value / 1000 + 'k';
+                    }
+                }
+            },
+            tooltip: {
+                pointFormat: '${point.y}',
+                borderColor: 'transparent',
+                backgroundColor: 'transparent',
+                shadow: false,
+                style: {
+                    color: '#0084ff',
+                    fontSize: '12px',
+                    padding: '8px'
+                }
+            },
+            plotOptions: {
+                area: {
+                    marker: {
+                        enabled: false,
+                        symbol: 'circle',
+                        radius: 2,
+                        states: {
+                            hover: {
+                                enabled: true
+                            }
                         }
                     }
                 }
-            }
-        },
-        series: [{
-            name: 'Visits',
-            data: [ 11, 32, 110, 235, 369, 640, 1005, 1436, 2063, 3057, 3000, 2600],
-            color: "#e6e9ee",
-            fillOpacity: 1
-        }]
+            },
+            series: [{
+                name: 'Visits',
+                data: [ 11, 32, 110, 235, 369, 640, 1005, 1436, 2063, 3057, 3000, 2600],
+                color: "#e6e9ee",
+                fillOpacity: 1,
+                marker: {
+                    fillColor: '#0084ff'
+                }
+            }]
+        });
     });
-});
 }());
 // Place any jQuery/helper plugins in here.
