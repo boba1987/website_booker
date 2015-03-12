@@ -57,9 +57,9 @@
     */
     $('.carousel').carousel();
     /**
-    Highcharts init
+    Highcharts init and settings
     */
-    $(function () {
+    function renderChart(){
         $('#chartContainer-visits').highcharts({
             chart: {
                 type: 'area',
@@ -110,7 +110,8 @@
                 style: {
                     color: '#0084ff',
                     fontSize: '12px',
-                    padding: '8px'
+                    padding: '8px',
+                    fontWeight: 'bold'
                 }
             },
             plotOptions: {
@@ -137,6 +138,10 @@
                 }
             }]
         });
-    });
+    };
+
+    if($('#chartContainer-visits').length > 0){
+        renderChart();
+    } 
 }());
 // Place any jQuery/helper plugins in here.

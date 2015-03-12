@@ -136,6 +136,7 @@
 
     .item-desc, .item-title{
       color: @gray-3;
+      font-size: 12px;
     }
 
     .item-desc{
@@ -145,7 +146,6 @@
 
     .item-title{
       text-transform: uppercase;
-      font-size: 12px;
       margin-bottom: 3px;
     }
 
@@ -156,6 +156,15 @@
       font-size: 12px;
       color: @gray-2;
       margin-bottom: 0;
+      text-transform: capitalize;
+
+      @media (max-width: 991px){
+        max-width: 50%;
+        width: 45%;
+        margin-right: 5%;
+        float: left; 
+        margin-bottom: 5px;
+      }
     }
 
     .item-tech-left{

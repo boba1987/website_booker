@@ -8,6 +8,11 @@
   span{
     text-transform: uppercase;
     line-height: 1;
+    display: block;
+
+    @media (max-width: 991px){
+    	text-align: center;
+    }
   }
 }
 
@@ -68,6 +73,10 @@
   float: left;
   margin-top: 5px;
 
+  @media(max-width: 991px){
+  	float: right;
+  }
+
   a{
     .text-ellipsis;
     display: inline-block;
@@ -114,6 +123,10 @@
 .tabs-holder-2{
   float: right;
   margin-bottom: 30px;
+
+  @media (max-width: 991px){
+  	margin-left: 30px;
+  }
 
   a{
     display: inline-block;
@@ -320,4 +333,20 @@
 
 .quote-link{
 	background: url('../img/quote-gray.png') no-repeat center left;
+}
+
+.asking-price{
+	@media (max-width: 991px){
+		p{
+			text-align: center;
+		}
+	}
+}
+
+.place-offer{
+	@media (max-width: 991px){
+		margin: 0 auto;
+		margin-top: 20px;
+		display: table;
+	}
 }
