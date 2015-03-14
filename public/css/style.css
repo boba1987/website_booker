@@ -1125,6 +1125,11 @@ footer a:hover {
   margin-right: 30px;
   color: white;
 }
+@media (max-width: 991px) {
+  .published-list li {
+    margin-bottom: 20px;
+  }
+}
 .ceo-bord p {
   line-height: 2;
   font-size: 12px;
