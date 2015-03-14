@@ -1761,6 +1761,9 @@ footer a:hover {
 .link-arrow-blue {
   padding-right: 25px;
 }
+.extend-button {
+  padding: 10px 20px;
+}
 .center {
   margin: 0 auto;
 }
