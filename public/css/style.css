@@ -1695,6 +1695,9 @@ footer a:hover {
   }
 }
 .domain-desc-list .domain-desc-item {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
   background: #f2f4f7;
   border: solid 1px #c9d7d8;
   padding: 15px;
