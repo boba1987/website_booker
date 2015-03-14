@@ -852,6 +852,11 @@ footer a:hover {
 .treading-list li {
   float: left;
 }
+@media (max-width: 991px) {
+  .treading-list li {
+    width: 100%;
+  }
+}
 .treading-list li > div {
   padding: 15px 20px 35px;
   -webkit-border-radius: 7px;
