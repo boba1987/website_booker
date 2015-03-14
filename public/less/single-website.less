@@ -9,19 +9,37 @@
 	width: 73%;
 	margin: 0 auto;
 
+	@media (max-width: 1024px){
+		width: 90%;
+		padding-bottom: 60px;
+	}
+
 	.blue-button.prev, .blue-button.next{
 		position: absolute;
 		top: 50%;
 		margin-top: -20px;
 		text-transform: uppercase;
+
+		@media (max-width: 1024px){
+			top: auto;
+			bottom: -40px;
+		}
 	}
 
 	.blue-button.prev{
 		left: -140px;
+
+		@media (max-width: 1024px){
+			left: 0;
+		}
 	}
 
 	.blue-button.next{
 		right: -140px;
+
+		@media (max-width: 1024px){
+			right: 0;
+		}
 	}
-	
+
 }
