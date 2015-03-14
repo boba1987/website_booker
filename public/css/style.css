@@ -92,6 +92,7 @@ body {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  padding: 10px;
   width: 100%;
   resize: none;
   border: solid 1px #c9d7d8;
