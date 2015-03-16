@@ -157,6 +157,25 @@ body {
   color: #a8afba;
   cursor: pointer;
 }
+.input-gray input {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+  height: 40px;
+  padding: 10px 10px 10px 35px;
+  width: 100%;
+  font-size: 14px;
+  border: solid 1px #c9d7d8;
+  color: #a8afba;
+}
+.input-gray span {
+  position: absolute;
+  z-index: 2;
+  color: #a8afba;
+  top: 10px;
+  left: 35px;
+}
 /*!
 Chosen, a Select Box Enhancer for jQuery and Prototype
 by Patrick Filler for Harvest, http://getharvest.com

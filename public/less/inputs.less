@@ -41,3 +41,24 @@
   	color: @gray-2;
   	cursor: pointer;
 }
+
+.input-gray{
+	input{
+		.border-radius(5px);
+		position: relative;
+		height: 40px;
+		padding: 10px 10px 10px 35px; 
+		width: 100%;
+		font-size: 14px;
+		border: solid 1px @gray-6;
+		color: @gray-2;
+	}
+
+	span{
+		position: absolute;
+		z-index: 2;
+		color: @gray-2;
+		top: 10px;
+		left: 35px;
+	}
+}
