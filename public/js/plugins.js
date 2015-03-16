@@ -59,14 +59,14 @@
     /**
     Highcharts init and settings
     */
-    function renderChart(){
-        $('#chartContainer-visits').highcharts({
+    function renderChart(id, title, xAxisCat, yAxisD){
+        $(id).highcharts({
             chart: {
                 type: 'area',
                 height: 200
             },
             title: {
-                text: 'Visits',
+                text: title,
                 style: {
                     "font-size": "14px",
                     "color": "#51575e"
@@ -92,7 +92,7 @@
                 dateTimeLabelFormats: {
                     day: '%b'
                 },
-                categories: ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC']
+                categories: xAxisCat
             },
             yAxis: {
                 title: {
@@ -136,7 +136,7 @@
             },
             series: [{
                 name: 'Visits',
-                data: [ 1100, 3020, 3300, 3350, 3609, 6400, 10005, 14036, 20063, 30057, 30000, 26000],
+                data: yAxisD,
                 color: "#e6e9ee",
                 fillOpacity: 1,
                 marker: {
@@ -145,9 +145,11 @@
             }]
         });
     };
-
-    if($('#chartContainer-visits').length > 0){
-        renderChart();
+    var xAxisCategories = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'],
+        yAxixData = [ 1100, 3020, 3300, 3350, 3609, 6400, 10005, 14036, 20063, 30057, 30000, 26000];
+    if($('.highcharts-container').length > 0){
+        /* When chart init, provide x axis, y axis data and chart title */
+        renderChart('#chartContainer-visits', 'Visits' ,xAxisCategories, yAxixData);
     } 
 }());
 // Place any jQuery/helper plugins in here.
