@@ -31,6 +31,10 @@
 				background: url('../img/verified-blue.png') no-repeat center;
 				border: none;
 			}
+
+			&>div{
+				background: @blue-1;
+			}
 		}
 
 		&.verify{
@@ -94,7 +98,7 @@
 	.border-radius(5px);
 	background: @blue-2;
 	border: solid 1px @blue-3;
-	padding-top: 100px;
+	padding-top: 40px;
 	padding-bottom: 40px;
 	max-width: 800px;
 	margin: 0 auto;
@@ -111,11 +115,12 @@
 }
 
 .form-tab-list{
-	position: absolute;
 	width: 100%;
 	right: 0;
 	top: 0;
 	height: 65px;
+	margin-top: -40px;
+	margin-bottom: 40px;
 	
 	li{
 		float: left;
@@ -219,6 +224,7 @@
 .tooltip-inner{
 	background: @gray-12;
 	font-style: italic;
+	padding: 10px;
 }
 
 .tooltip.top .tooltip-arrow{
@@ -227,4 +233,17 @@
 
 .tooltip.right .tooltip-arrow{
 	border-right-color: @gray-12;
+}
+
+.promote-form{
+	.border-radius(7px);
+	border: solid 2px @gray-6;
+	background: white;
+	padding: 15px;
+  	padding-bottom: 30px;
+  	margin-top: 0;
+
+  	.input-holder{
+  		margin-top: 5px;
+  	}
 }

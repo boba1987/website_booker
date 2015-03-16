@@ -117,14 +117,26 @@ body {
   resize: none;
   border: solid 1px #c9d7d8;
 }
+.gray-3-18,
+.gray-3-25 {
+  color: #51575e;
+  line-height: 1.5;
+}
 .gray-3-25 {
   font-size: 25px;
-  line-height: 1.5;
-  color: #51575e;
+}
+.gray-3-20 {
+  font-size: 20px;
+}
+.gray-2-14,
+.gray-2-16 {
+  color: #a8afba;
 }
 .gray-2-14 {
   font-size: 14px;
-  color: #a8afba;
+}
+.gray-2-16 {
+  font-size: 16px;
 }
 /* Inputs styles */
 .input-white {
@@ -193,6 +205,9 @@ textarea.medium {
 }
 textarea.small {
   height: 90px;
+}
+label {
+  min-height: 25px;
 }
 /*!
 Chosen, a Select Box Enhancer for jQuery and Prototype
@@ -1847,6 +1862,9 @@ footer a:hover {
   background: url('../img/verified-blue.png') no-repeat center;
   border: none;
 }
+.steps-list li.verified > div {
+  background: #0084ff;
+}
 .steps-list li.verify span {
   background: url('../img/verify-blue-white.png') no-repeat center;
   height: 40px;
@@ -1901,7 +1919,7 @@ footer a:hover {
   border-radius: 5px;
   background: #f2f4f7;
   border: solid 1px #c9d7d8;
-  padding-top: 100px;
+  padding-top: 40px;
   padding-bottom: 40px;
   max-width: 800px;
   margin: 0 auto;
@@ -1915,11 +1933,12 @@ footer a:hover {
   margin-bottom: 0;
 }
 .form-tab-list {
-  position: absolute;
   width: 100%;
   right: 0;
   top: 0;
   height: 65px;
+  margin-top: -40px;
+  margin-bottom: 40px;
 }
 .form-tab-list li {
   float: left;
@@ -2005,12 +2024,26 @@ footer a:hover {
 .tooltip-inner {
   background: #adb9c0;
   font-style: italic;
+  padding: 10px;
 }
 .tooltip.top .tooltip-arrow {
   border-top-color: #adb9c0;
 }
 .tooltip.right .tooltip-arrow {
   border-right-color: #adb9c0;
+}
+.promote-form {
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  border: solid 2px #c9d7d8;
+  background: white;
+  padding: 15px;
+  padding-bottom: 30px;
+  margin-top: 0;
+}
+.promote-form .input-holder {
+  margin-top: 5px;
 }
 .center {
   margin: 0 auto;
