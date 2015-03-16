@@ -151,5 +151,19 @@
         /* When chart init, provide x axis, y axis data and chart title */
         renderChart('#chartContainer-visits', 'Visits' ,xAxisCategories, yAxixData);
     } 
+
+    var placement;
+    /* Bottstrap tooltip plugin init */
+    if($(window).width() < 1200){
+        placement = {
+            "placement" : "top"
+        }
+    }else{
+        placement = {
+            "placement" : "right"
+        }
+    }
+
+    $('.info-flyout').tooltip(placement);
 }());
 // Place any jQuery/helper plugins in here.

@@ -1956,6 +1956,40 @@ footer a:hover {
 .gray-link:hover {
   color: #a8afba;
 }
+.info-flyout {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  height: 20px;
+  width: 20px;
+  color: white;
+  background: #adb9c0;
+  z-index: 2;
+  right: -11px;
+  top: 0;
+  cursor: pointer;
+}
+.tooltip {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width: 150px;
+  color: white;
+  margin-top: -10px !important;
+}
+.tooltip-inner {
+  background: #adb9c0;
+  font-style: italic;
+}
+.tooltip.top .tooltip-arrow {
+  border-top-color: #adb9c0;
+}
+.tooltip.right .tooltip-arrow {
+  border-right-color: #adb9c0;
+}
 .center {
   margin: 0 auto;
 }

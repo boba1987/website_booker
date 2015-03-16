@@ -186,3 +186,38 @@
 	    color: @gray-2;    
 	  }
 }
+
+.info-flyout{
+	.border-radius(50%);
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	height: 20px;
+	width: 20px;
+	color: white;
+	background: @gray-12;
+	z-index: 2;
+	right: -11px;
+	top: 0;
+	cursor: pointer;
+}
+
+.tooltip {
+	.border-radius(5px);
+	width: 150px;
+	color: white;
+	margin-top: -10px !important;
+}
+
+.tooltip-inner{
+	background: @gray-12;
+	font-style: italic;
+}
+
+.tooltip.top .tooltip-arrow{
+	border-top-color: @gray-12;
+}
+
+.tooltip.right .tooltip-arrow{
+	border-right-color: @gray-12;
+}
