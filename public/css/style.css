@@ -6,12 +6,12 @@ ul {
 }
 /* Color styles */
 /* Buttons styles */
-.blue-button {
+.blue-button,
+.gray-button {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
   color: white;
-  background: #0084ff;
   padding: 10px;
   min-width: 120px;
   text-align: center;
@@ -20,10 +20,19 @@ ul {
   text-transform: uppercase;
 }
 .blue-button:hover,
+.gray-button:hover,
 .blue-button:active,
-.blue-button:focus {
+.gray-button:active,
+.blue-button:focus,
+.gray-button:focus {
   text-decoration: none;
   color: white;
+}
+.blue-button {
+  background: #0084ff;
+}
+.gray-button {
+  background: #a8afba;
 }
 .button-white-large {
   white-space: nowrap;
@@ -175,6 +184,15 @@ body {
   color: #a8afba;
   top: 10px;
   left: 35px;
+}
+textarea {
+  resize: none;
+}
+textarea.medium {
+  height: 142px;
+}
+textarea.small {
+  height: 90px;
 }
 /*!
 Chosen, a Select Box Enhancer for jQuery and Prototype
@@ -1824,6 +1842,10 @@ footer a:hover {
 }
 .steps-list li.active > div {
   background: #0084ff;
+}
+.steps-list li.verified span {
+  background: url('../img/verified-blue.png') no-repeat center;
+  border: none;
 }
 .steps-list li.verify span {
   background: url('../img/verify-blue-white.png') no-repeat center;
