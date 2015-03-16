@@ -1,0 +1,156 @@
+/* Domain listing pages style */
+.step-indicator-holder{
+	height: 80px;
+}
+
+.steps-list{
+	display: table;
+	margin: 0 auto;
+
+	li{
+		float: left;
+		position: relative;
+		width: 170px;
+
+		@media (max-width:991px){
+			width: 160px;
+		}
+
+		&.active{
+			span{
+				background: @blue-1;
+			}
+
+			&>div{
+				background: @blue-1;
+			}
+		}
+
+		&.verify{
+			span{
+				background: url('../img/verify-blue-white.png') no-repeat center;
+				height: 40px;
+				width: 40px;
+				top: -18px;
+				right: -10px;
+			}
+		}
+
+		&>div{
+			height: 3px;
+			background: @blue-4;
+		}
+
+		p{
+			color: @gray-7;
+			text-transform: capitalize;
+		}
+
+		&:first-child{
+			width: 1px;
+		}
+
+		span{
+			.border-radius(50%);
+			display: block;
+			width: 20px;
+			height: 20px;
+			background: @blue-4;
+			position: absolute;
+			right: 0;
+			top: -8px;
+			border: solid 5px white;
+		}
+
+		.step-desc-1, .step-desc-2{
+			.text-ellipsis;
+			position: absolute;
+			width: 100px;
+			right: -40px;
+			text-align: center;
+			font-size: 12px;
+		}
+
+		.step-desc-1{
+			top: 20px;
+		}
+
+		.step-desc-2{
+			top: 45px;
+		}
+
+
+	}
+}
+
+.steps-form-holder{
+	.border-radius(5px);
+	background: @blue-2;
+	border: solid 1px @blue-3;
+	padding: 30px;
+	padding-top: 70px;
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.form-tab-list{
+	position: absolute;
+	width: 100%;
+	right: 0;
+	top: 0;
+	height: 65px;
+	
+	li{
+		float: left;
+		height: 100%;
+		background: white;
+		border-right: solid 1px @gray-6;
+		border-bottom: solid 1px @gray-6;
+
+		&:first-child{
+			-webkit-border-top-left-radius: 5px;
+			-moz-border-radius-topleft: 5px;
+			border-top-left-radius: 5px;
+		}
+
+		&:last-child{
+			-webkit-border-top-right-radius: 5px;
+			-moz-border-radius-topright: 5px;
+			border-top-right-radius: 5px;
+			border-right: none;
+		}
+
+		&.active{
+			background: transparent;
+			border-bottom: none;
+			a{
+				color: @blue-1;
+
+				&:hover{
+					color: @blue-1;
+				}
+			}
+		}
+
+		a{
+			display: block;
+			text-align: center;
+			font-size: 16px;
+			color: @gray-11;
+			text-transform: uppercase;
+			padding: 22px;
+
+			&:hover{
+				color: @gray-11;				
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.domain-form{
+	li{
+		width: 50%;
+	}
+}
