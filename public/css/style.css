@@ -118,12 +118,23 @@ body {
   border: solid 1px #c9d7d8;
 }
 .gray-3-18,
-.gray-3-25 {
+.gray-3-25,
+.gray-3-30 {
   color: #51575e;
   line-height: 1.5;
 }
+.gray-7-20 {
+  color: #3e6372;
+  line-height: 1.5;
+}
+.gray-3-30 {
+  font-size: 30px;
+}
 .gray-3-25 {
   font-size: 25px;
+}
+.gray-3-20 {
+  font-size: 20px;
 }
 .gray-3-20 {
   font-size: 20px;
@@ -1925,6 +1936,12 @@ footer a:hover {
   margin: 0 auto;
   position: relative;
 }
+.steps-form-holder > p {
+  color: #3e6372;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
 .steps-form-holder hr {
   border-color: #c9d7d8;
   margin: 25px 0;
@@ -2046,6 +2063,78 @@ footer a:hover {
 }
 .promote-form .input-holder {
   margin-top: 5px;
+}
+.promote-options > li {
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  border: solid 2px #c9d7d8;
+  background: white;
+  padding: 20px 0;
+  color: #3e6372;
+  margin-bottom: 20px;
+}
+.promote-options > li:hover {
+  padding: 21px 1px;
+  border: solid 1px #0084ff;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 132, 255, 0.5);
+  -moz-box-shadow: 0px 0px 1px 1px rgba(0, 132, 255, 0.5);
+  box-shadow: 0px 0px 1px 1px rgba(0, 132, 255, 0.5);
+}
+.promote-type {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  border: solid 1px #fafbfb;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  .promote-type {
+    margin: 0 auto;
+  }
+}
+.promote-type.orange > div > div {
+  background: #ff8a00;
+}
+.promote-type.gray > div > div {
+  background: #9fa7b7;
+}
+.promote-type.blue > div > div {
+  background: #0084ff;
+}
+.promote-type > div {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: solid 1px #e2eeef;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+}
+.promote-type > div > div {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  color: white;
+  height: 100%;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 30px 10px;
+  text-align: center;
+}
+.newspaper-layout {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 10;
+  -moz-column-gap: 10;
+}
+.newspaper-layout li {
+  padding: 0;
+  padding-bottom: 5px;
 }
 .center {
   margin: 0 auto;
