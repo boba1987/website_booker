@@ -2064,6 +2064,13 @@ footer a:hover {
 .promote-form .input-holder {
   margin-top: 5px;
 }
+.promote-form .promote-options > li {
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  padding: 20px 0 !important;
+}
 .promote-options > li {
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -2315,4 +2322,12 @@ footer a:hover {
 }
 .padding-0-40 {
   padding: 0 40px;
+}
+@media (max-width: 991px) {
+  .sm-center {
+    margin: 0 auto;
+    text-align: center;
+    float: none !important;
+    display: block;
+  }
 }
