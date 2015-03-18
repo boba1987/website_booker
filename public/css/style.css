@@ -2052,14 +2052,23 @@ footer a:hover {
   border-right-color: #adb9c0;
 }
 .promote-form {
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  border-radius: 7px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
   border: solid 2px #c9d7d8;
   background: white;
   padding: 15px;
   padding-bottom: 30px;
   margin-top: 0;
+  position: relative;
+}
+.promote-form.premium .premium-offer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url('../img/star-orange.png') no-repeat center;
+  height: 49px;
+  width: 49px;
 }
 .promote-form .input-holder {
   margin-top: 5px;
@@ -2104,7 +2113,7 @@ footer a:hover {
   }
 }
 .promote-type.orange > div > div {
-  background: #ff8a00;
+  background: #ff6900;
 }
 .promote-type.gray > div > div {
   background: #9fa7b7;

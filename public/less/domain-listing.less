@@ -245,12 +245,24 @@
 }
 
 .promote-form{
-	.border-radius(7px);
+	.border-radius(10px);
 	border: solid 2px @gray-6;
 	background: white;
 	padding: 15px;
   	padding-bottom: 30px;
   	margin-top: 0;
+  	position: relative;
+
+  	&.premium{
+  		.premium-offer{
+			position: absolute;
+			top: 0;
+			right: 0;
+			background: url('../img/star-orange.png') no-repeat center;
+			height: 49px;
+			width: 49px;
+		}
+  	}
 
   	.input-holder{
   		margin-top: 5px;
@@ -300,7 +312,7 @@
 
 	&.orange{
 		&>div>div{
-			background: @orange-1;
+			background: @orange-2;
 		}
 	}
 
