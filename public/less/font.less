@@ -8,6 +8,79 @@ body{
   color: @gray-3;
 }
 
+//get custom font mixin
+.getFont(@size, @color: @black-1, @line-height: 1.5) { 
+  font-size: ~"@{size}px";
+  color: ~"@{color}";
+  line-height: @line-height;
+}
+
+//generate gray fonts
+@iterationsG: 30;
+.loopingClassGray (@index, @num) when (@index > 9) { 
+  @fullColor: ~"@{gray-@{num}}";
+  @colorName: ~"@{num}-@{index}";
+  .gray-@{colorName} {
+    .getFont(@index, @fullColor)
+  } 
+  .loopingClassGray(@index - 1, @num); 
+} 
+
+//prints out .gray-1-30
+.loopingClassGray (0, 1) {} 
+.loopingClassGray(@iterationsG, 1);
+
+//prints out .gray-2-30
+.loopingClassGray (0, 2) {} 
+.loopingClassGray(@iterationsG, 2);
+
+//prints out .gray-3-30
+.loopingClassGray (0, 3) {} 
+.loopingClassGray(@iterationsG, 3);
+
+//prints out .gray-6-30
+.loopingClassGray (0, 6) {} 
+.loopingClassGray(@iterationsG, 6);
+
+//prints out .gray-7-30
+.loopingClassGray (0, 7) {} 
+.loopingClassGray(@iterationsG, 7);
+
+//prints out .gray-16-30
+.loopingClassGray (0, 16) {} 
+.loopingClassGray(@iterationsG, 16);
+
+//generate blue fonts
+@iterationsB: 30;
+.loopingClassBlue (@index, @num) when (@index > 9) { 
+  @fullColor: ~"@{blue-@{num}}";
+  @colorName: ~"@{num}-@{index}";
+  .blue-@{colorName} {
+    .getFont(@index, @fullColor)
+  } 
+  .loopingClassBlue(@index - 1, @num); 
+} 
+
+//prints out .blue-30-1
+.loopingClassBlue (0, 1) {} 
+.loopingClassBlue(@iterationsB, 1);
+
+//generate red fonts
+@iterationsR: 30;
+.loopingClassRed (@index, @num) when (@index > 9) { 
+  @fullColor: ~"@{red-@{num}}";
+  @colorName: ~"@{num}-@{index}";
+  .red-@{colorName} {
+    .getFont(@index, @fullColor)
+  } 
+  .loopingClassRed(@index - 1, @num); 
+} 
+
+//prints out .red-30-1
+.loopingClassRed (0, 2) {} 
+.loopingClassRed(@iterationsR, 2);
+
+
 .h1-gray-1, .h2-gray-1, .h3-gray-1{
   line-height: 1.5;
   color: @h3-gray-1-color;
@@ -74,40 +147,6 @@ body{
   }
 }
 
-.gray-3-18, .gray-3-25, .gray-3-30{
-  color: @gray-3;
-  line-height: 1.5;
-}
-
-.gray-7-20{
-  color: @gray-7;
-  line-height: 1.5;
-}
-
-.gray-3-30{
-  font-size: 30px;
-}
-
-.gray-3-25{
-  font-size: 25px;
-}
-
-.gray-3-20{
-  font-size: 20px;
-}
-
-.gray-3-20{
-  font-size: 20px;
-}
-
-.gray-2-14, .gray-2-16{
-  color: @gray-2;
-}
-
-.gray-2-14{
-  font-size: 14px;
-}
-
-.gray-2-16{
-  font-size: 16px;
+.text-underline{
+  text-decoration: underline;
 }
