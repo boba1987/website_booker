@@ -12,7 +12,7 @@ ul {
   -moz-border-radius: 20px;
   border-radius: 20px;
   color: white;
-  padding: 10px;
+  padding: 10px 20px;
   min-width: 120px;
   text-align: center;
   border: none;
@@ -2804,9 +2804,12 @@ footer a:hover {
   text-transform: uppercase;
   padding: 22px;
 }
+.form-tab-list li a:hover,
+.form-tab-list li a:focus {
+  text-decoration: none;
+}
 .form-tab-list li a:hover {
   color: #c5c7c9;
-  text-decoration: none;
 }
 .domain-form .form-tab-list li {
   width: 50%;
