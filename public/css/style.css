@@ -16,7 +16,7 @@ ul {
   min-width: 120px;
   text-align: center;
   border: none;
-  display: block;
+  display: inline-block;
   text-transform: uppercase;
 }
 .blue-button:hover,
@@ -2879,7 +2879,7 @@ footer a:hover {
   right: 0;
   background: url('../img/star-orange.png') no-repeat center;
   height: 49px;
-  width: 49px;
+  width: 48px;
 }
 .promote-form .input-holder {
   margin-top: 5px;

@@ -250,7 +250,7 @@
                                         <button type="submit" class="blue-button pull-right">
                                             Next >
                                         </button>
-                                        <a href="" class="gray-link pull-right">SAVE DRAFT</a>
+                                        <a href="" class="gray-link pull-right prevent-default" data-toggle="modal" data-target="#save-draft-modal">SAVE DRAFT</a>
                                     </div>
                                 </div>
                             </form>
@@ -371,6 +371,30 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Save Draft Modal -->
+        <div class="modal fade" id="save-draft-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content modal-gray">
+                    <div class="info-icon-gray-large">
+                        i
+                    </div>
+                    <p class="gray-7-20 text-center text-capitalize margin-top-20">
+                        save draft
+                    </p>
+                    <p class="gray-7-14 text-center margin-top-20">
+                        Are you sure you wish to stop and save draft? <br>
+                        Drafts will appear in "Accounts>Drafts"
+                    </p>
+                    <a href="" class="blue-button pull-right margin-top-20 prevent-default" data-dismiss="modal" aria-label="Close">
+                        yes
+                    </a>
+                    <a href="" class="gray-button margin-top-20 prevent-default" data-dismiss="modal" aria-label="Close">
+                        no
+                    </a>
+                </div>
+            </div>
+        </div>
 
         <!-- Lib scripts -->
         <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
