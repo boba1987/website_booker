@@ -163,7 +163,12 @@
             "placement" : "right"
         }
     }
-
+    /* Tooltip settings */
     $('.info-flyout').tooltip(placement);
+    /* Tab selection settings */
+    $('#sell-tabs a').click(function (e) {
+      e.preventDefault();
+      $(this).tab('show');
+    });
 }());
 // Place any jQuery/helper plugins in here.
