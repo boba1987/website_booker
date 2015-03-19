@@ -2963,18 +2963,24 @@ footer a:hover {
   padding: 0;
   padding-bottom: 5px;
 }
-.info-icon-blue-large {
+.info-icon-blue-large,
+.info-icon-gray-large {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  background: #0084ff;
   font-size: 30px;
   text-align: center;
   color: white;
   padding: 10px;
   margin: 0 auto;
+}
+.info-icon-blue-large {
+  background: #0084ff;
+}
+.info-icon-gray-large {
+  background: #adb9c0;
 }
 .white-text-holder {
   -webkit-border-radius: 5px;
@@ -3198,4 +3204,21 @@ footer a:hover {
     float: none !important;
     display: block;
   }
+}
+/* Modal styles */
+.modal-gray {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #f2f4f7;
+  padding: 35px 80px;
+}
+@media (max-widht: 991px) {
+  .modal-gray {
+    padding: 30px;
+  }
+}
+.modal-content {
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }

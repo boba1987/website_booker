@@ -1,5 +1,10 @@
 /* Common app fetures */
 
+/* Prevent default by class selector */
+$('.prevent-default').on('click', function(event){
+	event.preventDefault();
+});
+
 /* Password reveal function */
 $('.reveal-pass').on({
 	mousedown: function(event) {
