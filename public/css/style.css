@@ -3029,12 +3029,19 @@ footer a:hover {
 .dropdown-select .card-content-head:hover {
   background: white;
 }
+.dropdown-select .card-content-head > div {
+  width: 30%;
+  float: left;
+}
+.dropdown-select .card-content-head > div p {
+  text-align: center;
+}
 .dropdown-select .card-content,
 .dropdown-select .card-content-head {
   width: 100%;
 }
 .dropdown-select > div div {
-  width: 30%;
+  width: 33.33%;
   float: left;
 }
 .dropdown-select > div div p {
