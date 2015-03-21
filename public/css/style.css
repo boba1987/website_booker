@@ -3026,19 +3026,21 @@ footer a:hover {
 .dropdown-select .card-content-head {
   padding: 15px 0;
 }
+.dropdown-select .card-content-head:hover {
+  background: white;
+}
 .dropdown-select .card-content,
 .dropdown-select .card-content-head {
   width: 100%;
 }
 .dropdown-select > div div {
-  width: 33.33%;
+  width: 30%;
   float: left;
 }
 .dropdown-select > div div p {
   text-align: center;
 }
 .dropdown-select.dropdown {
-  padding-right: 50px;
   cursor: pointer;
 }
 .dropdown-menu {
@@ -3061,7 +3063,7 @@ footer a:hover {
 }
 .dropdown-menu li > div {
   padding: 10px 0;
-  background: #fafbfb;
+  background: #f2f4f7;
 }
 .dropdown-menu li > div:hover {
   background: white;
