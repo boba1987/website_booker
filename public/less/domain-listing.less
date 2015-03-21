@@ -420,6 +420,25 @@
 	margin: 0 14px;
 	border: solid 1px @gray-6;
 
+	.icon-arrow{
+		.font-icons;
+
+		position: absolute;
+		right: 15px;
+		top: 30px;
+		&::before {
+			content: "\e252";
+		}
+	}
+
+	&.open{
+		.icon-arrow{
+			&::before {
+				content: "\e253";
+			}
+		}
+	}
+
 	.card-content-head{
 		padding: 15px 0;
 
@@ -472,9 +491,16 @@
 
 	li{
 
+		&:last-child{
+			&>div{
+				border: solid 1px @gray-6;
+			}
+		}
+
 		&>div{
 			padding: 10px 0;
 			background: @blue-2;
+			border-bottom: none;
 
 			&:hover{
 				background: white;

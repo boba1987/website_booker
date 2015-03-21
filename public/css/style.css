@@ -960,6 +960,14 @@ body {
 .text-underline {
   text-decoration: underline;
 }
+.font-icons {
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 /* Inputs styles */
 .input-white {
   padding: 15px 5px 15px 25px;
@@ -3023,6 +3031,23 @@ footer a:hover {
   margin: 0 14px;
   border: solid 1px #c9d7d8;
 }
+.dropdown-select .icon-arrow {
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  right: 15px;
+  top: 30px;
+}
+.dropdown-select .icon-arrow::before {
+  content: "\e252";
+}
+.dropdown-select.open .icon-arrow::before {
+  content: "\e253";
+}
 .dropdown-select .card-content-head {
   padding: 15px 0;
 }
@@ -3065,9 +3090,13 @@ footer a:hover {
   margin-left: -1px;
   padding: 15px 0;
 }
+.dropdown-menu li:last-child > div {
+  border: solid 1px #c9d7d8;
+}
 .dropdown-menu li > div {
   padding: 10px 0;
   background: #f2f4f7;
+  border-bottom: none;
 }
 .dropdown-menu li > div:hover {
   background: white;
@@ -3281,4 +3310,26 @@ footer a:hover {
 .modal-content {
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+.failed-icon-white,
+.sucess-icon-white {
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  display: inline-block;
+  margin-top: 5px;
+}
+.failed-icon-white::before,
+.sucess-icon-white::before {
+  content: "\e014";
+}
+.failed-icon-white::before {
+  content: "\e014";
+}
+.sucess-icon-white::before {
+  content: "\e013";
 }

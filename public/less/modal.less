@@ -13,3 +13,26 @@
 	-webkit-box-shadow: none;
   	box-shadow: none;	
 }
+
+.failed-icon-white, .sucess-icon-white{
+	.font-icons;
+	color: white;
+	display: inline-block;
+	margin-top: 5px;
+
+	&::before {
+	  content: "\e014";
+	}
+}
+
+.failed-icon-white{
+	&::before {
+	  content: "\e014";
+	}
+}
+
+.sucess-icon-white{
+	&::before {
+	  content: "\e013";
+	}
+}

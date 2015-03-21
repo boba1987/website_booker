@@ -13,7 +13,7 @@
         <link rel="icon" type="image/png" href="favicon.png">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
         <link rel="stylesheet" href="css/jquery-ui-theme.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -121,7 +121,7 @@
                             </p>
                             <p class="gray-16-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores optio tenetur cumque aliquid similique accusamus, odit atque, quisquam at non rerum eos nesciunt sed vel accusantium velit cum voluptates?</p>
                             <a href="" class="text-capitalize gray-16-12">Click Here For Help</a>
-                            <a href="" class="text-uppercase blue-1-14 pull-right prevent-default" data-toggle="modal" data-target="#verify-email-modal"><b>verify file</b></a>
+                            <a href="" class="text-uppercase blue-1-14 pull-right prevent-default" data-toggle="modal" data-target="#verify-website-modal"><b>verify file</b></a>
                         </div>
                         <div class="col-xs-12">
                             <div class="or-separator">
@@ -139,7 +139,7 @@
                                 &lt;meta name="description" content=""&gt;
                             </div>
                             <a href="" class="text-capitalize gray-16-12">Click Here For Help</a>
-                            <a href="" class="text-uppercase blue-1-14 pull-right prevent-default" data-toggle="modal" data-target="#verify-dns-modal"><b>verify meta tag</b></a>
+                            <a href="" class="text-uppercase blue-1-14 pull-right prevent-default" data-toggle="modal" data-target="#verify-website-modal"><b>verify meta tag</b></a>
                         </div>
                     </div>
                     <div class="row">
@@ -272,46 +272,40 @@
             </div>
         </footer>
 
-        <!-- Verify Email Modal -->
-        <div class="modal fade" id="verify-email-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <!-- Verified Website Modal -->
+        <div class="modal fade" id="verify-website-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content modal-gray">
                     <div class="info-icon-gray-large">
-                        i
+                        <span class="sucess-icon-white"></span>
                     </div>
-                    <div class="row margin-top-10">
-                        <div class="col-xs-8 col-xs-push-2">
-                            <p class="gray-7-16 text-center">We just sent an email to this domain. <br>
-                                WHOIS record email on file.
-                            </p>
-                        </div>
-                    </div>
-                    <p class="gray-7-14 text-center">
+                    <p class="gray-7-14 text-center margin-top-20">
                         <i>
-                        If you do not recieve an email shortly, try to verify ownership trough the DNS TextRecord option or update the WHOIS email on record.
+                        Your website has been verified and will be launched on our marketplace momentarily.
                         </i>
                     </p>
                     <a href="" class="blue-button center margin-top-20 prevent-default" data-dismiss="modal" aria-label="Close">
-                        got it
+                        close
                     </a>
                 </div>
             </div>
         </div>
 
-        <!-- Verify DNS Modal -->
-        <div class="modal fade" id="verify-dns-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <!-- Failed to Verify Modal -->
+        <div class="modal fade" id="failed-modal-msg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content modal-gray">
                     <div class="info-icon-gray-large">
-                        i
+                        <span class="failed-icon-white"></span>
                     </div>
+
                     <p class="gray-7-14 text-center margin-top-20">
                         <i>
-                        It can take a few hours, depending on your register to update the DNS on this domain for it to become visible to us.
+                        We are uneable to fetch the main page of your site. Please check to insure that you can see it an try again.
                         </i>
                     </p>
                     <a href="" class="blue-button center margin-top-20 prevent-default" data-dismiss="modal" aria-label="Close">
-                        got it
+                        close
                     </a>
                 </div>
             </div>
