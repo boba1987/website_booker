@@ -174,5 +174,7 @@
     $('.dropdown-menu li .dropdown-select .card-content').on('click', function(){
         $(this).parents('.dropdown.dropdown-select').find('.card-content-head').html($(this).html());
     });
+    /* Trigger click on first option so it's selected */
+    $('.dropdown-menu li:first-child .dropdown-select .card-content').trigger('click');
 }());
 // Place any jQuery/helper plugins in here.
