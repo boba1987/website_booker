@@ -170,5 +170,9 @@
       e.preventDefault();
       $(this).tab('show');
     });
+    /* Sell picker dropdown plugin */
+    $('.dropdown-menu li .dropdown-select .card-content').on('click', function(){
+        $(this).parents('.dropdown.dropdown-select').find('.card-content-head').html($(this).html());
+    });
 }());
 // Place any jQuery/helper plugins in here.

@@ -3019,6 +3019,57 @@ footer a:hover {
   text-align: center;
   padding: 6px;
 }
+.dropdown-select {
+  margin: 0 14px;
+  border: solid 1px #c9d7d8;
+}
+.dropdown-select .card-content-head {
+  padding: 15px 0;
+}
+.dropdown-select .card-content,
+.dropdown-select .card-content-head {
+  width: 100%;
+}
+.dropdown-select > div div {
+  width: 33.33%;
+  float: left;
+}
+.dropdown-select > div div p {
+  text-align: center;
+}
+.dropdown-select.dropdown {
+  padding-right: 50px;
+  cursor: pointer;
+}
+.dropdown-menu {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  box-sizing: content-box;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  border: none;
+  width: 100%;
+  border: solid 1px #c9d7d8;
+  margin-top: -1px;
+  margin-left: -1px;
+  padding: 15px 0;
+}
+.dropdown-menu li {
+  margin-bottom: 10px;
+}
+.dropdown-menu li > div {
+  padding: 10px 0;
+  background: #fafbfb;
+}
+.dropdown-menu li > div:hover {
+  background: white;
+  cursor: pointer;
+}
+.dropdown-menu li:last-child {
+  margin-bottom: 0;
+}
 .center {
   display: table;
   margin: 0 auto;
@@ -3207,6 +3258,9 @@ footer a:hover {
     float: none !important;
     display: block;
   }
+}
+.margin-0 {
+  margin: 0 !important;
 }
 /* Modal styles */
 .modal-gray {
