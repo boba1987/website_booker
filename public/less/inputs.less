@@ -78,3 +78,24 @@ textarea{
 label{
 	min-height: 25px;
 }
+
+.custom-checkbox{
+	display: inline-block;
+	margin-right: 10px;
+
+	input{
+		height: 1px;
+		width: 1px;
+		opacity: 0;
+	}
+
+	label{
+		padding-left: 30px;
+		padding-bottom: 10px;
+		background: url('../img/checkbox-unchecked.png') no-repeat center left;
+		
+		&.checked{
+			background: url('../img/checkbox-checked.png') no-repeat center left; 
+		}
+	}
+}

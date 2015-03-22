@@ -17,3 +17,8 @@ $('.reveal-pass').on({
 		$(this).next().attr('type', 'password');	
 	}
 });
+
+/* Custom checkbox click event */
+$('.custom-checkbox label').on('click', function(){
+	$(this).toggleClass('checked');
+});
