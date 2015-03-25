@@ -1050,8 +1050,8 @@ label {
 }
 .custom-checkbox label {
   cursor: pointer;
-  padding-left: 30px;
-  padding-bottom: 10px;
+  text-transform: capitalize;
+  padding: 5px 0 10px 30px;
   background: url('../img/checkbox-unchecked.png') no-repeat center left;
 }
 .custom-checkbox label.checked {
@@ -3018,16 +3018,25 @@ footer a:hover {
   padding: 30px 10px;
   text-align: center;
 }
+.newspaper-layout,
+.newspaper-layout-3 {
+  -webkit-column-gap: 10;
+  -moz-column-gap: 10;
+}
+.newspaper-layout li,
+.newspaper-layout-3 li {
+  padding: 0;
+  padding-bottom: 5px;
+}
 .newspaper-layout {
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
-  -webkit-column-gap: 10;
-  -moz-column-gap: 10;
 }
-.newspaper-layout li {
-  padding: 0;
-  padding-bottom: 5px;
+.newspaper-layout-3 {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
 }
 .info-icon-blue-large,
 .info-icon-gray-large {
