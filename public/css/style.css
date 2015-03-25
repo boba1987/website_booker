@@ -1719,6 +1719,7 @@ header .blue-button {
 }
 .navbar-default {
   background: #f2f4f7;
+  margin-bottom: 0;
 }
 .nav-center-custom {
   display: table;
