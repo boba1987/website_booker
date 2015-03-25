@@ -190,11 +190,11 @@
     }
 
     $('.switch-holder [name="on-switch"]').on('click', function(){
-        $('.switch-holder [name="on-switch"]').prev().find('input').bootstrapSwitch('state', true)
+        $(this).prev().find('input').bootstrapSwitch('state', true)
     });
 
     $('.switch-holder [name="off-switch"]').on('click', function(){
-        $('.switch-holder [name="on-switch"]').prev().find('input').bootstrapSwitch('state', false)
+        $(this).next().find('input').bootstrapSwitch('state', false)
     });
 }());
 // Place any jQuery/helper plugins in here.
