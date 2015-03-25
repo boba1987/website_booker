@@ -1075,6 +1075,9 @@ label {
 .switch-holder p:last-child {
   text-align: left;
 }
+.switch-holder p[name="off-switch"] {
+  padding-left: 0;
+}
 .bootstrap-switch.bootstrap-switch-wrapper {
   float: left;
   -webkit-border-radius: 20px;
