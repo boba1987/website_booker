@@ -151,7 +151,7 @@
         /* When chart init, provide x axis, y axis data and chart title */
         renderChart('#chartContainer-visits', 'Visits' ,xAxisCategories, yAxixData);
     } 
-
+    /* Set the placement of a tooltip */
     var placement;
     /* Bottstrap tooltip plugin init */
     if($(window).width() < 1200){
@@ -176,5 +176,25 @@
     });
     /* Trigger click on first option so it's selected */
     $('.dropdown-menu li:first-child .dropdown-select .card-content').trigger('click');
+    /* On/Off switch init */
+    var swithcConfigObj = {
+        size: "small",
+        onColor: "primary",
+        offColor: "primary",
+        onText: "&nbsp;",
+        offText: "&nbsp;",
+        handleWidth: 10
+    };
+    if($("[name='rev-checkbox']").length > 0){
+        $("[name='rev-checkbox']").bootstrapSwitch(swithcConfigObj);
+    }
+
+    $('.switch-holder [name="on-switch"]').on('click', function(){
+        $('.switch-holder [name="on-switch"]').prev().find('input').bootstrapSwitch('state', true)
+    });
+
+    $('.switch-holder [name="off-switch"]').on('click', function(){
+        $('.switch-holder [name="on-switch"]').prev().find('input').bootstrapSwitch('state', false)
+    });
 }());
 // Place any jQuery/helper plugins in here.

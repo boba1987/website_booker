@@ -1049,12 +1049,48 @@ label {
   opacity: 0;
 }
 .custom-checkbox label {
+  cursor: pointer;
   padding-left: 30px;
   padding-bottom: 10px;
   background: url('../img/checkbox-unchecked.png') no-repeat center left;
 }
 .custom-checkbox label.checked {
   background: url('../img/checkbox-checked.png') no-repeat center left;
+}
+.domain-form .has-switch label {
+  padding-top: 5px;
+}
+.switch-holder {
+  margin-top: -5px;
+}
+.switch-holder p {
+  margin-top: 6px;
+  float: left;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.switch-holder p:first-child {
+  text-align: right;
+}
+.switch-holder p:last-child {
+  text-align: left;
+}
+.bootstrap-switch.bootstrap-switch-wrapper {
+  float: left;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #0084ff;
+  width: 66px !important;
+  height: 35px !important;
+  padding-top: 2px !important;
+  padding-left: 2px !important;
+}
+.bootstrap-switch.bootstrap-switch-wrapper .bootstrap-switch-label {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  height: 29px;
 }
 /*!
 Chosen, a Select Box Enhancer for jQuery and Prototype
@@ -2766,8 +2802,7 @@ footer a:hover {
   border-radius: 5px;
   background: #f2f4f7;
   border: solid 1px #c9d7d8;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 0;
   max-width: 800px;
   margin: 0 auto;
   position: relative;

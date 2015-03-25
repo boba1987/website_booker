@@ -90,6 +90,7 @@ label{
 	}
 
 	label{
+		cursor: pointer;
 		padding-left: 30px;
 		padding-bottom: 10px;
 		background: url('../img/checkbox-unchecked.png') no-repeat center left;
@@ -97,5 +98,42 @@ label{
 		&.checked{
 			background: url('../img/checkbox-checked.png') no-repeat center left; 
 		}
+	}
+}
+
+.domain-form .has-switch label{
+	padding-top: 5px;
+}
+
+.switch-holder{
+	margin-top: -5px;
+
+	p{
+		margin-top: 6px;
+		float: left;
+		padding: 0 10px;
+		cursor: pointer;
+
+		&:first-child{
+			text-align: right;
+		}
+		&:last-child{
+			text-align: left;
+		}
+	}
+}
+
+.bootstrap-switch.bootstrap-switch-wrapper{
+	float: left;
+	.border-radius(20px);
+	background: @blue-1;
+	width: 66px !important;
+	height: 35px !important;
+	padding-top: 2px !important;
+	padding-left: 2px !important;
+
+	.bootstrap-switch-label{
+		.border-radius(50%);
+		  height: 29px;
 	}
 }
