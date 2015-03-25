@@ -1,6 +1,10 @@
 /* Domain listing pages style */
 .step-indicator-holder{
 	height: 80px;
+
+	@media (max-width:991px){
+		margin-top: 10px !important;
+	}
 }
 
 .steps-list{
@@ -14,9 +18,14 @@
 
 		@media (max-width:991px){
 			width: 160px;
+			display: none;
 		}
 
 		&.active{
+			@media (max-width:991px){
+				display: block;
+			}
+
 			span{
 				background: @blue-1;
 			}
@@ -102,6 +111,10 @@
 	max-width: 800px;
 	margin: 0 auto;
 	position: relative;
+
+	@media (max-width: 991px){
+		margin-top: 10px !important;
+	}
 
 	.steps-form-holder-heading{
 		color: @gray-7;
