@@ -1712,7 +1712,7 @@ header .blue-button {
   display: inline-block;
   height: 60px;
   width: 220px;
-  background: url('../img/logo-main.png') no-repeat;
+  background: url('../img/logo-main.png') no-repeat center;
 }
 .navbar-toggle {
   margin-top: 13px;
