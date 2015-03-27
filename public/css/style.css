@@ -1913,6 +1913,11 @@ footer a:hover {
   margin-right: 60px;
   color: #0084ff;
 }
+@media (max-width: 767px) {
+  .featured-listing li > div .price {
+    float: none !important;
+  }
+}
 .featured-listing a {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -2381,6 +2386,12 @@ footer a:hover {
     float: right;
   }
 }
+@media (max-width: 767px) {
+  .tabs-holder {
+    float: left;
+    margin-top: 20px;
+  }
+}
 .tabs-holder a {
   white-space: nowrap;
   overflow: hidden;
@@ -2429,6 +2440,12 @@ footer a:hover {
     margin-left: 30px;
   }
 }
+@media (max-width: 767px) {
+  .tabs-holder-2 {
+    margin: 20px 0;
+    float: left;
+  }
+}
 .tabs-holder-2 a {
   display: inline-block;
   width: 55px;
@@ -2475,12 +2492,24 @@ footer a:hover {
   width: 100%;
   text-align: right;
 }
+@media (max-width: 767px) {
+  .single-desc-price .price {
+    float: left;
+    text-align: left;
+  }
+}
 .single-desc-price .left {
   color: #51575e;
   font-size: 10px;
   width: 100%;
   text-align: right;
   margin-bottom: 0;
+}
+@media (max-width: 767px) {
+  .single-desc-price .left {
+    float: left;
+    text-align: left;
+  }
 }
 .domain-offer {
   background: #0084ff;
@@ -2622,6 +2651,14 @@ footer a:hover {
     margin: 0 auto;
     margin-top: 20px;
     display: table;
+  }
+}
+@media (max-width: 767px) {
+  .place-offer button {
+    width: 125px !important;
+  }
+  .place-offer input {
+    width: 105px !important;
   }
 }
 /* Single website page styles */
@@ -2841,6 +2878,18 @@ footer a:hover {
 @media (max-width: 991px) {
   .steps-form-holder {
     margin-top: 10px !important;
+  }
+}
+@media (max-width: 767px) {
+  .steps-form-holder .gray-button,
+  .steps-form-holder .blue-button {
+    float: none !important;
+    display: block;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .steps-form-holder .gray-link {
+    float: left !important;
   }
 }
 .steps-form-holder .steps-form-holder-heading {

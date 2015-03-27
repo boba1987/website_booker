@@ -78,6 +78,11 @@
   	float: right;
   }
 
+  @media(max-width: 767px){
+    float: left;
+    margin-top: 20px;
+  }
+
   a{
     .text-ellipsis;
     display: inline-block;
@@ -127,6 +132,11 @@
 
   @media (max-width: 991px){
   	margin-left: 30px;
+  }
+
+  @media (max-width: 767px){
+    margin: 20px 0;
+    float: left;
   }
 
   a{
@@ -181,6 +191,11 @@
     margin-bottom: 3px;
     width: 100%;
     text-align: right;
+  
+    @media (max-width: 767px){
+      float: left;
+      text-align: left;
+    }
   }
 
   .left{
@@ -189,6 +204,11 @@
     width: 100%;
     text-align: right;
     margin-bottom: 0;
+
+    @media (max-width: 767px){
+      float: left;
+      text-align: left;
+    }
   }
 }
 
@@ -352,4 +372,13 @@
 		margin-top: 20px;
 		display: table;
 	}
+
+  @media (max-width: 767px){
+    button{
+      width: 125px !important;
+    }
+    input{
+      width: 105px !important;
+    }
+  }
 }
