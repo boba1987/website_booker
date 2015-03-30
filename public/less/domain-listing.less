@@ -216,6 +216,10 @@
 		color: @gray-7;
 		text-transform: capitalize;
 		padding-top: 10px;
+
+		@media (max-width: 991px){
+			font-size: 16px;
+		}
 	}
 }
 
@@ -247,6 +251,14 @@
 	right: -11px;
 	top: 0;
 	cursor: pointer;
+
+	@media (max-width: 991px){
+		height: 25px;
+		width: 25px;
+		font-size: 16px;
+		line-height: 25px;
+		right: -13px;
+	}
 }
 
 .tooltip {
@@ -334,8 +346,10 @@
 	border: solid 1px @gray-13;
 	padding: 10px;
 
-	@media (max-width: 768px){
+	@media (max-width: 991px){
 		margin: 0 auto;
+		width: 170px;
+		height: 170px;
 	}
 
 	&.orange{
@@ -365,12 +379,17 @@
 
 		&>div{
 			.border-radius(50%);
+			.text-ellipsis;
 			color: white;
 			height: 100%;
 			width: 100%;
 			text-transform: uppercase;
 			padding: 30px 10px;
   			text-align: center;
+
+  			@media (max-width: 991px){
+				padding: 40px 10px;
+			}
 		}
 	}
 }
@@ -382,18 +401,35 @@
 		padding: 0;
 		padding-bottom: 5px;
 	}
+
+	@media (max-width: 639px){
+		li{
+			float: left;
+			margin-right: 20px;
+		}
+	}
+
+	@media (min-width: 640px) and (max-width: 991px){
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+	}
 }
 
 .newspaper-layout{
-	-webkit-column-count: 2;
-	-moz-column-count: 2;
-	column-count: 2;
+	@media (min-width: 992px){
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+	}
 }
 
 .newspaper-layout-3{
-	-webkit-column-count: 3;
-	-moz-column-count: 3;
-	column-count: 3;
+	@media (min-width: 992px){
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		column-count: 3;
+	}
 }
 
 

@@ -6,6 +6,10 @@
 
 body{
   color: @gray-3;
+
+  @media (max-width: 991px){
+    font-size: 16px;
+  }
 }
 
 //get custom font mixin
@@ -21,7 +25,11 @@ body{
   @fullColor: ~"@{gray-@{num}}";
   @colorName: ~"@{num}-@{index}";
   .gray-@{colorName} {
-    .getFont(@index, @fullColor)
+    .getFont(@index, @fullColor);
+
+    @media(max-width: 991px){
+      .getFont(@index + 2, @fullColor);
+    }
   } 
   .loopingClassGray(@index - 1, @num); 
 } 
@@ -56,7 +64,10 @@ body{
   @fullColor: ~"@{blue-@{num}}";
   @colorName: ~"@{num}-@{index}";
   .blue-@{colorName} {
-    .getFont(@index, @fullColor)
+    .getFont(@index, @fullColor);
+    @media(max-width: 991px){
+      .getFont(@index + 2, @fullColor);
+    }
   } 
   .loopingClassBlue(@index - 1, @num); 
 } 
@@ -71,7 +82,10 @@ body{
   @fullColor: ~"@{red-@{num}}";
   @colorName: ~"@{num}-@{index}";
   .red-@{colorName} {
-    .getFont(@index, @fullColor)
+    .getFont(@index, @fullColor);
+    @media(max-width: 991px){
+      .getFont(@index + 2, @fullColor);
+    }
   } 
   .loopingClassRed(@index - 1, @num); 
 } 
@@ -122,10 +136,16 @@ body{
 
 .h3-gray-1{
   font-size: 14px;
+  @media (max-width: 991px){
+    font-size: 16px;
+  }
 }
 
 .h3-gray-2{
   font-size: 14px;
+  @media (max-width: 991px){
+    font-size: 16px;
+  }
 }
 
 .domain-desc-asking{
