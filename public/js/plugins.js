@@ -155,23 +155,29 @@
     var tooltipSetting,
         tooltip = ".info-flyout";
     /* Bottstrap tooltip plugin init */
-    if($(window).width() < 1200){
+    if($(window).width() > 1200){
+        tooltipSetting = {
+            "placement" : "right"
+        }
+    }else if($(window).width() < 1999 && $(window).width() > 1023){
+        tooltipSetting = {
+            "placement" : "top",
+            "delay": { "show": 200, "hide": 100 }
+        }
+    }else{
         tooltipSetting = {
             "placement" : "top",
             "trigger" : "click",
             "delay": { "show": 200, "hide": 100 }
         }
-    }else{
-        tooltipSetting = {
-            "placement" : "right"
-        }
     }
     /* Tooltip settings */
     $(tooltip).tooltip(tooltipSetting);
     $(tooltip).on('shown.bs.tooltip', function () {
-      setTimeout(function(){
-        $(tooltip).tooltip('hide');
-      }, 2500);
+        var self = $(this);
+        setTimeout(function(){
+            self.tooltip('hide');
+        }, 2500);
     });
     /* Tab selection settings */
     $('#sell-tabs a').click(function (e) {
