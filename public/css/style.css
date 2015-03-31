@@ -2318,7 +2318,6 @@ label {
 @media (max-width: 480px) {
   .uploaded-docs-list li {
     float: none;
-    margin-bottom: 50px;
   }
   .uploaded-docs-list li:last-child {
     margin-bottom: 10px;
@@ -2338,6 +2337,11 @@ label {
   font-size: 16px;
   line-height: 20px;
   cursor: pointer;
+}
+@media (max-width: 992px) {
+  .uploaded-docs-list .remove-doc {
+    font-size: 24px;
+  }
 }
 .uploaded-docs-list .remove-doc:hover {
   color: #3e6372;
@@ -3032,6 +3036,14 @@ footer a:hover {
 }
 .footer-prime {
   background-color: #e6e9ee;
+}
+@media (max-width: 480px) {
+  .footer-prime div {
+    width: 100%;
+  }
+  .footer-prime a {
+    margin-bottom: 10px;
+  }
 }
 .footer-secondary {
   background-color: #f2f4f7;

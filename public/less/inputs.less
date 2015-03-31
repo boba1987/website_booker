@@ -173,8 +173,7 @@ label{
 		}
 
 		@media (max-width: 480px){
-			float: none;
-			margin-bottom: 50px;
+			float: none;	
 
 			&:last-child{
 				margin-bottom: 10px;
@@ -190,6 +189,10 @@ label{
 		font-size: 16px;
 		line-height: 20px;
 		cursor: pointer;
+
+		@media (max-width: 992px){
+			font-size: 24px;
+		}
 
 		&:hover{
 			color: @gray-7;
