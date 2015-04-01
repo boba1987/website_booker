@@ -193,18 +193,48 @@
 	background: @gray-19;
 	padding-top: 80px;
 
-	ul{
+	.nav-items-holder{
 		li{
 			position: relative;
-			color: white;
+			color: @gray-22;
 			text-transform: uppercase;
-			padding: 20px 30px;
 			border-bottom: solid 1px @gray-20;
+			cursor: pointer;
 
 			&.active{
+				color: white;
+			}
+
+			&:hover, &.active{
 				background: @gray-21;
 			}
+
+			&>div:first-of-type{
+				padding: 20px 30px;
+			}
 		}
+
+		.collapse.in, [aria-expanded="true"]{
+			background: @gray-21;
+		}
+	}
+
+	.submenu{
+		li{
+			border: none;
+			padding: 0;
+			color: @gray-23;
+			text-transform: capitalize;
+			font-size: 14px;
+			padding: 5px 0;
+
+			&:hover{
+				color: @gray-22;
+			}
+		}
+
+		padding: 0 30px;
+		padding-bottom: 20px;
 	}
 
 	.glyphicon{

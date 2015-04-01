@@ -5018,15 +5018,41 @@ footer a:hover {
   background: #354052;
   padding-top: 80px;
 }
-.dashboard-nav ul li {
+.dashboard-nav .nav-items-holder li {
   position: relative;
-  color: white;
+  color: #a0acbf;
   text-transform: uppercase;
-  padding: 20px 30px;
   border-bottom: solid 1px #404c60;
+  cursor: pointer;
 }
-.dashboard-nav ul li.active {
+.dashboard-nav .nav-items-holder li.active {
+  color: white;
+}
+.dashboard-nav .nav-items-holder li:hover,
+.dashboard-nav .nav-items-holder li.active {
   background: #2f3949;
+}
+.dashboard-nav .nav-items-holder li > div:first-of-type {
+  padding: 20px 30px;
+}
+.dashboard-nav .nav-items-holder .collapse.in,
+.dashboard-nav .nav-items-holder [aria-expanded="true"] {
+  background: #2f3949;
+}
+.dashboard-nav .submenu {
+  padding: 0 30px;
+  padding-bottom: 20px;
+}
+.dashboard-nav .submenu li {
+  border: none;
+  padding: 0;
+  color: #6d798a;
+  text-transform: capitalize;
+  font-size: 14px;
+  padding: 5px 0;
+}
+.dashboard-nav .submenu li:hover {
+  color: #a0acbf;
 }
 .dashboard-nav .glyphicon {
   color: white;

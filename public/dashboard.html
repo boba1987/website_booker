@@ -159,22 +159,46 @@
         </header>
 
         <aside class="dashboard-nav">
-            <ul>
+            <ul class="nav-items-holder">
                 <li class="active">
-                    <b>dashboard</b>
+                    <div><b>dashboard</b></div>
                     <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
                 </li>
-                 <li class="">
-                    <b>deals</b>
+                <li class="">
+                    <div>
+                        <b>deals</b>
+                    </div>
                 </li>
-                 <li class="">
-                    <b>buying</b>
+                 <li class="" id="accordionBuy" class="collapsable-item" role="tablist" aria-multiselectable="true">
+                    <div data-toggle="collapse" data-parent="#accordionBuy" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <b>buying</b>
+                    </div>
+                    <div id="collapseOne" class="collapse in" role="tabpanel">
+                        <ul class="submenu">
+                            <li>revived offeres</li>
+                            <li>my properties</li>
+                            <li>my drafts</li>
+                            <li>property comments</li>
+                            <li>domain parking</li>
+                        </ul>
+                    </div>
                 </li>
-                 <li class="">
-                    <b>selling</b>
+                <li class="" id="accordionSell" role="tablist" aria-multiselectable="true">
+                    <div data-toggle="collapse" data-parent="#accordionSell" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <b>selling</b>
+                    </div>
+                    <div id="collapseTwo" class="collapse" role="tabpanel">
+                        <ul class="submenu">
+                            <li>selling</li>
+                            <li>selling</li>
+                            <li>selling</li>
+                        </ul>
+                    </div>
                 </li>
-                 <li class="">
-                    <b>my account</b>
+                <li class="">
+                    <div>
+                        <b>my account</b>
+                    </div>
                 </li>
             </ul>
         </aside>
