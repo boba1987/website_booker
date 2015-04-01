@@ -5347,9 +5347,12 @@ footer a:hover {
   border-radius: 10px;
   position: absolute;
   right: -30px;
+  top: 7px;
   padding: 0 7px;
   background: #ffc600;
   color: #2f3949;
+  font-size: 12px;
+  line-height: 16px;
 }
 .dashboard-nav .glyphicon {
   color: white;
