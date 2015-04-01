@@ -210,12 +210,44 @@
 			}
 
 			&>div:first-of-type{
-				padding: 20px 30px;
+				padding: 20px 40px;
 			}
 		}
 
 		.collapse.in, [aria-expanded="true"]{
 			background: @gray-21;
+		}
+
+		[aria-expanded="true"], [aria-expanded="false"]{
+			.icon{
+				right: 20px;
+				top: 24px;
+				font-size: 12px;
+				position: absolute;
+				display: inline-block;
+				font-family: 'Glyphicons Halflings';
+				font-style: normal;
+				font-weight: normal;
+				line-height: 1;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+		}
+
+		[aria-expanded="true"]{
+			.icon{
+				&::before{
+					content: "\e253";
+				}
+			}
+		}
+
+		[aria-expanded="false"]{
+			.icon{
+				&::before{
+					content: "\e252";
+				}
+			}
 		}
 	}
 
@@ -228,12 +260,16 @@
 			font-size: 14px;
 			padding: 5px 0;
 
-			&:hover{
-				color: @gray-22;
+			a{
+				color: @gray-23;
+				
+				&:hover{
+					color: @gray-22;
+				}
 			}
 		}
 
-		padding: 0 30px;
+		padding: 0 40px;
 		padding-bottom: 20px;
 	}
 

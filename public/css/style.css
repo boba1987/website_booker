@@ -5033,14 +5033,34 @@ footer a:hover {
   background: #2f3949;
 }
 .dashboard-nav .nav-items-holder li > div:first-of-type {
-  padding: 20px 30px;
+  padding: 20px 40px;
 }
 .dashboard-nav .nav-items-holder .collapse.in,
 .dashboard-nav .nav-items-holder [aria-expanded="true"] {
   background: #2f3949;
 }
+.dashboard-nav .nav-items-holder [aria-expanded="true"] .icon,
+.dashboard-nav .nav-items-holder [aria-expanded="false"] .icon {
+  right: 20px;
+  top: 24px;
+  font-size: 12px;
+  position: absolute;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.dashboard-nav .nav-items-holder [aria-expanded="true"] .icon::before {
+  content: "\e253";
+}
+.dashboard-nav .nav-items-holder [aria-expanded="false"] .icon::before {
+  content: "\e252";
+}
 .dashboard-nav .submenu {
-  padding: 0 30px;
+  padding: 0 40px;
   padding-bottom: 20px;
 }
 .dashboard-nav .submenu li {
@@ -5051,7 +5071,10 @@ footer a:hover {
   font-size: 14px;
   padding: 5px 0;
 }
-.dashboard-nav .submenu li:hover {
+.dashboard-nav .submenu li a {
+  color: #6d798a;
+}
+.dashboard-nav .submenu li a:hover {
   color: #a0acbf;
 }
 .dashboard-nav .glyphicon {
