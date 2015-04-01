@@ -3,8 +3,20 @@
 	max-width: 1200px;
 }
 
+.dashboard-header{
+	background: white;
+	position: relative;
+	z-index: 2;
+}
+
 .dashboard-header, .dashboard-container{
 	min-width: 1000px;
+}
+
+.main{
+	.dashboard-container{
+		padding-left: 240px;
+	}
 }
 
 .user-flyout{
@@ -167,6 +179,41 @@
 		  	height: 40px;
 		  	width: 40px;
 		  	top: 13px;
+		}
+	}
+}
+
+.dashboard-nav{
+	width: 225px;
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	height: 100%;
+	background: @gray-19;
+	padding-top: 80px;
+
+	ul{
+		li{
+			position: relative;
+			color: white;
+			text-transform: uppercase;
+			padding: 20px 30px;
+			border-bottom: solid 1px @gray-20;
+
+			&.active{
+				background: @gray-21;
+			}
+		}
+	}
+
+	.glyphicon{
+		color: white;
+
+		&.glyphicon-triangle-left{
+			position: absolute;
+			right: -4px;
+  			top: 22px;
 		}
 	}
 }

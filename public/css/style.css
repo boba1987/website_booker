@@ -4852,9 +4852,17 @@ footer a:hover {
 .dashboard-container {
   max-width: 1200px;
 }
+.dashboard-header {
+  background: white;
+  position: relative;
+  z-index: 2;
+}
 .dashboard-header,
 .dashboard-container {
   min-width: 1000px;
+}
+.main .dashboard-container {
+  padding-left: 240px;
 }
 .user-flyout {
   padding: 15px;
@@ -4999,4 +5007,32 @@ footer a:hover {
   height: 40px;
   width: 40px;
   top: 13px;
+}
+.dashboard-nav {
+  width: 225px;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: #354052;
+  padding-top: 80px;
+}
+.dashboard-nav ul li {
+  position: relative;
+  color: white;
+  text-transform: uppercase;
+  padding: 20px 30px;
+  border-bottom: solid 1px #404c60;
+}
+.dashboard-nav ul li.active {
+  background: #2f3949;
+}
+.dashboard-nav .glyphicon {
+  color: white;
+}
+.dashboard-nav .glyphicon.glyphicon-triangle-left {
+  position: absolute;
+  right: -4px;
+  top: 22px;
 }
