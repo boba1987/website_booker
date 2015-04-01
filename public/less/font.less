@@ -58,6 +58,10 @@ body{
 .loopingClassGray (0, 16) {} 
 .loopingClassGray(@iterationsG, 16);
 
+//prints out .gray-22-30
+.loopingClassGray (0, 22) {} 
+.loopingClassGray(@iterationsG, 22);
+
 //generate blue fonts
 @iterationsB: 30;
 .loopingClassBlue (@index, @num) when (@index > 9) { 

@@ -214,6 +214,17 @@
 			}
 		}
 
+		.has-notification{
+			.border-radius(50%);
+			display: block;
+			position: absolute;
+			top: 25px;
+			left: 15px;
+			background: @yellow-3;
+			height: 10px;
+			width: 10px;
+		}
+
 		.collapse.in, [aria-expanded="true"]{
 			background: @gray-21;
 		}
@@ -267,6 +278,15 @@
 					color: @gray-22;
 				}
 			}
+
+			.notifications-submenu{
+				.border-radius(10px);
+				position: absolute;
+				right: -30px;
+				padding: 0 7px;
+				background: @yellow-3;
+				color: @gray-21;
+			}
 		}
 
 		padding: 0 40px;
@@ -282,4 +302,10 @@
   			top: 22px;
 		}
 	}
+}
+
+.copy-right{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
