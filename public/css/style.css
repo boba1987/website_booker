@@ -4916,7 +4916,6 @@ footer a:hover {
   border-radius: 5px;
   border: solid 1px #e6e9ee;
   width: 330px;
-  padding: 20px;
   right: 0;
   left: auto;
   -webkit-box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.2) !important;
@@ -4956,4 +4955,48 @@ footer a:hover {
   width: 50px;
   overflow: hidden;
   border: solid 1px;
+}
+.notificationsList {
+  margin-bottom: -15px;
+}
+.notificationsList .notificationName {
+  font-size: 12px;
+  color: #3e6372;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+.notificationsList .notificationTime {
+  font-size: 12px;
+  color: #c9d7d8;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+.notificationsList li {
+  border-top: solid 1px #c9d7d8 !important;
+  position: relative;
+  min-height: 66px;
+}
+.notificationsList li.new .notificationIcon {
+  background: #ffc600;
+}
+.notificationsList li > div {
+  padding: 15px;
+  padding-left: 70px;
+  background: transparent;
+  border: none !important;
+}
+.notificationsList li > div:hover {
+  background: #f5f6f8;
+}
+.notificationsList li .notificationIcon {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 15px;
+  background: #c9d7d8;
+  color: white;
+  height: 40px;
+  width: 40px;
+  top: 13px;
 }

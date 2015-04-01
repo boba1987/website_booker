@@ -72,7 +72,6 @@
 	.border-radius(5px);
 	border: solid 1px @gray-1;
 	width: 330px;
-	padding: 20px;
 	right: 0;
   	left: auto;
 	-webkit-box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.2) !important;
@@ -117,5 +116,57 @@
 		width: 50px;
 	  	overflow: hidden;
 		border: solid 1px;
+	}
+}
+
+.notificationsList{
+	margin-bottom: -15px;
+
+	.notificationName{
+		.getFont(12, @gray-7);
+		margin-bottom: 0;
+	}
+
+	.notificationTime{
+		.getFont(12, @gray-6);
+		margin-bottom: 0;
+	}
+
+	.notificationFrom{
+
+	}
+
+	li{
+		border-top: solid 1px @gray-6 !important;
+		position: relative;
+		min-height: 66px;
+
+		&.new{
+			.notificationIcon{
+				background: @yellow-3;
+			}
+		}
+		
+		&>div{
+			padding: 15px;
+			padding-left: 70px;
+			background: transparent;
+			border: none !important;
+
+			&:hover{
+				background: lighten(@gray-1, 5%);
+			}
+		}
+
+		.notificationIcon{
+			.border-radius(50%);
+			position: absolute;
+			left: 15px;
+			background: @gray-6;
+			color: white;
+		  	height: 40px;
+		  	width: 40px;
+		  	top: 13px;
+		}
 	}
 }
