@@ -4255,7 +4255,7 @@ footer a:hover {
   background: white;
   border: solid 1px #e2eeef;
   overflow: hidden;
-  max-height: 300px;
+  max-height: 394px;
 }
 .dashboard-table-holder .table-head-title {
   padding: 20px;
@@ -4268,7 +4268,7 @@ footer a:hover {
   background: #d5e2f5;
 }
 .dashboard-table-holder .table-head ul {
-  padding: 8px 20px;
+  padding: 10px 20px;
   overflow-y: scroll;
   margin-right: -30px;
   padding-right: 50px;
@@ -4282,7 +4282,7 @@ footer a:hover {
   line-height: 1.5;
 }
 .dashboard-table-holder .table-list {
-  max-height: 194px;
+  max-height: 293px;
   overflow-y: scroll;
   padding: 0 20px;
   font-size: 12px;
@@ -4292,7 +4292,7 @@ footer a:hover {
 .dashboard-table-holder .table-list ul {
   border-bottom: solid 1px #e2eeef;
   margin: 0 -20px;
-  padding: 10px 20px;
+  padding: 15px 20px;
 }
 .dashboard-table-holder .table-list ul li {
   white-space: nowrap;
