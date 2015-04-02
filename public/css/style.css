@@ -1993,10 +1993,6 @@ footer a:hover {
   }
 }
 /* Page main content styles */
-html,
-body {
-  height: 100%;
-}
 .main {
   position: relative;
   height: 100%;
@@ -4151,4 +4147,18 @@ body {
   font-size: 12px;
   color: white;
   display: block;
+}
+.dashboard-table-holder {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: white;
+  border: solid 1px #e2eeef;
+}
+.dashboard-table-holder .table-head-title {
+  padding: 20px;
+  font-size: 14px;
+  color: #3e6372;
+  line-height: 1.5;
+  text-transform: capitalize;
 }
