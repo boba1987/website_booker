@@ -6,10 +6,6 @@
 
 body{
   color: @gray-3;
-
-  @media (max-width: 991px){
-    font-size: 16px;
-  }
 }
 
 //get custom font mixin
@@ -26,10 +22,6 @@ body{
   @colorName: ~"@{num}-@{index}";
   .gray-@{colorName} {
     .getFont(@index, @fullColor);
-
-    @media(max-width: 991px){
-      .getFont(@index + 2, @fullColor);
-    }
   } 
   .loopingClassGray(@index - 1, @num); 
 } 
@@ -69,9 +61,6 @@ body{
   @colorName: ~"@{num}-@{index}";
   .blue-@{colorName} {
     .getFont(@index, @fullColor);
-    @media(max-width: 991px){
-      .getFont(@index + 2, @fullColor);
-    }
   } 
   .loopingClassBlue(@index - 1, @num); 
 } 
@@ -87,9 +76,6 @@ body{
   @colorName: ~"@{num}-@{index}";
   .red-@{colorName} {
     .getFont(@index, @fullColor);
-    @media(max-width: 991px){
-      .getFont(@index + 2, @fullColor);
-    }
   } 
   .loopingClassRed(@index - 1, @num); 
 } 

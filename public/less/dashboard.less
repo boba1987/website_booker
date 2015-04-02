@@ -1,6 +1,6 @@
 /* Dashboard page styles */
 .dashboard-container{
-	max-width: 1200px;
+	max-width: 1400px;
 }
 
 .dashboard-header{
@@ -13,10 +13,9 @@
 	min-width: 1000px;
 }
 
-.main{
-	.dashboard-container{
-		padding-left: 240px;
-	}
+.dashboard-main-holder{
+	padding-left: 260px;
+	min-width: 1000px;
 }
 
 .user-flyout{
@@ -311,4 +310,116 @@
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+}
+
+.dashboard-menu-items{
+	background: @gray-24;
+
+	ul{
+		li{
+			float: left;
+
+			a{
+				text-transform: uppercase;
+				color: @brown-1;
+				font-size: 14px;
+				margin-right: 50px;
+				padding: 20px 5px;
+				display: inline-block;
+
+				&:hover{
+					text-decoration: none;
+					color: @blue-1;
+				}
+
+				&:focus{
+					text-decoration: none;	
+				}
+			}
+
+			&.active{
+				a{
+					text-decoration: none;
+					color: @blue-1;
+					border-bottom: solid 3px @blue-1;
+				}
+			}
+		}
+	}
+}
+
+.main-dashboard{
+}
+
+.row-correction{
+	margin-right: 0;
+}
+
+.dashboard-item-blue{
+	.border-radius(3px);
+	background: @blue-1;
+	padding: 20px;
+	padding-right: 60px;
+	padding-bottom: 45px;
+	position: relative;
+	min-height: 200px;
+	overflow: hidden;
+
+	.link-to{
+		-webkit-border-top-left-radius: 5px;
+		-webkit-border-bottom-left-radius: 5px;
+		-moz-border-radius-topleft: 5px;
+		-moz-border-radius-bottomleft: 5px;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		background: @blue-9;
+		border: solid 1px @blue-10;
+		border-right: none;
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 20px;
+		height: 40px;
+		width: 60px;
+	}
+
+	.item-footer{
+		.text-ellipsis;
+		background: @blue-9;
+		border-top: solid 1px @blue-10;
+		width: 100%;
+		position: absolute;
+		right: 0;
+		bottom: 0px;
+		padding: 10px 20px;
+		color: white;
+		font-size: 12px;
+		text-transform: uppercase;
+
+		a{
+			.text-ellipsis;
+			color: white;
+			font-size: 14px;
+			text-transform: uppercase;
+		}
+	}
+
+	.item-header{
+		font-size: 14px;
+		color: white;
+		text-transform: uppercase;
+	}
+
+	.item-list{
+		li{
+			.text-ellipsis;
+			margin-bottom: 8px;
+		}
+
+		a{
+			.text-ellipsis;
+			font-size: 12px;
+			color: white;
+		}
+	}
 }
