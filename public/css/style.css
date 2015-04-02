@@ -4248,6 +4248,13 @@ footer a:hover {
   font-size: 12px;
   color: white;
   display: block;
+  text-transform: capitalize;
+}
+.price-drop {
+  color: #df4a32;
+}
+.price-increase {
+  color: #23d200;
 }
 .dashboard-table-holder {
   -webkit-border-radius: 5px;
