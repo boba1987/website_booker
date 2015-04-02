@@ -4065,7 +4065,7 @@ footer a:hover {
   background: #2f3949;
 }
 .dashboard-nav .nav-items-holder li > div:first-of-type {
-  padding: 20px 50px;
+  padding: 17px 50px;
 }
 .dashboard-nav .nav-items-holder .has-notification {
   -webkit-border-radius: 50%;
@@ -4150,6 +4150,7 @@ footer a:hover {
 }
 .dashboard-menu-items {
   background: #d5e2f5;
+  min-width: 1000px;
 }
 .dashboard-menu-items ul li {
   float: left;
@@ -4159,7 +4160,7 @@ footer a:hover {
   color: #7e8889;
   font-size: 14px;
   margin-right: 50px;
-  padding: 20px 5px;
+  padding: 10px 5px;
   display: inline-block;
 }
 .dashboard-menu-items ul li a:hover {
