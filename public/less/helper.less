@@ -41,6 +41,19 @@
 .loopingPadding (0) {} 
 .loopingPadding(@iterationsP);
 
+@iterationsWD: 100; 
+.loopingWidth (@index) when (@index > 0) { 
+	.width-@{index} { 
+		width: unit(@index - 2, %) !important;
+		margin-right: unit(1, %) !important;
+		margin-left: unit(1, %) !important;
+	} 
+	.loopingWidth(@index - 5); 
+}
+
+.loopingWidth(0){}
+.loopingWidth(@iterationsWD);
+
 .padding-0-40{
 	padding: 0 40px;
 }

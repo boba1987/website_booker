@@ -432,10 +432,52 @@
 	.border-radius(5px);
 	background: white;
 	border: solid 1px @gray-4;
+	overflow: hidden;
+	max-height: 300px;
 
 	.table-head-title{
 		padding: 20px;
 		.getFont(14, @gray-7);
 		text-transform: capitalize;
+	}
+
+	.table-head{
+		background: @gray-24;
+
+		ul{
+			padding: 8px 20px;
+			overflow-y: scroll;
+			margin-right: -30px;
+			padding-right: 50px;
+
+			li{
+				float: left;
+				width: 23%;
+				margin: 0 1%;
+				.getFont(12, @gray-7);
+			}
+		}
+	}
+
+	.table-list{
+		max-height: 194px;
+  		overflow-y: scroll;
+  		padding: 0 20px;
+  		.getFont(12, @gray-7);
+
+  		ul{
+  			border-bottom: solid 1px @gray-4;
+  			margin: 0 -20px;
+  			padding: 10px 20px;
+
+  			li{
+  				.text-ellipsis;
+  				float: left;
+  			}
+
+  			&:last-child{
+  				border: none;
+  			}
+  		}
 	}
 }
