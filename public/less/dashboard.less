@@ -148,11 +148,13 @@
 	}
 
 	li{
-		border-top: solid 1px @gray-6 !important;
+		border-top: solid 1px lighten(@gray-6, 10%) !important;
 		position: relative;
 		min-height: 66px;
 
 		&.new{
+			background: lighten(@yellow-3, 49%);
+
 			.notificationIcon{
 				background: @yellow-3;
 			}
