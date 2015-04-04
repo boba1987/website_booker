@@ -1,0 +1,83 @@
+/* Notifications page styles */
+
+.notifications-center-holder{
+	.border-radius(5px);
+	border: solid 1px @gray-1;
+
+	.holder-header{
+		p{
+			.getFont(12, @gray-7);
+			text-transform: capitalize;
+			padding-top: 7px;
+			padding-left: 10px;
+			margin-bottom: 0;
+		}
+	}
+
+	.holder-footer, .holder-header{
+		padding: 10px;
+	}
+
+	.paging-navigation{
+		margin-right: 50px;
+
+		.paging-next{
+			right: -30px;
+		}
+
+		.paging-prev{
+			left: -30px;
+		}
+
+		.paging-prev, .paging-next{
+			.border-radius(3px);
+			border: solid 1px @blue-4;
+			width: 25px;
+			height: 25px;
+			padding: 0;
+			background-position: center;
+		}
+	}
+
+	.notifications-center-list{
+		padding: 0;
+
+		li{
+			padding: 10px 20px;
+			border-bottom: solid 1px @gray-1;
+
+			p{
+				margin-bottom: 4px;
+			}
+
+			.notification-icon{
+				.border-radius(50%);
+				display: block;
+				float: left;
+				height: 40px;
+				width: 40px;
+				background: @gray-6;
+				margin-right: 20px;
+			}
+
+			.sender{
+				.getFont(12, @gray-7);
+				margin-bottom: 0;
+			}
+
+			.notification-time{
+				.getFont(12, @gray-1)
+			}
+
+			.newMessageFrom{
+				font-weight: bold;
+			}
+
+			&.new{
+				.notification-icon{
+					background: @yellow-3;
+				}
+			}
+		}
+	}
+}

@@ -4311,3 +4311,81 @@ footer a:hover {
 .dashboard-table-holder .table-list ul:last-child {
   border: none;
 }
+/* Notifications page styles */
+.notifications-center-holder {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: solid 1px #e6e9ee;
+}
+.notifications-center-holder .holder-header p {
+  font-size: 12px;
+  color: #3e6372;
+  line-height: 1.5;
+  text-transform: capitalize;
+  padding-top: 7px;
+  padding-left: 10px;
+  margin-bottom: 0;
+}
+.notifications-center-holder .holder-footer,
+.notifications-center-holder .holder-header {
+  padding: 10px;
+}
+.notifications-center-holder .paging-navigation {
+  margin-right: 50px;
+}
+.notifications-center-holder .paging-navigation .paging-next {
+  right: -30px;
+}
+.notifications-center-holder .paging-navigation .paging-prev {
+  left: -30px;
+}
+.notifications-center-holder .paging-navigation .paging-prev,
+.notifications-center-holder .paging-navigation .paging-next {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: solid 1px #b2d4dc;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  background-position: center;
+}
+.notifications-center-holder .notifications-center-list {
+  padding: 0;
+}
+.notifications-center-holder .notifications-center-list li {
+  padding: 10px 20px;
+  border-bottom: solid 1px #e6e9ee;
+}
+.notifications-center-holder .notifications-center-list li p {
+  margin-bottom: 4px;
+}
+.notifications-center-holder .notifications-center-list li .notification-icon {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  float: left;
+  height: 40px;
+  width: 40px;
+  background: #c9d7d8;
+  margin-right: 20px;
+}
+.notifications-center-holder .notifications-center-list li .sender {
+  font-size: 12px;
+  color: #3e6372;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+.notifications-center-holder .notifications-center-list li .notification-time {
+  font-size: 12px;
+  color: #e6e9ee;
+  line-height: 1.5;
+}
+.notifications-center-holder .notifications-center-list li .newMessageFrom {
+  font-weight: bold;
+}
+.notifications-center-holder .notifications-center-list li.new .notification-icon {
+  background: #ffc600;
+}
