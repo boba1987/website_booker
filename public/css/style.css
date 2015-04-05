@@ -3892,7 +3892,7 @@ body {
 }
 .dashboard-header,
 .dashboard-container {
-  min-width: 1000px;
+  min-width: 990px;
 }
 .dashboard-main-holder {
   padding-left: 260px;
@@ -4320,6 +4320,7 @@ body {
 .bg-gray {
   position: absolute;
   width: 100%;
+  min-width: 1000px;
   height: 100%;
   background: #f2f4f7;
 }
