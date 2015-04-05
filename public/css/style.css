@@ -4364,7 +4364,7 @@ body {
   border-bottom: solid 1px #e6e9ee;
 }
 .notifications-center-holder .notifications-center-list li p {
-  margin-bottom: 4px;
+  margin-bottom: 0;
 }
 .notifications-center-holder .notifications-center-list li .notification-icon {
   -webkit-border-radius: 50%;
@@ -4372,10 +4372,11 @@ body {
   border-radius: 50%;
   display: block;
   float: left;
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   background: #c9d7d8;
   margin-right: 20px;
+  margin-top: 4px;
 }
 .notifications-center-holder .notifications-center-list li .sender {
   font-size: 12px;
