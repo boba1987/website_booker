@@ -10,12 +10,16 @@
 }
 
 .dashboard-header, .dashboard-container{
-	min-width: 990px;
+	min-width: 1000px;
 }
 
 .dashboard-main-holder{
 	padding-left: 260px;
 	min-width: 1000px;
+
+	@media (max-width:1000px){
+		//padding-left: 60px;
+	}
 }
 
 .user-flyout{
@@ -188,11 +192,28 @@
 	width: 225px;
 	position: absolute;
 	z-index: 1;
-	left: 0;
 	top: 0;
 	height: 100%;
 	min-height: 650px;
 	background: @gray-19;
+	-webkit-transition: all 0.5s; /* Safari */
+  transition: all 0.5s;
+
+	// @media (max-width: 1000px){
+	// 	left: 0px;
+
+	// 	.glyphicon-triangle-left{
+	// 		right: -3px !important;
+	// 	}
+
+	// 	&.collapsed{
+	//   	left: -226px;
+	//   }
+	// }
+
+	// @media (min-width: 1001px){
+	// 	left: 0px !important;
+	// }
 
 	.nav-items-holder{
 		li{
@@ -503,4 +524,25 @@
 	background: white;
 	padding-top: 15px;
 	padding-bottom: 15px;
+}
+
+.mobile-navigation{
+	height: 100%;
+	width: 40px;
+	right: -40px;
+	position: absolute;
+	background: @gray-19;
+	display: none;
+
+	.icon-bar{
+		background: white;
+	}
+
+	.navbar-toggle{
+		padding: 8px;
+	}
+
+	@media (max-width: 1000px){
+		display: block;
+	}
 }
