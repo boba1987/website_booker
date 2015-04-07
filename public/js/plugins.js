@@ -152,33 +152,19 @@
         renderChart('#chartContainer-visits', 'Visits' ,xAxisCategories, yAxixData);
     } 
     /* Set the placement of a tooltip */
-    var tooltipSetting,
-        tooltip = ".info-flyout";
+    var placement;
     /* Bottstrap tooltip plugin init */
-    if($(window).width() > 1200){
-        tooltipSetting = {
-            "placement" : "right"
-        }
-    }else if($(window).width() < 1999 && $(window).width() > 1023){
-        tooltipSetting = {
-            "placement" : "top",
-            "delay": { "show": 200, "hide": 100 }
+    if($(window).width() < 1200){
+        placement = {
+            "placement" : "top"
         }
     }else{
-        tooltipSetting = {
-            "placement" : "top",
-            "trigger" : "click",
-            "delay": { "show": 200, "hide": 100 }
+        placement = {
+            "placement" : "right"
         }
     }
     /* Tooltip settings */
-    $(tooltip).tooltip(tooltipSetting);
-    $(tooltip).on('shown.bs.tooltip', function () {
-        var self = $(this);
-        setTimeout(function(){
-            self.tooltip('hide');
-        }, 2500);
-    });
+    $('.info-flyout').tooltip(placement);
     /* Tab selection settings */
     $('#sell-tabs a').click(function (e) {
       e.preventDefault();
