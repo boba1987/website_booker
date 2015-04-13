@@ -4,6 +4,7 @@
 $('.prevent-default').on('click', function(event){
 	event.preventDefault();
 });
+
 /* Password reveal function */
 $('.reveal-pass').on({
 	mousedown: function(event) {
@@ -16,14 +17,8 @@ $('.reveal-pass').on({
 		$(this).next().attr('type', 'password');	
 	}
 });
+
 /* Custom checkbox click event */
 $('.custom-checkbox label').on('click', function(){
 	$(this).toggleClass('checked');
-});
-/* Disabled layout */
-$('[data-disabled="true"]').append('<div class="disabled"></div>');
-/* Trigger file upload click */
-$('.uploader').click(function(){
-	$(this).parents('.uploaded-docs-holder').siblings('input[type=file]').click();
-    return false;
 });

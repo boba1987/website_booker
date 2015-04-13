@@ -457,7 +457,7 @@
 	color: @green-1;
 }
 
-.dashboard-table-holder{
+.dashboard-table-holder, .paging-table{
 	.border-radius(5px);
 	background: white;
 	border: solid 1px @gray-4;
@@ -480,6 +480,7 @@
 			padding-right: 50px;
 
 			li{
+				.text-ellipsis;
 				float: left;
 				width: 23%;
 				margin: 0 1%;
@@ -502,12 +503,45 @@
   			li{
   				.text-ellipsis;
   				float: left;
+  				min-height: 1px;
+
+  				&.price{
+  					padding-right: 1%;
+  				}
   			}
 
   			&:last-child{
   				border: none;
   			}
   		}
+	}
+
+	.table-footer{
+		padding: 10px;
+	}
+}
+
+.paging-table{
+	max-height: none;
+
+	.table-head{
+		padding: 10px 0;
+
+		ul{
+			overflow: visible;
+			text-transform: uppercase;
+		}
+	}
+
+	.table-list{
+		max-height: none;
+		overflow-y: visible;
+
+		ul{
+			&:last-child{
+				border-bottom: solid 1px @gray-4;
+			}
+		}
 	}
 }
 
