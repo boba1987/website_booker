@@ -36,4 +36,4 @@ function dealsMain(){
 /* Set min height on .main */
 (function(){
 	$('.main').css('min-height', mainSectionHeight);
-}())
+}());

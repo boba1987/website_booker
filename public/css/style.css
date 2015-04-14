@@ -820,6 +820,111 @@ body i {
   color: #a0acbf;
   line-height: 1.5;
 }
+.gray-27-30 {
+  font-size: 30px;
+  color: #6e7882;
+  line-height: 1.5;
+}
+.gray-27-29 {
+  font-size: 29px;
+  color: #6e7882;
+  line-height: 1.5;
+}
+.gray-27-28 {
+  font-size: 28px;
+  color: #6e7882;
+  line-height: 1.5;
+}
+.gray-27-27 {
+  font-size: 27px;
+  color: #6e7882;
+  line-height: 1.5;
+}
+.gray-27-26 {
+  font-size: 26px;
+  color: #6e7882;
+  line-height: 1.5;
+}
+.gray-27-25 {
+  font-size: 25px;
+  color: #6e7882;
+  line-height: 1.5;
+}
+.gray-27-24 {
+  font-size: 24px;
+  color: #6e7882;
+  line-height: 1.5;
+}
+.gray-27-23 {
+  font-size: 23px;
+  color: #6e7882;
+  line-height: 1.5;
+}
+.gray-27-22 {
+  font-size: 22px;
+  color: #6e7882;
+  line-height: 1.5;
+}
+.gray-27-21 {
+  font-size: 21px;
+  color: #6e7882;
+  line-height: 1.5;
+}
+.gray-27-20 {
+  font-size: 20px;
+  color: #6e7882;
+  line-height: 1.5;
+}
+.gray-27-19 {
+  font-size: 19px;
+  color: #6e7882;
+  line-height: 1.5;
+}
+.gray-27-18 {
+  font-size: 18px;
+  color: #6e7882;
+  line-height: 1.5;
+}
+.gray-27-17 {
+  font-size: 17px;
+  color: #6e7882;
+  line-height: 1.5;
+}
+.gray-27-16 {
+  font-size: 16px;
+  color: #6e7882;
+  line-height: 1.5;
+}
+.gray-27-15 {
+  font-size: 15px;
+  color: #6e7882;
+  line-height: 1.5;
+}
+.gray-27-14 {
+  font-size: 14px;
+  color: #6e7882;
+  line-height: 1.5;
+}
+.gray-27-13 {
+  font-size: 13px;
+  color: #6e7882;
+  line-height: 1.5;
+}
+.gray-27-12 {
+  font-size: 12px;
+  color: #6e7882;
+  line-height: 1.5;
+}
+.gray-27-11 {
+  font-size: 11px;
+  color: #6e7882;
+  line-height: 1.5;
+}
+.gray-27-10 {
+  font-size: 10px;
+  color: #6e7882;
+  line-height: 1.5;
+}
 .blue-1-30 {
   font-size: 30px;
   color: #0084ff;
@@ -3924,7 +4029,7 @@ body {
   min-width: 1000px;
 }
 .dashboard-main-holder {
-  padding-left: 260px;
+  padding-left: 255px;
   min-width: 1000px;
 }
 .user-flyout {
@@ -4404,7 +4509,8 @@ body {
   padding-bottom: 16px;
   text-transform: capitalize;
   margin-left: -35px;
-  padding-left: 295px;
+  padding-left: 290px;
+  min-width: 1040px;
 }
 .mobile-navigation {
   height: 100%;
@@ -4442,18 +4548,52 @@ body {
   margin: 0 !important;
 }
 .scroll-container ul li {
-  border-top: solid 1px #e6e9ee;
-  padding: 15px 35px;
+  border-top: solid 1px #d7dbe1;
+  padding: 15px 30px;
   cursor: pointer;
 }
+.scroll-container ul li p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .scroll-container ul li:hover {
-  background: #e6e9ee;
+  background: #f2f4f7;
 }
 .scroll-container ul li:last-child {
-  border-bottom: solid 1px #e6e9ee;
+  border-bottom: solid 1px #d7dbe1;
 }
 .scroll-container.gray-25 {
   background: #dde1e6;
+}
+.scroll-container.gray-28 {
+  background: #e8ebf0;
+}
+.scroll-container.gray-5 {
+  background: #f2f4f7;
+}
+.user-list li {
+  position: relative;
+}
+.user-list li .user-profile-link {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: gray;
+  height: 15px;
+  width: 15px;
+  display: block;
+}
+.user-list li img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 40px;
+  width: 40px;
+  border: solid 1px;
+  float: left;
+  margin-right: 10px;
 }
 .scroll-container-3 {
   width: 33.33%;
@@ -4461,12 +4601,134 @@ body {
 .scroll-container-4 {
   width: 25%;
 }
+.scroll-container-2 {
+  width: 41.67%;
+}
 .scroll-container-title {
   font-size: 14px;
   color: #6e7882;
   line-height: 1.5;
   text-transform: capitalize;
-  padding: 25px 35px;
+  padding: 25px 30px;
+}
+.user-profile-link-holder {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  position: relative;
+  background: white;
+  margin: 10px;
+  padding: 30px 20px;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.2) !important;
+  -moz-box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.2) !important;
+  box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.2) !important;
+}
+.user-profile-link-holder img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  height: 115px;
+  width: 115px;
+  border: solid 1px;
+  overflow: hidden;
+}
+.user-profile-link-holder .blue-button {
+  margin: 0 auto;
+  margin-top: 20px;
+  display: table;
+}
+.user-profile-link-holder .close {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: gray;
+  top: 20px;
+  right: 20px;
+}
+.conversation-list li {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #9fa7b7;
+  line-height: 1.5;
+  position: relative;
+  cursor: auto !important;
+  padding: 15px !important;
+  padding-top: 30px !important;
+  margin-bottom: 70px;
+  border: none !important;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.2) !important;
+  -moz-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.2) !important;
+  box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.2) !important;
+}
+.conversation-list li:hover {
+  background: inherit !important;
+}
+.conversation-list li.recieved {
+  background: white;
+}
+.conversation-list li.recieved .sender {
+  right: 15px;
+  left: auto;
+}
+.conversation-list li.recieved:hover {
+  background: white !important;
+}
+.conversation-list li.sent {
+  background: #f3faff;
+}
+.conversation-list li.sent:hover {
+  background: #f3faff !important;
+}
+.conversation-list li .sender {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  border: solid 1px;
+  position: absolute;
+  top: -22px;
+  left: 15px;
+  height: 45px;
+  width: 45px;
+  -webkit-box-shadow: inset 0px 0px 4px 0px rgba(50, 50, 50, 0.2);
+  -moz-box-shadow: inset 0px 0px 4px 0px rgba(50, 50, 50, 0.2);
+  box-shadow: inset 0px 0px 4px 0px rgba(50, 50, 50, 0.2);
+}
+.conversation-list li .message-time {
+  font-size: 12px;
+  color: #9fa7b7;
+  line-height: 1.5;
+  position: absolute;
+  max-width: 50%;
+  bottom: -25px;
+  left: 0;
+}
+.conversation-list li .flag {
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+  display: block;
+  height: 15px;
+  width: 15px;
+  background: gray;
+}
+.conversation-holder {
+  padding: 0 20px;
+}
+.conversation-holder .scroll-container-title {
+  padding-left: 0;
+}
+.dashboard-textarea {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width: 100%;
+  background: white;
 }
 /* Notifications page styles */
 .notifications-center-holder {

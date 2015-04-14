@@ -14,7 +14,7 @@
 }
 
 .dashboard-main-holder{
-	padding-left: 260px;
+	padding-left: 255px;
 	min-width: 1000px;
 
 	@media (max-width:1000px){
@@ -566,7 +566,8 @@
 	padding-bottom: 16px;
 	text-transform: capitalize;
 	margin-left: -35px;
-	padding-left: 295px;
+	padding-left: 290px;
+	min-width: 1040px;
 }
 
 .mobile-navigation{
@@ -605,22 +606,59 @@
 		}
 
 		li{
-			border-top: solid 1px @gray-1;
-			padding: 15px 35px;
+			p{
+				.text-ellipsis;
+			}
+			border-top: solid 1px @gray-29;
+			padding: 15px 30px;
 			cursor: pointer;
 
 			&:hover{
-				background: @gray-1;
+				background: @gray-5;
 			}
 
 			&:last-child{
-				border-bottom: solid 1px @gray-1;
+				border-bottom: solid 1px @gray-29;
 			}
 		}
 	}
 
 	&.gray-25{
 		background: @gray-26;
+	}
+
+	&.gray-28{
+		background: @gray-28;
+	}
+
+	&.gray-5{
+		background: @gray-5;
+	}
+}
+
+.user-list{
+	li{
+		position: relative;
+
+		.user-profile-link{
+			position: absolute;
+			top: 10px;
+			right: 15px;
+			background: gray;
+			height: 15px;
+			width: 15px;
+			display: block;
+		}
+
+		img{
+			.border-radius(50%);
+			overflow: hidden;
+			height: 40px;
+			width: 40px;
+			border: solid 1px;
+			float: left;
+			margin-right: 10px;
+		}
 	}
 }
 
@@ -632,8 +670,137 @@
 	width: 25%;
 }
 
+.scroll-container-2{
+	width: 41.67%;
+}
+
 .scroll-container-title{
 	.getFont(14, @gray-27);
 	text-transform: capitalize;
-	padding: 25px 35px;
+	padding: 25px 30px;
+}
+
+.user-profile-link-holder{
+	.border-radius(10px);
+	position: relative;
+	background: white;
+	margin: 10px;
+	padding: 30px 20px;
+	-webkit-box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.2) !important;
+  	-moz-box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.2) !important;
+  	box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.2) !important;
+
+	img{
+		.border-radius(50%);
+		display: block;
+		margin: 0 auto;
+		margin-top: 20px;
+		height: 115px;
+		width: 115px;
+		border: solid 1px;
+		overflow: hidden;
+	}
+
+	.blue-button{
+		margin: 0 auto;
+		margin-top: 20px;
+		display: table;
+	}
+
+	.close{
+		position: absolute;
+		height: 20px;
+		width: 20px;
+		background: gray;
+		top: 20px;
+		right: 20px;
+	}
+}
+
+.conversation-list{
+
+	li{
+		.border-radius(5px);
+		.getFont(12, @gray-14);
+		position: relative;
+		cursor: auto !important;
+		padding: 15px !important;
+		padding-top: 30px !important;
+		margin-bottom: 70px;
+		border: none !important;
+		-webkit-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.2) !important;
+		-moz-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.2) !important;
+		box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.2) !important;
+		
+		&:hover{
+			background: inherit !important;
+		}
+
+		&.recieved{
+			background: white;
+
+			.sender{
+				right: 15px;
+				left: auto;
+			}
+
+			&:hover{
+				background: white !important;
+			}
+		}
+
+		&.sent{
+			background: @gray-30;
+
+			&:hover{
+				background: @gray-30 !important;
+			}
+		}
+
+		.sender{
+			.border-radius(50%);
+			overflow: hidden;
+			border: solid 1px;
+			position: absolute;
+			top: -22px;
+			left: 15px;
+			height: 45px;
+			width: 45px;
+			-webkit-box-shadow: inset 0px 0px 4px 0px rgba(50, 50, 50, 0.2);
+			-moz-box-shadow:    inset 0px 0px 4px 0px rgba(50, 50, 50, 0.2);
+			box-shadow:         inset 0px 0px 4px 0px rgba(50, 50, 50, 0.2);
+		}
+
+		.message-time{
+			.getFont(12, @gray-14);
+			position: absolute;
+			max-width: 50%;
+			bottom: -25px;
+			left: 0;
+		}
+
+		.flag{
+			position: absolute;
+			bottom: -25px;
+			right: 0;
+			display: block;
+			height: 15px;
+			width: 15px;
+			background: gray;
+		}
+	}
+}
+
+.conversation-holder{
+	padding: 0 20px;
+
+	.scroll-container-title{
+		padding-left: 0;
+	}
+}
+
+.dashboard-textarea{
+	.border-radius(5px);
+	width: 100%;
+	background: white;
 }
