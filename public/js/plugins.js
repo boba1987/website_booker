@@ -43,6 +43,7 @@
     Rate slider init
     */
     $( "#rate-range-slider" ).slider({
+        disabled: true,
         range: "max",
         value: 50,
         min: 1,
