@@ -61,9 +61,6 @@ body {
   color: #51575e;
   font-family: 'latoregular';
 }
-body b {
-  font-family: 'latobold';
-}
 body i {
   font-family: 'latoitalic';
 }
@@ -2033,7 +2030,6 @@ body {
 }
 .main {
   position: relative;
-  min-height: 100%;
 }
 .heading-backgroud {
   background: gray;
@@ -4086,9 +4082,6 @@ body {
   height: 100%;
   min-height: 650px;
   background: #354052;
-  -webkit-transition: all 0.5s;
-  /* Safari */
-  transition: all 0.5s;
 }
 .dashboard-nav .nav-items-holder li {
   position: relative;
@@ -4099,6 +4092,9 @@ body {
 }
 .dashboard-nav .nav-items-holder li.active {
   color: white;
+}
+.dashboard-nav .nav-items-holder li.active .glyphicon {
+  display: block;
 }
 .dashboard-nav .nav-items-holder li:hover,
 .dashboard-nav .nav-items-holder li.active {
@@ -4181,7 +4177,8 @@ body {
 .dashboard-nav .glyphicon.glyphicon-triangle-left {
   position: absolute;
   right: -4px;
-  top: 22px;
+  top: 20px;
+  display: none;
 }
 .copy-right {
   position: absolute;
@@ -4398,10 +4395,16 @@ body {
   background: #f2f4f7;
 }
 .dashboard-page-tittle {
+  font-size: 16px;
+  color: #6e7882;
+  line-height: 1.5;
   position: relative;
   background: white;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 16px;
+  text-transform: capitalize;
+  margin-left: -35px;
+  padding-left: 295px;
 }
 .mobile-navigation {
   height: 100%;
@@ -4421,6 +4424,49 @@ body {
   .mobile-navigation {
     display: block;
   }
+}
+.scroll-container {
+  overflow-y: scroll;
+  float: left;
+}
+.scroll-container ul .desc-1 {
+  font-size: 12px;
+  color: #6e7882;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+.scroll-container ul .desc-2 {
+  font-size: 12px;
+  color: #9fa7b7;
+  line-height: 1.5;
+  margin: 0 !important;
+}
+.scroll-container ul li {
+  border-top: solid 1px #e6e9ee;
+  padding: 15px 35px;
+  cursor: pointer;
+}
+.scroll-container ul li:hover {
+  background: #e6e9ee;
+}
+.scroll-container ul li:last-child {
+  border-bottom: solid 1px #e6e9ee;
+}
+.scroll-container.gray-25 {
+  background: #dde1e6;
+}
+.scroll-container-3 {
+  width: 33.33%;
+}
+.scroll-container-4 {
+  width: 25%;
+}
+.scroll-container-title {
+  font-size: 14px;
+  color: #6e7882;
+  line-height: 1.5;
+  text-transform: capitalize;
+  padding: 25px 35px;
 }
 /* Notifications page styles */
 .notifications-center-holder {
@@ -4501,4 +4547,8 @@ body {
   height: 25px;
   padding: 0;
   background-position: center;
+}
+/* Deals page styles */
+#dashboardDeals {
+  padding-left: 240px;
 }

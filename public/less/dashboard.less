@@ -196,8 +196,8 @@
 	height: 100%;
 	min-height: 650px;
 	background: @gray-19;
-	-webkit-transition: all 0.5s; /* Safari */
-  transition: all 0.5s;
+	//-webkit-transition: all 0.5s; /* Safari */
+  	//transition: all 0.5s;
 
 	// @media (max-width: 1000px){
 	// 	left: 0px;
@@ -225,6 +225,10 @@
 
 			&.active{
 				color: white;
+
+				.glyphicon{
+					display: block;
+				}
 			}
 
 			&:hover, &.active{
@@ -325,7 +329,8 @@
 		&.glyphicon-triangle-left{
 			position: absolute;
 			right: -4px;
-  			top: 22px;
+  			top: 20px;
+  			display: none;
 		}
 	}
 }
@@ -347,7 +352,7 @@
 
 			a{
 				text-transform: uppercase;
-				color: @brown-1;
+				color: @gray-25;
 				font-size: 14px;
 				margin-right: 50px;
 				padding: 10px 5px;
@@ -554,10 +559,14 @@
 }
 
 .dashboard-page-tittle{
+	.getFont(16, @gray-27);
 	position: relative;
 	background: white;
 	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-bottom: 16px;
+	text-transform: capitalize;
+	margin-left: -35px;
+	padding-left: 295px;
 }
 
 .mobile-navigation{
@@ -579,4 +588,52 @@
 	@media (max-width: 1000px){
 		display: block;
 	}
+}
+
+.scroll-container{
+	overflow-y: scroll;
+	float: left;
+
+	ul{
+		.desc-1{
+			.getFont(12, @gray-27);
+			margin-bottom: 5px;
+		}
+		.desc-2{
+			.getFont(12, @gray-14);
+			.margin-0;
+		}
+
+		li{
+			border-top: solid 1px @gray-1;
+			padding: 15px 35px;
+			cursor: pointer;
+
+			&:hover{
+				background: @gray-1;
+			}
+
+			&:last-child{
+				border-bottom: solid 1px @gray-1;
+			}
+		}
+	}
+
+	&.gray-25{
+		background: @gray-26;
+	}
+}
+
+.scroll-container-3{
+	width: 33.33%;
+}
+
+.scroll-container-4{
+	width: 25%;
+}
+
+.scroll-container-title{
+	.getFont(14, @gray-27);
+	text-transform: capitalize;
+	padding: 25px 35px;
 }

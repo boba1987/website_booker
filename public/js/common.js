@@ -22,3 +22,18 @@ $('.reveal-pass').on({
 $('.custom-checkbox label').on('click', function(){
 	$(this).toggleClass('checked');
 });
+
+/* Set max height on scroll sections( e.g. Deals page ) */
+var mainSectionHeight = $(window).height() - $('header').outerHeight();
+
+function dealsMain(){
+	$('.scroll-container').css({
+		'max-height': mainSectionHeight - $('.dashboard-page-tittle').outerHeight(),
+		'height' : mainSectionHeight - $('.dashboard-page-tittle').outerHeight()
+	});
+}
+
+/* Set min height on .main */
+(function(){
+	$('.main').css('min-height', mainSectionHeight);
+}())
