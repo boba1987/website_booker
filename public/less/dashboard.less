@@ -223,32 +223,48 @@
 			border-bottom: solid 1px @gray-20;
 			cursor: pointer;
 
+			a{
+				color: @gray-23;
+				display: block;
+				padding: 17px 50px;
+				
+				&:hover, &:focus{
+					color: @gray-22;
+					text-decoration: none;
+				}
+			}
+
+
 			&.active{
 				color: white;
+				background: @gray-31;
 
 				.glyphicon{
 					display: block;
 				}
 			}
 
-			&:hover, &.active{
-				background: @gray-21;
+			&:hover{
+				background: @gray-31;
 			}
 
-			&>div:first-of-type{
-				padding: 17px 50px;
+			&.has-notification{
+				.notifications-indicator{
+					display: inline !important;
+				}
 			}
 		}
 
-		.has-notification{
+		.notifications-indicator{
 			.border-radius(50%);
 			display: block;
 			position: absolute;
-			top: 25px;
+			top: 24px;
 			left: 5px;
 			background: @yellow-3;
 			height: 5px;
 			width: 5px;
+			display: none;
 		}
 
 		.collapse.in, [aria-expanded="true"]{
@@ -289,9 +305,7 @@
 	}
 
 	.submenu{
-		padding: 0 40px;
 		padding-bottom: 20px;
-		padding-left: 25px;
 
 		li{
 			border: none;
@@ -299,20 +313,16 @@
 			color: @gray-23;
 			text-transform: capitalize;
 			font-size: 14px;
-			padding: 5px 0;
+			padding-left: 25px;
 
 			a{
-				color: @gray-23;
-				
-				&:hover{
-					color: @gray-22;
-				}
+				padding: 7px 0;
 			}
 
 			.notifications-submenu{
 				.border-radius(10px);
 				position: absolute;
-				right: -30px;
+				right: 20px;
 				top: 7px;
 				padding: 0 7px;
 				background: @yellow-3;
@@ -320,6 +330,10 @@
 				font-size: 12px;
   				line-height: 16px;
 			}
+		}
+
+		.glyphicon.glyphicon-triangle-left{
+		  	top: 10px;
 		}
 	}
 
@@ -349,12 +363,16 @@
 	ul{
 		li{
 			float: left;
+			margin-right: 50px;
+
+			&:last-child{
+				margin-right: 0;
+			}
 
 			a{
 				text-transform: uppercase;
 				color: @gray-25;
 				font-size: 14px;
-				margin-right: 50px;
 				padding: 10px 5px;
 				display: inline-block;
 

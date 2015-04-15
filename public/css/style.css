@@ -4198,30 +4198,41 @@ body {
   border-bottom: solid 1px #404c60;
   cursor: pointer;
 }
+.dashboard-nav .nav-items-holder li a {
+  color: #6d798a;
+  display: block;
+  padding: 17px 50px;
+}
+.dashboard-nav .nav-items-holder li a:hover,
+.dashboard-nav .nav-items-holder li a:focus {
+  color: #a0acbf;
+  text-decoration: none;
+}
 .dashboard-nav .nav-items-holder li.active {
   color: white;
+  background: #29313e;
 }
 .dashboard-nav .nav-items-holder li.active .glyphicon {
   display: block;
 }
-.dashboard-nav .nav-items-holder li:hover,
-.dashboard-nav .nav-items-holder li.active {
-  background: #2f3949;
+.dashboard-nav .nav-items-holder li:hover {
+  background: #29313e;
 }
-.dashboard-nav .nav-items-holder li > div:first-of-type {
-  padding: 17px 50px;
+.dashboard-nav .nav-items-holder li.has-notification .notifications-indicator {
+  display: inline !important;
 }
-.dashboard-nav .nav-items-holder .has-notification {
+.dashboard-nav .nav-items-holder .notifications-indicator {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
   display: block;
   position: absolute;
-  top: 25px;
+  top: 24px;
   left: 5px;
   background: #ffc600;
   height: 5px;
   width: 5px;
+  display: none;
 }
 .dashboard-nav .nav-items-holder .collapse.in,
 .dashboard-nav .nav-items-holder [aria-expanded="true"] {
@@ -4248,9 +4259,7 @@ body {
   content: "\e252";
 }
 .dashboard-nav .submenu {
-  padding: 0 40px;
   padding-bottom: 20px;
-  padding-left: 25px;
 }
 .dashboard-nav .submenu li {
   border: none;
@@ -4258,26 +4267,26 @@ body {
   color: #6d798a;
   text-transform: capitalize;
   font-size: 14px;
-  padding: 5px 0;
+  padding-left: 25px;
 }
 .dashboard-nav .submenu li a {
-  color: #6d798a;
-}
-.dashboard-nav .submenu li a:hover {
-  color: #a0acbf;
+  padding: 7px 0;
 }
 .dashboard-nav .submenu li .notifications-submenu {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
   position: absolute;
-  right: -30px;
+  right: 20px;
   top: 7px;
   padding: 0 7px;
   background: #ffc600;
   color: #2f3949;
   font-size: 12px;
   line-height: 16px;
+}
+.dashboard-nav .submenu .glyphicon.glyphicon-triangle-left {
+  top: 10px;
 }
 .dashboard-nav .glyphicon {
   color: white;
@@ -4300,12 +4309,15 @@ body {
 }
 .dashboard-menu-items ul li {
   float: left;
+  margin-right: 50px;
+}
+.dashboard-menu-items ul li:last-child {
+  margin-right: 0;
 }
 .dashboard-menu-items ul li a {
   text-transform: uppercase;
   color: #7e8889;
   font-size: 14px;
-  margin-right: 50px;
   padding: 10px 5px;
   display: inline-block;
 }
