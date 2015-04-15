@@ -4500,6 +4500,10 @@ body {
 .paging-table .table-footer {
   padding: 10px;
 }
+.dashboard-table-holder.grid li,
+.paging-table.grid li {
+  white-space: inherit !important;
+}
 .dashboard-table-holder.grid .table-head > ul,
 .paging-table.grid .table-head > ul,
 .dashboard-table-holder.grid .table-list > ul,
@@ -4511,6 +4515,12 @@ body {
 .dashboard-table-holder.grid .table-list > ul > li,
 .paging-table.grid .table-list > ul > li {
   border-right: solid 1px #e2eeef;
+}
+.dashboard-table-holder.grid .table-head > ul > li:first-child,
+.paging-table.grid .table-head > ul > li:first-child,
+.dashboard-table-holder.grid .table-list > ul > li:first-child,
+.paging-table.grid .table-list > ul > li:first-child {
+  padding-left: 10px;
 }
 .dashboard-table-holder.grid .table-head > ul > li:last-child,
 .paging-table.grid .table-head > ul > li:last-child,

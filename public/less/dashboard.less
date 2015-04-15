@@ -550,11 +550,18 @@
 	}
 
 	&.grid{
+		li{
+		  	white-space: inherit !important;
+		}
+
 		.table-head, .table-list{
 			&>ul{
 				display: flex;
 				&>li{
 					border-right: solid 1px @gray-4;
+					&:first-child{
+						padding-left: 10px;
+					} 
 					&:last-child{
 						border: none;
 					}
