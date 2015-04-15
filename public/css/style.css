@@ -4510,7 +4510,7 @@ body {
 .paging-table.grid .table-head > ul > li,
 .dashboard-table-holder.grid .table-list > ul > li,
 .paging-table.grid .table-list > ul > li {
-  border-right: solid 1px #bbcbe2;
+  border-right: solid 1px #e2eeef;
 }
 .dashboard-table-holder.grid .table-head > ul > li:last-child,
 .paging-table.grid .table-head > ul > li:last-child,
@@ -4518,16 +4518,52 @@ body {
 .paging-table.grid .table-list > ul > li:last-child {
   border: none;
 }
+.dashboard-table-holder.grid:last-child .nested-grid-12 ul li,
+.paging-table.grid:last-child .nested-grid-12 ul li {
+  margin-right: -9%;
+}
+[class^="nested-grid-"],
+[class*=" nested-grid-"] {
+  padding: 0 !important;
+  overflow: visible !important;
+}
+[class^="nested-grid-"] ul li,
+[class*=" nested-grid-"] ul li {
+  border-bottom: solid 1px #e2eeef;
+}
+[class^="nested-grid-"] ul li:last-child,
+[class*=" nested-grid-"] ul li:last-child {
+  border: none;
+}
+.nested-grid-25 ul {
+  margin-left: -9% !important;
+}
+.nested-grid-25 ul li {
+  padding: 15px 8%;
+}
+.nested-grid-12 ul {
+  margin-left: -20% !important;
+}
+.nested-grid-12 ul li {
+  padding: 15px 18%;
+}
 .paging-table {
   max-height: none;
 }
 .paging-table .table-head ul {
   overflow: visible;
   text-transform: uppercase;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 .paging-table .table-list {
   max-height: none;
   overflow-y: visible;
+  padding: 0 !important;
+}
+.paging-table .table-list > ul {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 .paging-table .table-list > ul:last-child {
   border-bottom: solid 1px #e2eeef;
