@@ -4435,6 +4435,7 @@ body {
 .dashboard-table-holder .table-head,
 .paging-table .table-head {
   background: #d5e2f5;
+  font-weight: bold;
 }
 .dashboard-table-holder .table-head ul,
 .paging-table .table-head ul {
