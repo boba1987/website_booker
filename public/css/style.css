@@ -3965,6 +3965,10 @@ body {
   margin-right: 1% !important;
   margin-left: 1% !important;
 }
+.width-12 {
+  width: 10.5% !important;
+  margin: 0 1% !important;
+}
 .padding-0-40 {
   padding: 0 40px;
 }
@@ -4204,7 +4208,8 @@ body {
   padding: 17px 50px;
 }
 .dashboard-nav .nav-items-holder li a:hover,
-.dashboard-nav .nav-items-holder li a:focus {
+.dashboard-nav .nav-items-holder li a:focus,
+.dashboard-nav .nav-items-holder li a:visited {
   color: #a0acbf;
   text-decoration: none;
 }
@@ -4241,7 +4246,7 @@ body {
 .dashboard-nav .nav-items-holder [aria-expanded="true"] .icon,
 .dashboard-nav .nav-items-holder [aria-expanded="false"] .icon {
   right: 20px;
-  top: 24px;
+  top: 22px;
   font-size: 12px;
   position: absolute;
   display: inline-block;
@@ -4437,18 +4442,20 @@ body {
   background: #d5e2f5;
   font-weight: bold;
 }
-.dashboard-table-holder .table-head ul,
-.paging-table .table-head ul {
-  padding: 10px 20px;
+.dashboard-table-holder .table-head > ul,
+.paging-table .table-head > ul {
+  padding: 0 20px;
   overflow-y: scroll;
   margin-right: -30px;
   padding-right: 50px;
 }
-.dashboard-table-holder .table-head ul li,
-.paging-table .table-head ul li {
+.dashboard-table-holder .table-head > ul > li,
+.paging-table .table-head > ul > li {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding-top: 10px;
+  padding-bottom: 10px;
   float: left;
   width: 23%;
   margin: 0 1%;
@@ -4465,37 +4472,54 @@ body {
   color: #3e6372;
   line-height: 1.5;
 }
-.dashboard-table-holder .table-list ul,
-.paging-table .table-list ul {
+.dashboard-table-holder .table-list > ul,
+.paging-table .table-list > ul {
   border-bottom: solid 1px #e2eeef;
   margin: 0 -20px;
-  padding: 15px 20px;
+  padding: 0 20px;
 }
-.dashboard-table-holder .table-list ul li,
-.paging-table .table-list ul li {
+.dashboard-table-holder .table-list > ul > li,
+.paging-table .table-list > ul > li {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding-top: 15px;
+  padding-bottom: 15px;
   float: left;
   min-height: 1px;
 }
-.dashboard-table-holder .table-list ul li.price,
-.paging-table .table-list ul li.price {
+.dashboard-table-holder .table-list > ul > li.price,
+.paging-table .table-list > ul > li.price {
   padding-right: 1%;
 }
-.dashboard-table-holder .table-list ul:last-child,
-.paging-table .table-list ul:last-child {
+.dashboard-table-holder .table-list > ul:last-child,
+.paging-table .table-list > ul:last-child {
   border: none;
 }
 .dashboard-table-holder .table-footer,
 .paging-table .table-footer {
   padding: 10px;
 }
+.dashboard-table-holder.grid .table-head > ul,
+.paging-table.grid .table-head > ul,
+.dashboard-table-holder.grid .table-list > ul,
+.paging-table.grid .table-list > ul {
+  display: flex;
+}
+.dashboard-table-holder.grid .table-head > ul > li,
+.paging-table.grid .table-head > ul > li,
+.dashboard-table-holder.grid .table-list > ul > li,
+.paging-table.grid .table-list > ul > li {
+  border-right: solid 1px #bbcbe2;
+}
+.dashboard-table-holder.grid .table-head > ul > li:last-child,
+.paging-table.grid .table-head > ul > li:last-child,
+.dashboard-table-holder.grid .table-list > ul > li:last-child,
+.paging-table.grid .table-list > ul > li:last-child {
+  border: none;
+}
 .paging-table {
   max-height: none;
-}
-.paging-table .table-head {
-  padding: 10px 0;
 }
 .paging-table .table-head ul {
   overflow: visible;
@@ -4505,7 +4529,7 @@ body {
   max-height: none;
   overflow-y: visible;
 }
-.paging-table .table-list ul:last-child {
+.paging-table .table-list > ul:last-child {
   border-bottom: solid 1px #e2eeef;
 }
 .bg-gray {

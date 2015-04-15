@@ -228,7 +228,7 @@
 				display: block;
 				padding: 17px 50px;
 				
-				&:hover, &:focus{
+				&:hover, &:focus, &:visited{
 					color: @gray-22;
 					text-decoration: none;
 				}
@@ -274,7 +274,7 @@
 		[aria-expanded="true"], [aria-expanded="false"]{
 			.icon{
 				right: 20px;
-				top: 24px;
+				top: 22px;
 				font-size: 12px;
 				position: absolute;
 				display: inline-block;
@@ -497,14 +497,17 @@
 		background: @gray-24;
 		font-weight: bold;
 
-		ul{
-			padding: 10px 20px;
+		&>ul{
+			padding: 0 20px;
 			overflow-y: scroll;
 			margin-right: -30px;
 			padding-right: 50px;
 
-			li{
+			&>li{
 				.text-ellipsis;
+				float: left;
+				padding-top: 10px;
+				padding-bottom: 10px;
 				float: left;
 				width: 23%;
 				margin: 0 1%;
@@ -519,13 +522,15 @@
   		padding: 0 20px;
   		.getFont(12, @gray-7);
 
-  		ul{
+  		&>ul{
   			border-bottom: solid 1px @gray-4;
   			margin: 0 -20px;
-  			padding: 15px 20px;
+  			padding: 0 20px;
 
-  			li{
+  			&>li{
   				.text-ellipsis;
+  				padding-top: 15px;
+  				padding-bottom: 15px;
   				float: left;
   				min-height: 1px;
 
@@ -543,14 +548,26 @@
 	.table-footer{
 		padding: 10px;
 	}
+
+	&.grid{
+		.table-head, .table-list{
+			&>ul{
+				display: flex;
+				&>li{
+					border-right: solid 1px @blue-11;
+					&:last-child{
+						border: none;
+					}
+				}
+			}
+		}
+	}
 }
 
 .paging-table{
 	max-height: none;
 
 	.table-head{
-		padding: 10px 0;
-
 		ul{
 			overflow: visible;
 			text-transform: uppercase;
@@ -561,7 +578,7 @@
 		max-height: none;
 		overflow-y: visible;
 
-		ul{
+		&>ul{
 			&:last-child{
 				border-bottom: solid 1px @gray-4;
 			}
