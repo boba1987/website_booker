@@ -4270,7 +4270,7 @@ body {
   padding-left: 25px;
 }
 .dashboard-nav .submenu li a {
-  padding: 7px 0;
+  padding: 10px 0;
 }
 .dashboard-nav .submenu li .notifications-submenu {
   -webkit-border-radius: 10px;
@@ -4278,15 +4278,15 @@ body {
   border-radius: 10px;
   position: absolute;
   right: 20px;
-  top: 7px;
-  padding: 0 7px;
+  top: 10px;
+  padding: 2px 7px;
   background: #ffc600;
   color: #2f3949;
   font-size: 12px;
   line-height: 16px;
 }
 .dashboard-nav .submenu .glyphicon.glyphicon-triangle-left {
-  top: 10px;
+  top: 13px;
 }
 .dashboard-nav .glyphicon {
   color: white;
