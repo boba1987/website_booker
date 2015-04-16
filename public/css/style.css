@@ -4626,12 +4626,19 @@ body {
   color: #6e7882;
   line-height: 1.5;
   margin: 0 !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 5px;
 }
 .scroll-container .scroll-list .desc-2 {
   font-size: 12px;
   color: #9fa7b7;
   line-height: 1.5;
   margin: 0 !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin-top: 5px;
 }
 .scroll-container .scroll-list li {
