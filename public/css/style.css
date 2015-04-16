@@ -1138,6 +1138,9 @@ body i {
   color: #c70000;
   line-height: 1.5;
 }
+.font-normal {
+  font-weight: normal;
+}
 .h1-gray-1,
 .h2-gray-1,
 .h3-gray-1 {
@@ -4468,6 +4471,7 @@ body {
   max-height: 293px;
   overflow-y: scroll;
   padding: 0 20px;
+  font-weight: bold;
   font-size: 12px;
   color: #3e6372;
   line-height: 1.5;
