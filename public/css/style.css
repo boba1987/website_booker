@@ -2987,9 +2987,9 @@ body {
   border: solid 1px #51575e;
   position: absolute;
   top: 0;
-  left: 10px;
-  height: 60px;
-  width: 60px;
+  left: 15px;
+  height: 50px;
+  width: 50px;
   overflow: hidden;
 }
 .comments-list li .user-name {
@@ -5035,6 +5035,10 @@ body {
 .dashboard-progress-indicator-2 li {
   width: 90%;
 }
+.border-bottom {
+  border-bottom: solid 2px #e5e5e5;
+  padding-bottom: 5px;
+}
 /* Notifications page styles */
 .notifications-center-holder {
   -webkit-border-radius: 5px;
@@ -5117,6 +5121,7 @@ body {
 }
 /* Deals page styles */
 #dashboardDeals,
-#dashboardNotes {
+#dashboardNotes,
+#dashboardPropertyComments {
   padding-left: 240px;
 }
