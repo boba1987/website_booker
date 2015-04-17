@@ -139,15 +139,37 @@ label{
 	height: 35px !important;
 	padding-top: 2px !important;
 	padding-left: 2px !important;
+	border-color: transparent;
 
 	.bootstrap-switch-label{
 		.border-radius(50%);
+		position: relative;
+		z-index: 2;
 		height: 29px;
 		-webkit-box-shadow: 1px 1px 2px 1px rgba(50, 50, 50, 0.3);
 		-moz-box-shadow: 1px 1px 2px 1px rgba(50, 50, 50, 0.3);
 		box-shadow: 1px 1px 2px 1px rgba(50, 50, 50, 0.3);
 	}
 }
+
+.bootstrap-switch-off{
+	background-color: @gray-32 !important;
+
+	.bootstrap-switch.bootstrap-switch-wrapper, .bootstrap-switch-primary{
+		background-color: @gray-32 !important;		
+	}
+}
+
+.bootstrap-switch.bootstrap-switch-small .bootstrap-switch-handle-off{
+	padding: 5px;
+}
+
+.bootstrap-switch-handle-on{
+	margin-left: -2px;
+	margin-right: 2px;
+}
+
+
 
 .uploaded-docs-holder{
 	@media (max-width: 991px){

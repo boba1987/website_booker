@@ -1344,15 +1344,32 @@ label {
   height: 35px !important;
   padding-top: 2px !important;
   padding-left: 2px !important;
+  border-color: transparent;
 }
 .bootstrap-switch.bootstrap-switch-wrapper .bootstrap-switch-label {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+  position: relative;
+  z-index: 2;
   height: 29px;
   -webkit-box-shadow: 1px 1px 2px 1px rgba(50, 50, 50, 0.3);
   -moz-box-shadow: 1px 1px 2px 1px rgba(50, 50, 50, 0.3);
   box-shadow: 1px 1px 2px 1px rgba(50, 50, 50, 0.3);
+}
+.bootstrap-switch-off {
+  background-color: #c7d4d5 !important;
+}
+.bootstrap-switch-off .bootstrap-switch.bootstrap-switch-wrapper,
+.bootstrap-switch-off .bootstrap-switch-primary {
+  background-color: #c7d4d5 !important;
+}
+.bootstrap-switch.bootstrap-switch-small .bootstrap-switch-handle-off {
+  padding: 5px;
+}
+.bootstrap-switch-handle-on {
+  margin-left: -2px;
+  margin-right: 2px;
 }
 @media (max-width: 991px) {
   .uploaded-docs-holder {
@@ -4535,6 +4552,32 @@ body {
 .dashboard-table-holder.grid:last-child .nested-grid-12 ul li,
 .paging-table.grid:last-child .nested-grid-12 ul li {
   margin-right: -9%;
+}
+.dashboard-table-holder .bootstrap-switch,
+.paging-table .bootstrap-switch {
+  margin-left: 4px;
+}
+.dashboard-table-holder .bootstrap-switch.bootstrap-switch-wrapper,
+.paging-table .bootstrap-switch.bootstrap-switch-wrapper {
+  height: 25px !important;
+}
+.dashboard-table-holder .bootstrap-switch-handle-on,
+.paging-table .bootstrap-switch-handle-on,
+.dashboard-table-holder .bootstrap-switch-handle-off,
+.paging-table .bootstrap-switch-handle-off {
+  line-height: 10px !important;
+  width: 40px !important;
+  position: relative;
+  top: -3px;
+}
+.dashboard-table-holder .bootstrap-switch-handle-off,
+.paging-table .bootstrap-switch-handle-off {
+  width: 40px !important;
+}
+.dashboard-table-holder .bootstrap-switch.bootstrap-switch-wrapper .bootstrap-switch-label,
+.paging-table .bootstrap-switch.bootstrap-switch-wrapper .bootstrap-switch-label {
+  height: 21px !important;
+  width: 21px !important;
 }
 [class^="nested-grid-"],
 [class*=" nested-grid-"] {

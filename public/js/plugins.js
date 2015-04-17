@@ -179,15 +179,27 @@
     $('.dropdown-menu li:first-child .dropdown-select .card-content').trigger('click');
     /* On/Off switch init */
     var swithcConfigObj = {
-        size: "small",
-        onColor: "primary",
-        offColor: "primary",
-        onText: "&nbsp;",
-        offText: "&nbsp;",
-        handleWidth: 10
-    };
+            size: "small",
+            onColor: "primary",
+            offColor: "primary",
+            onText: "&nbsp;",
+            offText: "&nbsp;",
+            handleWidth: 10
+        },
+        dashboardSwitchConfig = {
+            size: "small",
+            onColor: "primary",
+            offColor: "primary",
+            onText: "ON",
+            offText: "OFF",
+            handleWidth: 10
+        };
     if($("[name='rev-checkbox']").length > 0){
         $("[name='rev-checkbox']").bootstrapSwitch(swithcConfigObj);
+    }
+
+    if($("[name='dash-checkbox']").length > 0){
+        $("[name='dash-checkbox']").bootstrapSwitch(dashboardSwitchConfig);
     }
 
     $('.switch-holder [name="on-switch"]').on('click', function(){
