@@ -1371,6 +1371,26 @@ label {
   margin-left: -2px;
   margin-right: 2px;
 }
+.small-switch .bootstrap-switch {
+  margin-left: 4px;
+}
+.small-switch .bootstrap-switch.bootstrap-switch-wrapper {
+  height: 25px !important;
+}
+.small-switch .bootstrap-switch-handle-on,
+.small-switch .bootstrap-switch-handle-off {
+  line-height: 10px !important;
+  width: 40px !important;
+  position: relative;
+  top: -3px;
+}
+.small-switch .bootstrap-switch-handle-off {
+  width: 40px !important;
+}
+.small-switch .bootstrap-switch.bootstrap-switch-wrapper .bootstrap-switch-label {
+  height: 21px !important;
+  width: 21px !important;
+}
 @media (max-width: 991px) {
   .uploaded-docs-holder {
     margin: 0 auto;
@@ -4553,31 +4573,9 @@ body {
 .paging-table.grid:last-child .nested-grid-12 ul li {
   margin-right: -9%;
 }
-.dashboard-table-holder .bootstrap-switch,
-.paging-table .bootstrap-switch {
-  margin-left: 4px;
-}
-.dashboard-table-holder .bootstrap-switch.bootstrap-switch-wrapper,
-.paging-table .bootstrap-switch.bootstrap-switch-wrapper {
-  height: 25px !important;
-}
-.dashboard-table-holder .bootstrap-switch-handle-on,
-.paging-table .bootstrap-switch-handle-on,
-.dashboard-table-holder .bootstrap-switch-handle-off,
-.paging-table .bootstrap-switch-handle-off {
-  line-height: 10px !important;
-  width: 40px !important;
-  position: relative;
-  top: -3px;
-}
-.dashboard-table-holder .bootstrap-switch-handle-off,
-.paging-table .bootstrap-switch-handle-off {
-  width: 40px !important;
-}
-.dashboard-table-holder .bootstrap-switch.bootstrap-switch-wrapper .bootstrap-switch-label,
-.paging-table .bootstrap-switch.bootstrap-switch-wrapper .bootstrap-switch-label {
-  height: 21px !important;
-  width: 21px !important;
+.dashboard-table-holder .small-switch,
+.paging-table .small-switch {
+  margin-top: -3px;
 }
 [class^="nested-grid-"],
 [class*=" nested-grid-"] {
