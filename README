@@ -13,3 +13,13 @@ Server boilerplate
 Notes:
 -use Bower to install third party
 -set third party location for those instaled via Bower in .bowerrc
+
+Missing modals: 
+  -Selling 
+    -> receivedOfferes-delete-modal
+    -> myProperties-delete-confirm
+  -Buying
+    -> buying-watching-stop-watching
+    -> seller-modal-stop-following
+    -> categories-modal-stop-following
+    -> notes-delete-note
