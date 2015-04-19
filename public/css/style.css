@@ -1252,7 +1252,7 @@ body i {
   border-radius: 5px;
   border: solid 1px #c9d7d8;
   width: 100%;
-  padding: 10px;
+  padding: 8px;
   color: #a8afba;
 }
 .password {
@@ -4112,6 +4112,9 @@ body {
 }
 .dahsboard-content-container .input-holder {
   margin-bottom: 20px;
+}
+.dahsboard-content-container .chosen-container {
+  margin-bottom: 0;
 }
 .user-flyout {
   padding: 15px;

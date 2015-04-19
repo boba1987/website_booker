@@ -272,14 +272,14 @@
                 <div class=" dashboard-menu-items">
                     <div class="dashboard-main-holder clearfix">
                         <ul role="tablist">
+                            <li role="presentation" class="">
+                                <a href="#dashboardMyAccount" aria-controls="dashboardMyAccount" role="tab" data-toggle="tab" aria-expanded="true" class="prevent-default"><b>my information</b></a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#dashboardEmailSettings" aria-controls="dashboardEmailSettings" role="tab" data-toggle="tab" aria-expanded="false" class="prevent-default"><b>email settings</b></a>
+                            </li>
                             <li role="presentation" class="active">
-                                <a href="#dashboardMyAccount" aria-controls="website-tab" role="tab" data-toggle="tab" aria-expanded="true" class="prevent-default"><b>my information</b></a>
-                            </li>
-                            <li role="presentation">
-                                <a href="#dashboardEmailSettings" aria-controls="website-tab" role="tab" data-toggle="tab" aria-expanded="false" class="prevent-default"><b>email settings</b></a>
-                            </li>
-                            <li role="presentation">
-                                <a href="" class="prevent-default"><b>security settings</b></a>
+                                <a href="#dashboardsecuritySettings" aria-controls="dashboardsecuritySettings" role="tab" data-toggle="tab" aria-expanded="false" class="prevent-default"><b>security settings</b></a>
                             </li>
                             <li role="presentation">
                                 <a href="" class="prevent-default"><b>identity verification</b></a>
@@ -291,7 +291,7 @@
                     </div>
                     </div>
                     <div class="tab-content">
-                        <div id="dashboardMyAccount" role="tabpanel" class="dashboard-container tab-pane dashboard-main-holder margin-top-30 active">
+                        <div id="dashboardMyAccount" role="tabpanel" class="dashboard-container tab-pane dashboard-main-holder margin-top-30">
                             <div class="row row-correction">
                                 <div class="col-xs-12">
                                     <div class="dahsboard-content-container margin-bottom-30">
@@ -426,33 +426,143 @@
                                             </div>
                                             <form action="" class="domain-form">
                                                 <div class="input-holder col-xs-12">
-                                                    <div class="col-lg-4 col-md-12">
+                                                    <div class="col-lg-3 col-md-12">
                                                         <label for="current-email">
                                                             Current Email
                                                         </label>
                                                     </div>
-                                                    <div class="col-lg-8 col-md-12">
-                                                        <input id="current-email" placeholder="First Name" type="text" class="text-input">
+                                                    <div class="col-lg-9 col-md-12">
+                                                        <input id="current-email" placeholder="" type="text" class="text-input">
                                                     </div>
                                                 </div>
                                                 <div class="input-holder col-xs-12">
-                                                    <div class="col-lg-4 col-md-12">
+                                                    <div class="col-lg-3 col-md-12">
                                                         <label for="new-email">
                                                             New Email
                                                         </label>
                                                     </div>
-                                                    <div class="col-lg-8 col-md-12">
-                                                        <input id="new-email" placeholder="First Name" type="text" class="text-input">
+                                                    <div class="col-lg-9 col-md-12">
+                                                        <input id="new-email" placeholder="" type="text" class="text-input">
                                                     </div>
                                                 </div>
                                                 <div class="input-holder col-xs-12">
-                                                    <div class="col-lg-4 col-md-12">
-                                                        <label for="new-email">
+                                                    <div class="col-lg-3 col-md-12">
+                                                        <label for="confirm-new-email">
                                                             Confirm New Email
                                                         </label>
                                                     </div>
-                                                    <div class="col-lg-8 col-md-12">
-                                                        <input id="confirm-new-email" placeholder="First Name" type="text" class="text-input">
+                                                    <div class="col-lg-9 col-md-12">
+                                                        <input id="confirm-new-email" placeholder="" type="text" class="text-input">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 margin-bottom-30 margin-top-10">
+                                                    <div class="col-xs-12">
+                                                        <button type="submit" class="blue-button pull-right">
+                                                            SAVE
+                                                        </button>
+                                                        <a href="" class="gray-link pull-right prevent-default" data-toggle="modal" data-target="#save-draft-modal">CANCEL</a>
+                                                    </div>
+                                                </div>
+                                            </form>    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="dashboardsecuritySettings" role="tabpanel" class="dashboard-container tab-pane dashboard-main-holder margin-top-30 active">
+                            <div class="row row-correction">
+                                <div class="col-xs-12">
+                                    <div class="dahsboard-content-container margin-bottom-30">
+                                        <div class="col-lg-10 col-lg-push-1 col-md-12 margin-top-40">
+                                            <div class="col-xs-12 margin-bottom-30">
+                                                <div class="col-xs-12">
+                                                    <p class="gray-7-18">Change Password</p>
+                                                </div>
+                                            </div>
+                                            <form action="" class="domain-form">
+                                                <div class="input-holder col-xs-12">
+                                                    <div class="col-lg-3 col-md-12">
+                                                        <label for="current-email">
+                                                            Current Password
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-lg-9 col-md-12">
+                                                        <input id="current-email" placeholder="" type="password" class="text-input">
+                                                    </div>
+                                                </div>
+                                                <div class="input-holder col-xs-12">
+                                                    <div class="col-lg-3 col-md-12">
+                                                        <label for="new-email">
+                                                            New Password
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-lg-9 col-md-12">
+                                                        <input id="new-email" placeholder="" type="password" class="text-input">
+                                                    </div>
+                                                </div>
+                                                <div class="input-holder col-xs-12">
+                                                    <div class="col-lg-3 col-md-12">
+                                                        <label for="confirm-new-email">
+                                                            Confirm New Password
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-lg-9 col-md-12">
+                                                        <input id="confirm-new-email" placeholder="" type="password" class="text-input">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 margin-bottom-30 margin-top-30">
+                                                    <div class="col-xs-12">
+                                                        <p class="gray-7-18">Security Questions</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 input-holder">
+                                                    <div class="col-lg-3 col-md-4 col-sm-12">
+                                                        <label for="sec-question-1">
+                                                            Question:
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-lg-9 col-md-8 col-sm-12">
+                                                        <select name="" id="sec-question-1" class="chosen-select">
+                                                            <option value="">Lorem ipsum</option>
+                                                            <option value="">dolor sit amet</option>
+                                                            <option value="">Laboriosam ducimus</option>
+                                                            <option value="">Illum, facere.</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="input-holder col-xs-12">
+                                                    <div class="col-lg-3 col-md-12">
+                                                        <label for="sec-answer-1">
+                                                            Answer:
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-lg-9 col-md-12">
+                                                        <input id="sec-answer-1" placeholder="" type="password" class="text-input">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 input-holder">
+                                                    <div class="col-lg-3 col-md-4 col-sm-12">
+                                                        <label for="sec-question-1">
+                                                            Question:
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-lg-9 col-md-8 col-sm-12">
+                                                        <select name="" id="sec-question-1" class="chosen-select">
+                                                            <option value="">Lorem ipsum</option>
+                                                            <option value="">dolor sit amet</option>
+                                                            <option value="">Laboriosam ducimus</option>
+                                                            <option value="">Illum, facere.</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="input-holder col-xs-12">
+                                                    <div class="col-lg-3 col-md-12">
+                                                        <label for="sec-answer-1">
+                                                            Answer:
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-lg-9 col-md-12">
+                                                        <input id="sec-answer-1" placeholder="" type="password" class="text-input">
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-12 margin-bottom-30 margin-top-10">
