@@ -3670,6 +3670,11 @@ body {
   margin: 0 14px;
   border: solid 1px #c9d7d8;
 }
+.dropdown-select .dropdown-menu {
+  width: 100%;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
 .dropdown-select .icon-arrow {
   font-family: 'Glyphicons Halflings';
   font-style: normal;
@@ -4098,12 +4103,15 @@ body {
   min-width: 1000px;
 }
 .dahsboard-content-container {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
   background: white;
   border: solid 1px #c9d7d8;
   overflow: hidden;
+}
+.dahsboard-content-container .input-holder {
+  margin-bottom: 20px;
 }
 .user-flyout {
   padding: 15px;
@@ -4165,7 +4173,7 @@ body {
   border-radius: 5px;
   border: solid 1px #e6e9ee;
   width: 330px;
-  right: 0;
+  right: -1px;
   left: auto;
   -webkit-box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.2) !important;
   -moz-box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.2) !important;
