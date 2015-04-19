@@ -50,6 +50,24 @@ ul {
 .button-white-large:hover {
   background: #c9d7d8;
 }
+.white-button {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: white;
+  padding: 9px 20px;
+  color: #c9d7d8;
+  border: solid 2px #c9d7d8;
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+}
+.white-button:hover,
+.white-button:active,
+.white-button:focus {
+  text-decoration: none;
+  color: #c9d7d8;
+}
 /* Common mixin styles */
 .text-ellipsis {
   white-space: nowrap;
