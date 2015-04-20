@@ -146,6 +146,7 @@
             }]
         });
     };
+    /* Data provided to chart */
     var xAxisCategories = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'],
         yAxixData = [ 1100, 3020, 3300, 3350, 3609, 6400, 10005, 14036, 20063, 30057, 30000, 26000];
     if($('.highcharts-container').length > 0){
