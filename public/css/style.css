@@ -6,8 +6,7 @@ ul {
 }
 /* Color styles */
 /* Buttons styles */
-.blue-button,
-.gray-button {
+.button-common {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
@@ -19,20 +18,49 @@ ul {
   display: inline-block;
   text-transform: uppercase;
 }
-.blue-button:hover,
-.gray-button:hover,
-.blue-button:active,
-.gray-button:active,
-.blue-button:focus,
-.gray-button:focus {
+.button-common:hover,
+.button-common:active,
+.button-common:focus {
   text-decoration: none;
   color: white;
 }
 .blue-button {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: white;
+  padding: 8px 20px;
+  min-width: 120px;
+  text-align: center;
+  border: none;
+  display: inline-block;
+  text-transform: uppercase;
   background: #0084ff;
 }
+.blue-button:hover,
+.blue-button:active,
+.blue-button:focus {
+  text-decoration: none;
+  color: white;
+}
 .gray-button {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: white;
+  padding: 8px 20px;
+  min-width: 120px;
+  text-align: center;
+  border: none;
+  display: inline-block;
+  text-transform: uppercase;
   background: #a8afba;
+}
+.gray-button:hover,
+.gray-button:active,
+.gray-button:focus {
+  text-decoration: none;
+  color: white;
 }
 .button-white-large {
   white-space: nowrap;
