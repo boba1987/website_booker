@@ -15,6 +15,20 @@
   }
 }
 
+.small-button-common{
+  .border-radius(20px);
+  
+  color: white;
+  font-size: 12px;
+  text-transform: capitalize;
+  padding: 5px 12px;
+  line-height: 25px;
+
+  .glyphicon{
+    margin-right: 5px;
+  }
+}
+
 .blue-button{
   .button-common;
   background: @blue-1;
@@ -55,4 +69,38 @@
     text-decoration: none;
     color: @gray-6;
   }
+}
+
+.small-button{
+  .border-radius(20px);
+  
+  color: white;
+  font-size: 12px;
+  text-transform: capitalize;
+  padding: 5px 10px;
+  line-height: 25px;
+
+  .glyphicon{
+    margin-right: 5px;
+  }
+}
+
+.gray-notification-button{
+  .small-button-common;
+  background: @blue-3;
+}
+
+.blue-notification-button{
+  .small-button-common;
+  background: @blue-1;
+}
+
+.blue-button-fb{
+  .button-common;
+  background: @blue-7;
+}
+
+.blue-button-li{
+  .button-common;
+  background: @blue-12;
 }

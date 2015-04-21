@@ -24,6 +24,19 @@ ul {
   text-decoration: none;
   color: white;
 }
+.small-button-common {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+  text-transform: capitalize;
+  padding: 5px 12px;
+  line-height: 25px;
+}
+.small-button-common .glyphicon {
+  margin-right: 5px;
+}
 .blue-button {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -95,6 +108,85 @@ ul {
 .white-button:focus {
   text-decoration: none;
   color: #c9d7d8;
+}
+.small-button {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+  text-transform: capitalize;
+  padding: 5px 10px;
+  line-height: 25px;
+}
+.small-button .glyphicon {
+  margin-right: 5px;
+}
+.gray-notification-button {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+  text-transform: capitalize;
+  padding: 5px 12px;
+  line-height: 25px;
+  background: #c9d7d8;
+}
+.gray-notification-button .glyphicon {
+  margin-right: 5px;
+}
+.blue-notification-button {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+  text-transform: capitalize;
+  padding: 5px 12px;
+  line-height: 25px;
+  background: #0084ff;
+}
+.blue-notification-button .glyphicon {
+  margin-right: 5px;
+}
+.blue-button-fb {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: white;
+  padding: 8px 20px;
+  min-width: 120px;
+  text-align: center;
+  border: none;
+  display: inline-block;
+  text-transform: uppercase;
+  background: #3b5998;
+}
+.blue-button-fb:hover,
+.blue-button-fb:active,
+.blue-button-fb:focus {
+  text-decoration: none;
+  color: white;
+}
+.blue-button-li {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: white;
+  padding: 8px 20px;
+  min-width: 120px;
+  text-align: center;
+  border: none;
+  display: inline-block;
+  text-transform: uppercase;
+  background: #0077b5;
+}
+.blue-button-li:hover,
+.blue-button-li:active,
+.blue-button-li:focus {
+  text-decoration: none;
+  color: white;
 }
 /* Common mixin styles */
 .text-ellipsis {
@@ -3449,7 +3541,7 @@ body {
 }
 .gray-link {
   display: inline-block;
-  color: #a8afba;
+  color: #a8afba !important;
   padding: 10px;
   margin: 0 20px;
 }
@@ -4143,6 +4235,9 @@ body {
 }
 .dahsboard-content-container .chosen-container {
   margin-bottom: 0;
+}
+.dahsboard-content-container .user-flyout {
+  padding: 0;
 }
 .user-flyout {
   padding: 15px;
