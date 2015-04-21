@@ -4239,6 +4239,15 @@ body {
 .dahsboard-content-container .user-flyout {
   padding: 0;
 }
+.dahsboard-content-container .custom-checkbox {
+  display: block;
+}
+.dahsboard-content-container .custom-checkbox label {
+  color: #3e6372;
+  padding-top: 10px;
+  font-size: 12px;
+  text-transform: none;
+}
 .user-flyout {
   padding: 15px;
   cursor: pointer;
