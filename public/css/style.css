@@ -5285,6 +5285,12 @@ body {
   padding: 12px;
   padding-left: 9px;
 }
+.dashboard-modal .modal-dialog {
+  width: 400px;
+}
+.dashboard-modal .modal-dialog .modal-content {
+  padding: 30px;
+}
 /* Notifications page styles */
 .notifications-center-holder {
   -webkit-border-radius: 5px;
