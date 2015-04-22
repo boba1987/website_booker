@@ -5280,6 +5280,11 @@ body {
   width: 150px;
   height: 150px;
 }
+.dashboard-modal .info-icon-blue-large,
+.dashboard-modal .info-icon-gray-large {
+  padding: 12px;
+  padding-left: 9px;
+}
 /* Notifications page styles */
 .notifications-center-holder {
   -webkit-border-radius: 5px;

@@ -285,7 +285,9 @@
                                     </li>
                                     <li class="width-10 price"></li>
                                     <li class="width-10 price"></li>
-                                    <li class="width-10 price"></li>
+                                    <li class="width-10 price">
+                                        <a href="" data-toggle="modal" data-target="#delete-listing-modal">del</a>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="table-footer table-navigation clearfix">
@@ -304,6 +306,47 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Delete listing Modal -->
+        <div class="modal fade dashboard-modal" id="delete-listing-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content modal-gray">
+                    <div class="info-icon-gray-large">
+                        <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                    </div>
+                    <p class="gray-7-20 text-center text-capitalize margin-top-20">
+                        please confirm
+                    </p>
+                    <p class="gray-7-14 text-center margin-0">You <b>cannot</b> undo a listing deletion.</p>
+                    <p class="gray-7-14 text-center">
+                        <i>
+                            Refunds <b>will not</b> be used for deleted items.
+                        </i>
+                    </p>
+                    <form action="" class="clearfix">
+                        <div class="input-holder col-lg-12 col-md-12">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <label for="website-card-type">
+                                        Please enter account password to confirm
+                                    </label>
+                                </div>
+                                <div class="col-lg-12">
+                                    <input id="website-card-type" type="password" class="text-input">
+                                </div>
+                            </div>
+                            <button type="submit" class="blue-button pull-right margin-top-20 prevent-default" data-dismiss="modal" aria-label="Close">
+                                yes
+                            </button>
+                            <a href="" class="gray-button margin-top-20 prevent-default" data-dismiss="modal" aria-label="Close">
+                                no
+                            </a>
+                            </form>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
