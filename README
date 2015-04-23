@@ -15,8 +15,6 @@ Notes:
 -set third party location for those instaled via Bower in .bowerrc
 
 Missing modals: 
-  -Buying
-    -> notes-delete-note
   -My Account
   	-> email-settings-modal
   	-> identity-verification
