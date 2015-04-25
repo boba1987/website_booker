@@ -1086,3 +1086,83 @@
 		}
 	}
 }
+
+.credit-cards-list{
+	margin-bottom: 80px;
+	margin-left: 20px;
+
+	li{
+		.border-radius(5px);
+		position: relative;
+		background: gray;	
+		width: 340px;
+		height: 195px;
+		float: left;
+		margin: 0 35px 45px 0;
+
+		&.default{
+			.def-card{
+				display: block;
+			}
+
+			.make-def{
+				display: none;
+			}
+		}
+
+		.holder, .expires, .card-num{
+			position: absolute;
+			color: white;
+			font-size: 14px;
+		}
+
+		.holder{
+			left: 25px;
+			bottom: 30px;
+			width: 200px;
+		}
+
+		.expires{
+			right: 30px;
+			bottom: 30px;
+		}
+
+		.card-num{
+			right: 30px;
+			top: 85px;
+		}
+
+		.def-card, .make-def{
+			position: absolute;
+			left: 0;
+			bottom: -30px;
+			font-size: 12px;
+			color: @gray-6;
+		}
+
+		.make-def{
+			bottom: -20px;
+		}
+
+		.delete-card{
+			position: absolute;
+			right: 0;
+			bottom: -25px;
+		}
+
+		.def-card{
+			display: none;
+		}
+
+		&.add-card{
+			.border-radius(5px);
+			background: @gray-33;
+			border: dashed 2px @blue-3;
+			color: @blue-3;
+			text-align: center;
+			p{
+				margin-top: 120px;
+			}
+		}
+	}
+}

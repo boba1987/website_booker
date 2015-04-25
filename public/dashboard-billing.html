@@ -328,9 +328,141 @@
                         </div>
                         <div id="dashboardPayment" role="tabpanel" class="dashboard-container tab-pane dashboard-main-holder margin-top-30">
                             <div class="row row-correction">
-                                <div class="col-xs-12">
-                                    <div class="dahsboard-content-container margin-bottom-30">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit deserunt incidunt repellat neque pariatur fuga quisquam possimus nisi impedit odit at ex repudiandae dolorum assumenda, optio, vel nulla quasi, praesentium.
+                                <ul class="credit-cards-list clearfix">
+                                    <li class="default">
+                                        <div class="holder">
+                                            Vladimir Babic
+                                        </div>
+                                        <div class="expires">
+                                            02/18
+                                        </div>
+                                        <div class="card-num">
+                                            2654
+                                        </div>
+                                        <a href="" class="delete-card prevent-default">del</a>
+                                        <p class="def-card">Default Card</p>
+                                        <a href="" class="make-def prevent-default">Make Default</a>
+                                    </li>
+                                    <li>
+                                        <div class="holder">
+                                            Vladimir Babic
+                                        </div>
+                                        <div class="expires">
+                                            02/18
+                                        </div>
+                                        <div class="card-num">
+                                            2654
+                                        </div>
+                                        <a href="" class="delete-card prevent-default">del</a>
+                                        <p class="def-card">Default Card</p>
+                                        <a href="" class="make-def prevent-default">Make Default</a>
+                                    </li>
+                                    <li class="add-card">
+                                        <p>ADD PAYMENT METHOD</p>
+                                    </li>
+                                </ul>
+                                <div class="col-lg-8 col-lg-push-2">
+                                    <div class="margin-bottom-120">
+                                        <div class="promote-form premium domain-form">
+                                            <p class="gray-7-24 text-center margin-bottom-20 margin-top-20">Add Card</p>
+                                            <form action="" id="add-card-form" class="clearfix">
+                                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                                    <img src="img/credit-cards.png" class="sm-center" alt="">
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-6 clearfix">
+                                                    <img src="img/trusts.png" class="pull-right sm-center" alt="">
+                                                </div>
+                                                <div class="input-holder col-lg-6 col-md-6">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <label for="website-card-type">
+                                                                card type
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <input id="website-card-type" type="text" class="text-input">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="input-holder col-lg-6 col-md-6">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <label for="website-card-number">
+                                                                card number
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <input id="website-card-number" type="text" class="text-input">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="input-holder col-lg-3 col-md-3">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <label class="visible-xs visible-sm" for="website-card-exp-mm">
+                                                                expires on MM
+                                                            </label>
+                                                            <label class="hidden-xs hidden-sm" for="">
+                                                                expires on
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <input id="website-card-exp-mm" type="text" class="text-input" placeholder="MM">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="input-holder col-lg-3 col-md-3">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <label class="visible-xs visible-sm" for="website-card-exp-yy">
+                                                                expires on YY
+                                                            </label>
+                                                            <label class="hidden-xs hidden-sm" for="website-card-number">
+                                                                
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <input id="website-card-exp-yy" type="text" class="text-input" placeholder="YY">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="input-holder col-lg-6 col-md-6">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <label for="website-sec-code">
+                                                                security code (CCV)
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <input id="website-sec-code" type="text" class="text-input">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                               
+                                                <div class="input-holder col-lg-6 col-md-6">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <label for="website-card-holder">
+                                                                card holder
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <input id="website-contry" type="text" class="text-input">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-12 margin-top-30">
+                                                    <a href="" class="pull-left gray-button">CANCEL</a>
+                                                    <button type="submit" class="blue-button pull-right">
+                                                        ADD CARD
+                                                    </button>
+                                                </div>
+                                            </form>    
+                                        </div>
                                     </div>
                                 </div>
                             </div>

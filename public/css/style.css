@@ -5291,6 +5291,78 @@ body {
 .dashboard-modal .modal-dialog .modal-content {
   padding: 30px;
 }
+.credit-cards-list {
+  margin-bottom: 80px;
+  margin-left: 20px;
+}
+.credit-cards-list li {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+  background: gray;
+  width: 340px;
+  height: 195px;
+  float: left;
+  margin: 0 35px 45px 0;
+}
+.credit-cards-list li.default .def-card {
+  display: block;
+}
+.credit-cards-list li.default .make-def {
+  display: none;
+}
+.credit-cards-list li .holder,
+.credit-cards-list li .expires,
+.credit-cards-list li .card-num {
+  position: absolute;
+  color: white;
+  font-size: 14px;
+}
+.credit-cards-list li .holder {
+  left: 25px;
+  bottom: 30px;
+  width: 200px;
+}
+.credit-cards-list li .expires {
+  right: 30px;
+  bottom: 30px;
+}
+.credit-cards-list li .card-num {
+  right: 30px;
+  top: 85px;
+}
+.credit-cards-list li .def-card,
+.credit-cards-list li .make-def {
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  font-size: 12px;
+  color: #c9d7d8;
+}
+.credit-cards-list li .make-def {
+  bottom: -20px;
+}
+.credit-cards-list li .delete-card {
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+}
+.credit-cards-list li .def-card {
+  display: none;
+}
+.credit-cards-list li.add-card {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: #e6e9ed;
+  border: dashed 2px #c9d7d8;
+  color: #c9d7d8;
+  text-align: center;
+}
+.credit-cards-list li.add-card p {
+  margin-top: 120px;
+}
 /* Notifications page styles */
 .notifications-center-holder {
   -webkit-border-radius: 5px;
