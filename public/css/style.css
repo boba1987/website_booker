@@ -5355,6 +5355,7 @@ body {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  cursor: pointer;
   background: #e6e9ed;
   border: dashed 2px #c9d7d8;
   color: #c9d7d8;
