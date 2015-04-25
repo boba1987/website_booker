@@ -4269,7 +4269,7 @@ body {
   z-index: 1;
   top: 0;
   height: 100%;
-  min-height: 650px;
+  min-height: 750px;
   background: #354052;
 }
 .dashboard-nav .nav-items-holder li {
