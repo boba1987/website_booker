@@ -278,14 +278,14 @@
                             <li role="presentation">
                                 <a href="#dashboardEmailSettings" aria-controls="dashboardEmailSettings" role="tab" data-toggle="tab" aria-expanded="false" class="prevent-default"><b>email settings</b></a>
                             </li>
-                            <li role="presentation" class="active">
+                            <li role="presentation">
                                 <a href="#dashboardsecuritySettings" aria-controls="dashboardsecuritySettings" role="tab" data-toggle="tab" aria-expanded="false" class="prevent-default"><b>security settings</b></a>
                             </li>
-                            <li role="presentation">
-                                <a href="" class="prevent-default"><b>identity verification</b></a>
+                            <li role="presentation" class="">
+                                <a href="#dashboardIdentityVerification" class="prevent-default" aria-controls="dashboardIdentityVerification" role="tab" data-toggle="tab" aria-expanded="false"><b>identity verification</b></a>
                             </li>
-                            <li role="presentation">
-                                <a href="" class="prevent-default"><b>notifications</b></a>
+                            <li role="presentation" class="active">
+                                <a href="#dashboardNotificationsSettings" class="prevent-default" aria-controls="dashboardsecuritySettings" role="tab" data-toggle="tab" aria-expanded="false"><b>notifications</b></a>
                             </li>
                         </ul>
                     </div>
@@ -469,7 +469,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="dashboardsecuritySettings" role="tabpanel" class="dashboard-container tab-pane dashboard-main-holder margin-top-30 active">
+                        <div id="dashboardsecuritySettings" role="tabpanel" class="dashboard-container tab-pane dashboard-main-holder margin-top-30">
                             <div class="row row-correction">
                                 <div class="col-xs-12">
                                     <div class="dahsboard-content-container margin-bottom-30">
@@ -574,6 +574,180 @@
                                                     </div>
                                                 </div>
                                             </form>    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="dashboardIdentityVerification" role="tabpanel" class="dashboard-container tab-pane dashboard-main-holder margin-top-30">
+                            <div class="row row-correction">
+                                <div class="col-xs-12">
+                                    <div class="dahsboard-content-container margin-bottom-30">
+                                        <div class="col-lg-10 col-lg-push-1 col-md-12 margin-top-40">
+                                            <div class="col-xs-12 margin-bottom-30">
+                                                <div class="col-xs-12">
+                                                    <p class="gray-7-18 pull-left">Phone Verification &nbsp;&nbsp;</p>
+                                                    <span class="gray-notification-button">
+                                                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                                        not verified
+                                                    </span>
+                                                    <span class="blue-notification-button">
+                                                        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                                                        verified
+                                                    </span>
+                                                    <p class="gray-7-12 margin-top-30">
+                                                        <b>
+                                                            Phone verification is required for all users. It helps build confidence by linking your account to verified phone number.
+                                                        </b>
+                                                    </p>
+                                                    <div class="row">
+                                                        <div class="col-lg-10 margin-bottom-20">
+                                                            <div class="row">
+                                                                <div class="col-lg-3 col-md-12 col-sm-12">
+                                                                    <label for="sec-question-1">
+                                                                        Phone Number:
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
+                                                                    <select name="" id="sec-question-1" class="chosen-select">
+                                                                        <option value="">Lorem ipsum</option>
+                                                                        <option value="">dolor sit amet</option>
+                                                                        <option value="">Laboriosam ducimus</option>
+                                                                        <option value="">Illum, facere.</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-8 col-sm-8 col-xs-8">
+                                                                    <input id="phone-number-id" placeholder="" type="text" class="text-input">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-2">
+                                                            <button class="blue-button">verify</button>
+                                                        </div>
+                                                    </div>
+                                                    <p class="gray-7-18 margin-top-80">Connect To Facebook</p>
+                                                    <p class="gray-7-12 margin-top-30 margin-bottom-20">
+                                                        <b>
+                                                            Connect your account to Facebook. This helps as it instills confidence to other users that your identity is known.
+                                                        </b>
+                                                    </p>
+                                                    <a href="" class="blue-button-fb">
+                                                        Connect
+                                                    </a>
+                                                    <div class="user-flyout">
+                                                        <img src="" alt="">
+                                                        <a id="" class="dashboardUser prevent-default" href="">Vladimir Babic &nbsp;
+                                                        </a>
+                                                        <a href="" class="gray-link pull-right">disconect</a>
+                                                    </div>
+                                                    <p class="gray-7-18 margin-top-80">Connect To Linkedin</p>
+                                                    <p class="gray-7-12 margin-top-30 margin-bottom-20">
+                                                        <b>
+                                                            Connect your account to Linkedin. This helps as it instills confidence to other users that your identity is known.
+                                                        </b>
+                                                    </p>
+                                                    <a href="" class="blue-button-fb">
+                                                        Connect
+                                                    </a>
+                                                    <div class="user-flyout padding-0">
+                                                        <img src="" alt="">
+                                                        <a id="" class="dashboardUser prevent-default" href="">Vladimir Babic &nbsp;
+                                                        </a>
+                                                        <a href="" class="gray-link pull-right">disconect</a>
+                                                    </div>
+                                                    <div class="col-xs-12 margin-bottom-30 margin-top-30">
+                                                        <div class="col-xs-12">
+                                                            <button type="submit" class="blue-button pull-right">
+                                                                SAVE
+                                                            </button>
+                                                            <a href="" class="gray-link pull-right prevent-default" data-toggle="modal" data-target="#save-draft-modal">CANCEL</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="dashboardNotificationsSettings" role="tabpanel" class="dashboard-container tab-pane dashboard-main-holder margin-top-30 active">
+                            <div class="row row-correction">
+                                <div class="col-xs-12">
+                                    <div class="dahsboard-content-container margin-bottom-30">
+                                        <div class="col-lg-10 col-lg-push-1 col-md-12 margin-top-40">
+                                            <div class="col-xs-12 margin-bottom-30">
+                                                <div class="col-xs-12">
+                                                    <p class="gray-7-18">Email Preferences</p>
+                                                    <p class="gray-7-12 margin-top-30">
+                                                        <b>
+                                                            General 
+                                                        </b>
+                                                    </p>
+                                                    <form action="">
+                                                        <div class="custom-checkbox">
+                                                            <label for="notify-notifications">Notify me about changes to Website Broker</label>
+                                                            <input id="notify-notifications" type="checkbox">
+                                                        </div>
+                                                        <div class="custom-checkbox">
+                                                            <label for="subscribe-notification">Subscribe to the Website Broker Newsletter</label>
+                                                            <input id="subscribe-notification" type="checkbox">
+                                                        </div>
+                                                        <div class="custom-checkbox">
+                                                            <label for="offers-notifications">Allow Website Broker to email me special offers</label>
+                                                            <input id="offers-notifications" type="checkbox">
+                                                        </div>
+                                                        <div class="custom-checkbox">
+                                                            <label for="private-message-noticications">Notify me when I receive a private message</label>
+                                                            <input id="private-message-noticications" type="checkbox">
+                                                        </div>
+                                                        <hr>
+                                                        <p class="gray-7-12 margin-top-30">
+                                                            <b>
+                                                                Buying 
+                                                            </b>
+                                                        </p>
+                                                        <div class="custom-checkbox">
+                                                            <label for="comment-notifications">Notify me when a comment is written to a listing I am watching</label>
+                                                            <input id="comment-notifications" type="checkbox">
+                                                        </div>
+                                                        <div class="custom-checkbox">
+                                                            <label for="new-listing-notification">Notify me when a new listing is publised no a listing I am watching</label>
+                                                            <input id="new-listing-notification" type="checkbox">
+                                                        </div>
+                                                        <div class="custom-checkbox">
+                                                            <label for="create-listing-notifications">Notify me when a seller I am watching creates a new listing</label>
+                                                            <input id="create-listing-notifications" type="checkbox">
+                                                        </div>
+                                                        <div class="custom-checkbox">
+                                                            <label for="price-change-noticications">Notify me when a seller changes a price of a listing I am watching</label>
+                                                            <input id="price-change-noticications" type="checkbox">
+                                                        </div>
+                                                        <hr>
+                                                        <p class="gray-7-12 margin-top-30">
+                                                            <b>
+                                                                Selling 
+                                                            </b>
+                                                        </p>
+                                                        <div class="custom-checkbox">
+                                                            <label for="offer-notifications">Notify me when an offer is submited for one of my listings</label>
+                                                            <input id="offer-notifications" type="checkbox">
+                                                        </div>
+                                                        <div class="custom-checkbox">
+                                                            <label for="comment-own-notification">Notify me when a comment is writen on a listing I own</label>
+                                                            <input id="comment-own-notification" type="checkbox">
+                                                        </div>
+                                                        <hr>
+                                                        <div class="col-xs-12 margin-bottom-30 margin-top-30">
+                                                            <div class="col-xs-12">
+                                                                <button type="submit" class="blue-button pull-right">
+                                                                    SAVE
+                                                                </button>
+                                                                <a href="" class="gray-link pull-right prevent-default" data-toggle="modal" data-target="#save-draft-modal">CANCEL</a>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

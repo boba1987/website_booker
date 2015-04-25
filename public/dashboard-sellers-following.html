@@ -195,7 +195,7 @@
                                 	<span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
                                 	<a href="">watching</a>
                             	</li>
-                                <li  class="active">
+                                <li class="active">
                                 	<span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
                                 	<a href="">following</a>
                                 </li>
@@ -280,7 +280,9 @@
                                     <li class="width-15">www.google.com</li>
                                     <li class="width-15">Today</li>
                                     <li class="width-15 price"><span class="pull-left">$</span><span class="pull-right">750</span></li>
-                                    <li class="width-10 price"></li>
+                                    <li class="width-10 price">
+                                        <a href="" data-toggle="modal" data-target="#stop-following-modal">del</a>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="table-footer table-navigation clearfix">
@@ -299,6 +301,31 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stop following Modal -->
+        <div class="modal fade dashboard-modal" id="stop-following-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content modal-gray">
+                    <div class="info-icon-gray-large">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                    </div>
+                    <p class="gray-7-20 text-center text-capitalize margin-top-20">
+                        please confirm
+                    </p>
+                    <p class="gray-7-14 text-center margin-top-20">
+                        <i>
+                            Are you sure you want to stop following this seller?
+                        </i>
+                    </p>
+                    <a href="" class="blue-button pull-right margin-top-20 prevent-default" data-dismiss="modal" aria-label="Close">
+                        yes
+                    </a>
+                    <a href="" class="gray-button margin-top-20 prevent-default" data-dismiss="modal" aria-label="Close">
+                        no
+                    </a>
                 </div>
             </div>
         </div>

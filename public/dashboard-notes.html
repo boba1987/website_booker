@@ -191,7 +191,7 @@
                                     <a href="">my offeres</a>
                                     <span class="notifications-submenu">888</span>
                                 </li>
-                                <li class="active">
+                                <li>
                                     <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
                                     <a href="">watching</a>
                                 </li>
@@ -199,7 +199,7 @@
                                     <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
                                     <a href="">following</a>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
                                     <a href="">notes</a>
                                 </li>
@@ -241,7 +241,7 @@
             </aside>
 
             <div class="dashboard-page-tittle clearfix">
-                deals   
+                notes   
             </div>
             
             <div id="dashboardNotes" class="dashboard-container dashboard-main-holder">
@@ -313,6 +313,31 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- delete note Modal -->
+        <div class="modal fade dashboard-modal" id="delete-note-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content modal-gray">
+                    <div class="info-icon-gray-large">
+                        <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                    </div>
+                    <p class="gray-7-20 text-center text-capitalize margin-top-20">
+                        please confirm
+                    </p>
+                    <p class="gray-7-14 text-center margin-top-20">
+                        <i>
+                            Are you sure you want to delete this note?
+                        </i>
+                    </p>
+                    <a href="" class="blue-button pull-right margin-top-20 prevent-default" data-dismiss="modal" aria-label="Close">
+                        yes
+                    </a>
+                    <a href="" class="gray-button margin-top-20 prevent-default" data-dismiss="modal" aria-label="Close">
+                        no
+                    </a>
                 </div>
             </div>
         </div>
