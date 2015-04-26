@@ -1614,6 +1614,16 @@ label {
   z-index: 99;
   background: transparent;
 }
+label {
+  min-height: 15px;
+  font-size: 12px;
+}
+.pin-input-holder input {
+  float: left;
+  width: 22%;
+  margin: 0 1.5%;
+  text-align: center;
+}
 /*!
 Chosen, a Select Box Enhancer for jQuery and Prototype
 by Patrick Filler for Harvest, http://getharvest.com
@@ -5283,7 +5293,6 @@ body {
 .dashboard-modal .info-icon-blue-large,
 .dashboard-modal .info-icon-gray-large {
   padding: 12px;
-  padding-left: 9px;
 }
 .dashboard-modal .modal-dialog {
   width: 400px;
