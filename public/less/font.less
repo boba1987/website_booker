@@ -61,8 +61,8 @@ body{
 
 //get custom font mixin
 .getFont(@size, @color: @black-1, @line-height: 1.5) { 
-  font-size: ~"@{size}px";
-  color: ~"@{color}";
+  font-size: ~"@{size}px" !important;
+  color: ~"@{color}" !important;
   line-height: @line-height;
 }
 
@@ -96,6 +96,10 @@ body{
 //prints out .gray-7-30
 .loopingClassGray (0, 7) {} 
 .loopingClassGray(@iterationsG, 7);
+
+//prints out .gray-10-30
+.loopingClassGray (0, 10) {} 
+.loopingClassGray(@iterationsG, 10);
 
 //prints out .gray-16-30
 .loopingClassGray (0, 16) {} 
