@@ -347,22 +347,14 @@
 			a{
 				padding: 10px 0;
 			}
-
-			.notifications-submenu{
-				.border-radius(10px);
-				position: absolute;
-				right: 20px;
-				top: 10px;
-				padding: 2px 7px;
-				background: @yellow-3;
-				color: @gray-21;
-				font-size: 12px;
-  				line-height: 16px;
-			}
 		}
 
 		.glyphicon.glyphicon-triangle-left{
 		  	top: 13px;
+		}
+
+		.notifications-submenu{
+			top: 10px;
 		}
 	}
 
@@ -376,6 +368,18 @@
   			display: none;
 		}
 	}
+}
+
+.notifications-submenu{
+	.border-radius(10px);
+	position: absolute;
+	right: 20px;
+	top: 17px;
+	padding: 2px 7px;
+	background: @yellow-3;
+	color: @gray-21;
+	font-size: 12px;
+	line-height: 16px;
 }
 
 .copy-right{
@@ -546,10 +550,9 @@
 
 	.table-list{
 		max-height: 293px;
-  		overflow-y: scroll;
-  		padding: 0 20px;
-  		font-weight: bold;
-  		.getFont(12, @gray-7);
+		overflow-y: scroll;
+		padding: 0 20px;
+		.getFont(12, @gray-7);
 
   		&>ul{
   			border-bottom: solid 1px @gray-4;

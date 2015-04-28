@@ -4267,6 +4267,10 @@ body {
   width: 10.5% !important;
   margin: 0 1% !important;
 }
+.width-7 {
+  width: 7.5% !important;
+  margin: 0 1% !important;
+}
 .padding-0-40 {
   padding: 0 40px;
 }
@@ -4601,21 +4605,11 @@ body {
 .dashboard-nav .submenu li a {
   padding: 10px 0;
 }
-.dashboard-nav .submenu li .notifications-submenu {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  position: absolute;
-  right: 20px;
-  top: 10px;
-  padding: 2px 7px;
-  background: #ffc600;
-  color: #2f3949;
-  font-size: 12px;
-  line-height: 16px;
-}
 .dashboard-nav .submenu .glyphicon.glyphicon-triangle-left {
   top: 13px;
+}
+.dashboard-nav .submenu .notifications-submenu {
+  top: 10px;
 }
 .dashboard-nav .glyphicon {
   color: white;
@@ -4625,6 +4619,19 @@ body {
   right: -4px;
   top: 20px;
   display: none;
+}
+.notifications-submenu {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  padding: 2px 7px;
+  background: #ffc600;
+  color: #2f3949;
+  font-size: 12px;
+  line-height: 16px;
 }
 .copy-right {
   position: absolute;
@@ -4791,7 +4798,6 @@ body {
   max-height: 293px;
   overflow-y: scroll;
   padding: 0 20px;
-  font-weight: bold;
   font-size: 12px !important;
   color: #3e6372 !important;
   line-height: 1.5;
