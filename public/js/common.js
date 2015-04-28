@@ -29,11 +29,11 @@ var mainSectionHeight = $(window).height() - $('header').outerHeight();
 function dealsMain(){
 	$('.scroll-container').css({
 		'max-height': mainSectionHeight - $('.dashboard-page-tittle').outerHeight(),
-		'height' : mainSectionHeight - $('.dashboard-page-tittle').outerHeight()
+		'min-height' : 850 
 	});
 }
 
 /* Set min height on .main */
 (function(){
-	$('.main').css('min-height', mainSectionHeight);
+	$('.main').css('min-height', 850);
 }());
