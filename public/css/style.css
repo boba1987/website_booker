@@ -5486,6 +5486,46 @@ body {
 .credit-cards-list li.add-card p {
   margin-top: 120px;
 }
+.dashboard-comment-list li {
+  position: relative;
+  margin-bottom: 30px;
+}
+.dashboard-comment-list li .sender,
+.dashboard-comment-list li .comment,
+.dashboard-comment-list li .time {
+  font-size: 12px;
+}
+.dashboard-comment-list li .sender,
+.dashboard-comment-list li .time {
+  color: #88929b;
+  margin-right: 20px;
+}
+.dashboard-comment-list li .comment {
+  margin-top: 10px;
+  color: #6e7882;
+  min-width: 100%;
+}
+.dashboard-comment-list li .approved,
+.dashboard-comment-list li .declined,
+.dashboard-comment-list li .flaged {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  padding: 3px 10px;
+  font-size: 12px;
+  background: white;
+  position: absolute;
+  right: 0;
+}
+.dashboard-comment-list li .approved {
+  color: #23d200;
+}
+.dashboard-comment-list li .declined {
+  color: #df4a32;
+}
+.dashboard-comment-list li .flaged {
+  color: #88929b;
+}
 /* Notifications page styles */
 .notifications-center-holder {
   -webkit-border-radius: 5px;
