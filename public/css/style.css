@@ -4955,6 +4955,7 @@ body {
 .scroll-container {
   overflow-y: scroll;
   float: left;
+  min-height: 850px;
 }
 .scroll-container .scroll-list .desc-1 {
   font-size: 12px !important;
@@ -5568,7 +5569,8 @@ body {
 /* Deals page styles */
 #dashboardDeals,
 #dashboardNotes,
-#dashboardPropertyComments {
+#dashboardPropertyComments,
+#adminDashboardHistoryApprovals {
   padding-left: 240px;
 }
 /* Admin dashboard specific styles */
