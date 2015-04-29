@@ -5079,6 +5079,14 @@ body {
   padding-left: 290px;
   min-width: 1040px;
 }
+.dashboard-page-tittle .text-input {
+  height: 30px;
+  padding: 3px;
+}
+.dashboard-page-tittle .blue-button {
+  font-size: 14px !important;
+  padding: 5px 20px;
+}
 .mobile-navigation {
   height: 100%;
   width: 40px;
