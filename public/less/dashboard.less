@@ -722,7 +722,6 @@
 .scroll-container{
 	overflow-y: scroll;
 	float: left;
-	min-height: 850px;
 
 	.scroll-list{
 		.desc-1{
@@ -1213,4 +1212,43 @@
 			color: lighten(@gray-27, 10%);
 		}
 	}
+}
+
+.approvals{
+	padding: 0 30px;
+
+	.tabs-holder{
+		float: right;
+		margin: 0 auto;
+
+		.tab-left, .tab-right{
+			width: 30px;
+			height: 30px;
+		} 
+	}
+}
+
+.image-with-shadow{
+	.border-radius(50%);
+	overflow: hidden;
+	height: 45px;
+	width: 45px;
+	-webkit-box-shadow: inset 0px 0px 4px 0px rgba(50, 50, 50, 0.2);
+	-moz-box-shadow:    inset 0px 0px 4px 0px rgba(50, 50, 50, 0.2);
+	box-shadow:         inset 0px 0px 4px 0px rgba(50, 50, 50, 0.2);
+}
+
+.revenue-list{
+	
+}
+
+hr.gray{
+	border-color: @gray-15;
+}
+
+.white-container{
+	.border-radius(7px);
+	background: white;
+	padding: 15px;
+	border: solid 1px @gray-4;
 }

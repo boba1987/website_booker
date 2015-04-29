@@ -143,6 +143,21 @@ body{
 .loopingClassRed (0, 2) {} 
 .loopingClassRed(@iterationsR, 2);
 
+//generate red fonts
+@iterationsG: 30;
+.loopingClassGreen (@index, @num) when (@index > 9) { 
+  @fullColor: ~"@{green-@{num}}";
+  @colorName: ~"@{num}-@{index}";
+  .green-@{colorName} {
+    .getFont(@index, @fullColor);
+  } 
+  .loopingClassGreen(@index - 1, @num); 
+} 
+
+//prints out .red-30-1
+.loopingClassGreen (0, 1) {} 
+.loopingClassGreen(@iterationsG, 1);
+
 .font-normal{
   font-weight: normal;
 }
