@@ -245,23 +245,185 @@
                 <div class=" dashboard-menu-items">
                     <div class="dashboard-main-holder clearfix">
                         <ul role="tablist">
-                            <li role="presentation" class="">
+                            <li role="presentation" class="active">
                                 <a href="#singleUserId" aria-controls="singleUserId" role="tab" data-toggle="tab" aria-expanded="true" class="prevent-default"><b>identity</b></a>
                             </li>
                             <li role="presentation">
                                 <a href="#singleUserStat" aria-controls="singleUserStat" role="tab" data-toggle="tab" aria-expanded="false" class="prevent-default"><b>statistics</b></a>
                             </li>
-                            <li role="presentation" class="active">
+                            <li role="presentation" class="">
                                 <a href="#singleUserBilling" aria-controls="singleUserBilling" role="tab" data-toggle="tab" aria-expanded="false" class="prevent-default"><b>billing</b></a>
                             </li>
                         </ul>
                     </div>
                     </div>
                     <div class="tab-content">
-                        <div id="singleUserId" role="tabpanel" class="dashboard-container tab-pane dashboard-main-holder margin-top-30">
+                        <div id="singleUserId" role="tabpanel" class="dashboard-container tab-pane dashboard-main-holder margin-top-30 active">
                             <div class="row row-correction">
                                 <div class="col-xs-12">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sint harum sed, aliquam odit aperiam deleniti quae rerum dolore. Magni quibusdam, laudantium facere voluptates cum saepe atque fugiat vero commodi.
+                                    <div class="user-table-grid">
+                                        <div class="paging-table">
+                                            <div class="table-top padding-20">
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <img src="../img/avatar.jpg" class="image-with-shadow" alt="">
+                                                        <p class="gray-7-14 user-name">Vladimir Babic</p>
+                                                        <span class="gray-7-12">100% rating | <span class="green-1-12">Verified</span></span>  
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <a href="" class="red-button pull-right">suspend</a>
+                                                        <a href="" class="gray-button pull-right">flag</a>
+                                                        <a href="" class="gray-6-14 pull-right">RESET PASSWORD</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table-list">
+                                                <ul class="clearfix">
+                                                    <li class="width-40 padding-20">
+                                                        <p class="gray-27-18 margin-bottom-20">
+                                                            Identity Information
+                                                        </p>
+                                                        <div class="gray-27-12">
+                                                            <div class="row">
+                                                                <div class="col-xs-4 margin-bottom-10">
+                                                                    <b>Username:</b>
+                                                                </div>
+                                                                <div class="col-xs-8 margin-bottom-10">
+                                                                    <span class="">
+                                                                        dovla &nbsp; | &nbsp; 
+                                                                        <span>
+                                                                            97%
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="col-xs-4 margin-bottom-10">
+                                                                    <b>Name:</b>
+                                                                </div>
+                                                                <div class="col-xs-8 margin-bottom-10">
+                                                                    Vladimir Babic
+                                                                </div>
+                                                                <div class="col-xs-4 margin-bottom-10">
+                                                                    <b>Phone:</b>
+                                                                </div>
+                                                                <div class="col-xs-8 margin-bottom-10">
+                                                                    +1 231 333 109
+                                                                </div>
+                                                                <div class="col-xs-4 margin-bottom-10">
+                                                                    <b>Alternate:</b>
+                                                                </div>
+                                                                <div class="col-xs-8 margin-bottom-10">
+                                                                    231-333-109
+                                                                </div>
+                                                                <div class="col-xs-4 margin-bottom-10">
+                                                                    <b>Email:</b>
+                                                                </div>
+                                                                <div class="col-xs-8 margin-bottom-10">
+                                                                    vlada@gmail.com
+                                                                </div>
+                                                                <div class="col-xs-4 margin-bottom-10">
+                                                                    <b>Adress:</b>
+                                                                </div>
+                                                                <div class="col-xs-8 margin-bottom-10">
+                                                                    <p class="margin-0">
+                                                                        Zrenjanin, Secanj
+                                                                    </p>
+                                                                    <p class="margin-0">
+                                                                        Zrenjanin, Secanj 12
+                                                                    </p>
+                                                                    <p class="margin-0">
+                                                                        Serbia
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-xs-4 margin-top-80 margin-bottom-10">
+                                                                    <b>Revenue:</b>
+                                                                </div>
+                                                                <div class="col-xs-8 margin-top-80 margin-bottom-10">
+                                                                    <b>$11,300.00</b>
+                                                                </div>
+                                                                <div class="col-xs-4 margin-bottom-10">
+                                                                    <b>Verified Via:</b>
+                                                                </div>
+                                                                <div class="col-xs-8 margin-bottom-10">
+                                                                    <p class="margin-0">
+                                                                        Facebook
+                                                                    </p>
+                                                                    <p class="margin-0">
+                                                                        Email
+                                                                    </p>
+                                                                    <p class="margin-0">
+                                                                        Phone
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="width-60 padding-10">
+                                                        <p class="gray-27-18 margin-bottom-20">
+                                                            Email Preferences
+                                                        </p>
+                                                        <form action="">
+                                                            <div class="custom-checkbox">
+                                                                <label for="notify-notifications">Notify me about changes to Website Broker</label>
+                                                                <input id="notify-notifications" type="checkbox">
+                                                            </div>
+                                                            <div class="custom-checkbox">
+                                                                <label for="subscribe-notification">Subscribe to the Website Broker Newsletter</label>
+                                                                <input id="subscribe-notification" type="checkbox">
+                                                            </div>
+                                                            <div class="custom-checkbox">
+                                                                <label for="offers-notifications">Allow Website Broker to email me special offers</label>
+                                                                <input id="offers-notifications" type="checkbox">
+                                                            </div>
+                                                            <div class="custom-checkbox">
+                                                                <label for="private-message-noticications">Notify me when I receive a private message</label>
+                                                                <input id="private-message-noticications" type="checkbox">
+                                                            </div>
+                                                            
+                                                            <p class="gray-7-12 margin-top-30">
+                                                                <b>
+                                                                    Buying 
+                                                                </b>
+                                                            </p>
+                                                            <div class="custom-checkbox">
+                                                                <label for="comment-notifications">Notify me when a comment is written to a listing I am watching</label>
+                                                                <input id="comment-notifications" type="checkbox">
+                                                            </div>
+                                                            <div class="custom-checkbox">
+                                                                <label for="new-listing-notification">Notify me when a new listing is publised no a listing I am watching</label>
+                                                                <input id="new-listing-notification" type="checkbox">
+                                                            </div>
+                                                            <div class="custom-checkbox">
+                                                                <label for="create-listing-notifications">Notify me when a seller I am watching creates a new listing</label>
+                                                                <input id="create-listing-notifications" type="checkbox">
+                                                            </div>
+                                                            <div class="custom-checkbox">
+                                                                <label for="price-change-noticications">Notify me when a seller changes a price of a listing I am watching</label>
+                                                                <input id="price-change-noticications" type="checkbox">
+                                                            </div>
+                                                            
+                                                            <p class="gray-7-12 margin-top-30">
+                                                                <b>
+                                                                    Selling 
+                                                                </b>
+                                                            </p>
+                                                            <div class="custom-checkbox">
+                                                                <label for="offer-notifications">Notify me when an offer is submited for one of my listings</label>
+                                                                <input id="offer-notifications" type="checkbox">
+                                                            </div>
+                                                            <div class="custom-checkbox">
+                                                                <label for="comment-own-notification">Notify me when a comment is writen on a listing I own</label>
+                                                                <input id="comment-own-notification" type="checkbox">
+                                                            </div>
+                                                        </form>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="table-footer table-navigation clearfix">
+                                                <a href="" class="blue-button pull-right">submit</a>
+                                                <a href="" class="gray-button pull-right">no</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -272,19 +434,19 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="singleUserBilling" role="tabpanel" class="dashboard-container tab-pane dashboard-main-holder margin-top-30 active">
+                        <div id="singleUserBilling" role="tabpanel" class="dashboard-container tab-pane dashboard-main-holder margin-top-30">
                             <div class="row row-correction">
                                 <div class="col-xs-12">
                                     <div class="user-table-grid">
                                         <div class="paging-table">
                                             <div class="table-top padding-20">
                                                 <div class="row">
-                                                    <div class="col-xs-7">
+                                                    <div class="col-xs-6">
                                                         <img src="../img/avatar.jpg" class="image-with-shadow" alt="">
                                                         <p class="gray-7-14 user-name">Vladimir Babic</p>
                                                         <span class="gray-7-12">100% rating | <span class="green-1-12">Verified</span></span>  
                                                     </div>
-                                                    <div class="col-xs-5">
+                                                    <div class="col-xs-6">
                                                         <a href="" class="red-button pull-right">suspend</a>
                                                         <a href="" class="gray-button pull-right">flag</a>
                                                         <a href="" class="gray-6-14 pull-right">RESET PASSWORD</a>

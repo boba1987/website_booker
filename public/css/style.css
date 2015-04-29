@@ -4414,6 +4414,9 @@ body {
   width: 7.5% !important;
   margin: 0 1% !important;
 }
+.margin-0-20 {
+  margin: 0 20px;
+}
 .padding-0-40 {
   padding: 0 40px;
 }
@@ -4948,11 +4951,16 @@ body {
   color: #3e6372 !important;
   line-height: 1.5;
 }
+.dashboard-table-holder .table-list .custom-checkbox,
+.paging-table .table-list .custom-checkbox {
+  display: block;
+}
 .dashboard-table-holder .table-list > ul,
 .paging-table .table-list > ul {
   border-bottom: solid 1px #e2eeef;
   margin: 0 -20px;
   padding: 0 20px;
+  display: flex;
 }
 .dashboard-table-holder .table-list > ul > li,
 .paging-table .table-list > ul > li {
@@ -5713,8 +5721,11 @@ hr.gray {
   padding: 15px;
   border: solid 1px #e2eeef;
 }
+.user-table-grid .table-top {
+  border-bottom: solid 1px #e2eeef;
+}
 .user-table-grid .table-top a {
-  margin-left: 10px;
+  margin-left: 13px;
   margin-top: 10px;
 }
 .user-table-grid .table-top a:last-child {
@@ -5738,6 +5749,13 @@ hr.gray {
 .user-table-grid .table-head ul li:last-child,
 .user-table-grid .table-list ul li:last-child {
   border: none;
+}
+.user-table-grid .table-footer {
+  padding: 20px;
+}
+.user-table-grid .table-footer .blue-button,
+.user-table-grid .table-footer .gray-button {
+  margin-left: 20px;
 }
 /* Notifications page styles */
 .notifications-center-holder {

@@ -554,10 +554,15 @@
 		padding: 0 20px;
 		.getFont(12, @gray-7);
 
+		.custom-checkbox{
+			display: block;
+		}
+
   		&>ul{
   			border-bottom: solid 1px @gray-4;
   			margin: 0 -20px;
   			padding: 0 20px;
+  			display: flex;
 
   			&>li{
   				.text-ellipsis;
@@ -1265,9 +1270,10 @@ hr.gray{
 
 .user-table-grid{
 	.table-top{
+		border-bottom: solid 1px @gray-4;
 
 		a{
-			margin-left: 10px;
+			margin-left: 13px;
 			margin-top: 10px;
 
 			&:last-child{
@@ -1298,6 +1304,14 @@ hr.gray{
 					border: none;
 				}
 			}
+		}
+	}
+
+	.table-footer{
+		padding: 20px;
+
+		.blue-button, .gray-button{
+			margin-left: 20px;
 		}
 	}
 }
