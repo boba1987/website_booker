@@ -5713,6 +5713,32 @@ hr.gray {
   padding: 15px;
   border: solid 1px #e2eeef;
 }
+.user-table-grid .table-top a {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.user-table-grid .table-top a:last-child {
+  margin-left: 0;
+}
+.user-table-grid .table-top .gray-button,
+.user-table-grid .table-top .red-button {
+  margin-top: 3px;
+}
+.user-table-grid .table-top .user-name {
+  margin-bottom: 0;
+}
+.user-table-grid .table-top img {
+  margin-right: 10px;
+  float: left;
+}
+.user-table-grid .table-head ul li,
+.user-table-grid .table-list ul li {
+  border-right: solid 1px #dee6e9;
+}
+.user-table-grid .table-head ul li:last-child,
+.user-table-grid .table-list ul li:last-child {
+  border: none;
+}
 /* Notifications page styles */
 .notifications-center-holder {
   -webkit-border-radius: 5px;
