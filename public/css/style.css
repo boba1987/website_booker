@@ -5813,6 +5813,7 @@ hr.gray {
 .stats-list li {
   padding: 20px 30px;
   white-space: normal;
+  border-right: none !important;
 }
 .stats-list li:nth-child(even) {
   background-color: #f4f6fa;
