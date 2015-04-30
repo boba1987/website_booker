@@ -1315,3 +1315,60 @@ hr.gray{
 		}
 	}
 }
+
+.stats-menu-list{
+	li{
+		border-right: none !important;
+		border-bottom: solid 1px @gray-4;
+		font-family: "latobold";
+		font-weight: bold;
+		text-transform: capitalize;
+		padding: 10px 25px;
+		cursor: pointer;
+		position: relative;
+		font-size: 14px;
+
+		&:hover{
+			background-color: @blue-14;
+		}
+
+		&:last-child{
+			border-bottom: none;
+		}
+
+		&.active{
+			background-color: @blue-14;
+			.glyphicon{
+				display: block;
+				position: absolute;
+				right: -5px;	
+				top: 10px;
+				color: white;
+				font-size: 20px;
+			}
+		}
+
+		.glyphicon{
+			display: none;
+		}
+	}
+}
+
+.stats-list-head{
+	.getFont(18, @gray-7);
+	margin-bottom: 0;
+	padding: 20px 25px;
+	border-bottom: solid 1px @gray-4;
+}
+
+.stats-list{
+	.getFont(14, @gray-7);
+	li{
+		padding: 20px 30px;
+		white-space: normal;
+
+		&:nth-child(even){
+			background-color: @blue-14;
+		}
+	}
+}
