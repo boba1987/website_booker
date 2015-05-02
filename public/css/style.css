@@ -5866,6 +5866,10 @@ hr.gray {
 .reports-sum p {
   margin: 0;
 }
+.table-total {
+  background: #f7fcff;
+  font-size: 16px;
+}
 /* Notifications page styles */
 .notifications-center-holder {
   -webkit-border-radius: 5px;
