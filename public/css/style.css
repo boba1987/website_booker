@@ -1872,6 +1872,31 @@ label {
   margin: 0 1.5%;
   text-align: center;
 }
+.custom-text-input-holder {
+  position: relative;
+}
+.custom-text-input-holder .icon {
+  display: block;
+  height: 37px;
+  width: 40px;
+  position: absolute;
+}
+.custom-text-input-holder.right .icon {
+  right: 0;
+  bottom: 0;
+  border-left: solid 1px #c9d7d8;
+}
+.custom-text-input-holder.right input {
+  padding-right: 42px;
+}
+.custom-text-input-holder.left .icon {
+  left: 0;
+  bottom: 0;
+  border-right: solid 1px #c9d7d8;
+}
+.custom-text-input-holder.left input {
+  padding-left: 42px;
+}
 /*!
 Chosen, a Select Box Enhancer for jQuery and Prototype
 by Patrick Filler for Harvest, http://getharvest.com
@@ -5739,17 +5764,18 @@ hr.gray {
 .user-table-grid .table-top {
   border-bottom: solid 1px #e2eeef;
 }
+.user-table-grid .table-top .gray-link {
+  margin-top: 0;
+}
 .user-table-grid .table-top .blue-button,
 .user-table-grid .table-top .gray-button,
-.user-table-grid .table-top .red-button,
-.user-table-grid .table-top .gray-link {
+.user-table-grid .table-top .red-button {
   margin-left: 13px;
   margin-top: 10px;
 }
 .user-table-grid .table-top .blue-button:last-child,
 .user-table-grid .table-top .gray-button:last-child,
-.user-table-grid .table-top .red-button:last-child,
-.user-table-grid .table-top .gray-link:last-child {
+.user-table-grid .table-top .red-button:last-child {
   margin-left: 0;
 }
 .user-table-grid .table-top .gray-button,
@@ -5836,6 +5862,9 @@ hr.gray {
   border-top: solid 1px #c9d7d8;
   border-bottom: solid 1px #c9d7d8;
 }
+.advance-search-holder .blue-button {
+  margin-top: 32px !important;
+}
 .reports-list {
   display: table !important;
   width: 100%;
@@ -5860,7 +5889,7 @@ hr.gray {
   width: 60%;
 }
 .reports-sum {
-  padding: 30px !important;
+  padding: 20px !important;
   font-size: 12px;
 }
 .reports-sum p {

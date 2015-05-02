@@ -1276,7 +1276,11 @@ hr.gray{
 	.table-top{
 		border-bottom: solid 1px @gray-4;
 
-		.blue-button, .gray-button, .red-button, .gray-link{
+		.gray-link{
+			margin-top: 0
+		}
+
+		.blue-button, .gray-button, .red-button{
 			margin-left: 13px;
 			margin-top: 10px;
 
@@ -1389,6 +1393,10 @@ hr.gray{
 	background: @gray-5;
 	border-top: solid 1px @gray-6;
 	border-bottom: solid 1px @gray-6;
+
+	.blue-button{
+		margin-top: 32px !important;
+	}
 }
 
 .reports-list{
@@ -1418,7 +1426,7 @@ hr.gray{
 }
 
 .reports-sum{
-	padding: 30px !important;
+	padding: 20px !important;
 	font-size: 12px;
 	p{
 		margin: 0;

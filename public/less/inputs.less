@@ -295,3 +295,38 @@ label{
 		text-align: center;
 	}
 }
+
+.custom-text-input-holder{
+	position: relative;
+
+	.icon{
+		display: block;
+	  height: 37px;
+	  width: 40px;
+	  position: absolute;
+	}
+
+	&.right{
+		.icon{
+			right: 0;
+		  bottom: 0;
+		  border-left: solid 1px @gray-6;
+		}
+
+		input{
+			padding-right: 42px;
+		}
+	}
+
+	&.left{
+		.icon{
+			left: 0;
+		  bottom: 0;
+		  border-right: solid 1px @gray-6;
+		}
+
+		input{
+			padding-left: 42px;
+		}
+	}
+}

@@ -245,13 +245,13 @@
                 <div class=" dashboard-menu-items">
                     <div class="dashboard-main-holder clearfix">
                         <ul role="tablist">
-                            <li role="presentation" class="active">
+                            <li role="presentation">
                                 <a href="#revenue" aria-controls="revenue" role="tab" data-toggle="tab" aria-expanded="true" class="prevent-default"><b>revenue</b></a>
                             </li>
                             <li role="presentation">
                                 <a href="#property-listings" aria-controls="property-listings" role="tab" data-toggle="tab" aria-expanded="false" class="prevent-default"><b>property listings</b></a>
                             </li>
-                            <li role="presentation" class="">
+                            <li role="presentation" class="active">
                                 <a href="#user-aquisitions" aria-controls="user-aquisitions" role="tab" data-toggle="tab" aria-expanded="false" class="prevent-default"><b>user aquisitions</b></a>
                             </li>
                         </ul>
@@ -259,7 +259,7 @@
                     </div>
 
                     <div class="tab-content">
-                        <div id="revenue" role="tabpanel" class="dashboard-container tab-pane dashboard-main-holder margin-top-30 active">
+                        <div id="revenue" role="tabpanel" class="dashboard-container tab-pane dashboard-main-holder margin-top-30">
                             <div class="row row-correction">
                                 <div class="col-xs-12">
                                     <div class="user-table-grid grid-report margin-bottom-80">
@@ -1003,10 +1003,210 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="user-aquisitions" role="tabpanel" class="dashboard-container tab-pane dashboard-main-holder margin-top-30">
+                        <div id="user-aquisitions" role="tabpanel" class="dashboard-container tab-pane dashboard-main-holder margin-top-30 active">
                             <div class="row row-correction">
                                 <div class="col-xs-12">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus nesciunt veniam aspernatur nam quam, voluptatem iste! Quis corporis impedit molestias id dicta atque nisi molestiae, earum, iste, aut suscipit doloribus?
+                                    <div class="user-table-grid grid-report margin-bottom-80">
+                                        <div class="paging-table">
+                                            <div class="table-top">
+                                                <div class="padding-20">
+                                                    <div class="row">
+                                                        <div class="col-xs-6">
+                                                            <p class="gray-3-18 margin-0">User Report</p>
+                                                            <p class="gray-3-14"><span>10-22-14</span>&nbsp;to&nbsp;<span>11-22-14</span></p>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            <a href="" class="blue-button pull-right">advanced search</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="advance-search-holder">
+                                                    <form action="" class="domain-form">
+                                                        <div class="row">
+                                                            <div class="col-lg-4">
+                                                                <label class="" for="listing-type">niche</label>
+                                                                <select name="" id="listing-type-select" class="chosen-select">
+                                                                    <option value="Lorem ipsum">Lorem ipsum</option>
+                                                                    <option value="Consectetur adipisicing">Consectetur adipisicing</option>
+                                                                    <option value="Dignissimos ducimus">Dignissimos ducimus</option>
+                                                                    <option value="Ullam saepe itaque">Ullam saepe itaque</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <div class="row">
+                                                                    <div class="col-lg-6">
+                                                                        <div class="custom-text-input-holder right">
+                                                                            <span class="icon"></span>
+                                                                            <label for="date-from">from</label>
+                                                                            <input type="text" id="date-from" class="text-input">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+                                                                        <div class="custom-text-input-holder right">
+                                                                            <span class="icon"></span>
+                                                                            <label for="date-to">to</label>
+                                                                            <input type="text" id="date-to" class="text-input">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-2">
+                                                                <button type="submit" class="blue-button margin-top-30 full-width">
+                                                                    search
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="table-list">
+                                                <ul class="clearfix reports-list">
+                                                    <li>
+                                                        <ul class="clearfix">
+                                                            <li><b>New acquired listings</b></li>
+                                                            <li>443</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="clearfix">
+                                                            <li><b>New paid listings</b></li>
+                                                            <li>
+                                                                32
+                                                                <span class="pull-right gray-6-12">
+                                                                    70%
+                                                                </span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="clearfix">
+                                                            <li><b>New free listings</b></li>
+                                                            <li>
+                                                                323
+                                                                <span class="pull-right gray-6-12">
+                                                                    70%
+                                                                </span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="clearfix">
+                                                            <li><b>Paid domains</b></li>
+                                                            <li>
+                                                                323
+                                                                <span class="pull-right gray-6-12">
+                                                                    70%
+                                                                </span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="clearfix">
+                                                            <li><b>Free domains</b></li>
+                                                            <li>
+                                                                323
+                                                                <span class="pull-right gray-6-12">
+                                                                    70%
+                                                                </span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="clearfix">
+                                                            <li><b>Value of new listed domains</b></li>
+                                                            <li>
+                                                                $3,323
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="clearfix">
+                                                            <li><b>Websites listed</b></li>
+                                                            <li>
+                                                                332
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="clearfix">
+                                                            <li><b>Paid websites</b></li>
+                                                            <li>
+                                                                33
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="clearfix">
+                                                            <li><b>Free websites</b></li>
+                                                            <li>
+                                                                3332
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="clearfix">
+                                                            <li><b>Value of new listed webistes</b></li>
+                                                            <li>
+                                                                $3,323
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="clearfix">
+                                                            <li><b>Expited this period</b></li>
+                                                            <li>
+                                                                3
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="clearfix">
+                                                            <li><b>Expired within 7 days</b></li>
+                                                            <li>
+                                                                123
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="clearfix">
+                                                            <li><b>Expired within 14 days</b></li>
+                                                            <li>
+                                                                11
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="clearfix">
+                                                            <li><b>Expired within 30 days</b></li>
+                                                            <li>
+                                                                11
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="clearfix">
+                                                            <li><b>Total active listings</b></li>
+                                                            <li>
+                                                                110
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="table-footer reports-sum clearfix">
+                                                <div class="row">
+                                                    <div class="col-lg-8">
+                                                        <p class="gray-7-12"><b>Report by: <span>First Name, Last Name</span></b></p>
+                                                        <p class="gray-7-12"><b>Date of report: <span>11-22-14</span></b></p>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <a href="" class="blue-button pull-right">download</a>
+                                                        <a href="" class="gray-button pull-right">print</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
