@@ -658,6 +658,10 @@
 .paging-table{
 	max-height: none;
 
+	.chosen-container{
+		width: auto !important;
+	}
+
 	.table-head{
 		ul{
 			overflow: visible;
@@ -1272,7 +1276,7 @@ hr.gray{
 	.table-top{
 		border-bottom: solid 1px @gray-4;
 
-		a{
+		.blue-button, .gray-button, .red-button, .gray-link{
 			margin-left: 13px;
 			margin-top: 10px;
 
@@ -1371,5 +1375,52 @@ hr.gray{
 		&:nth-child(even){
 			background-color: @blue-14;
 		}
+	}
+}
+
+.grid-report{
+	.table-top{
+		
+	}
+}
+
+.advance-search-holder{
+	padding: 20px;
+	background: @gray-5;
+	border-top: solid 1px @gray-6;
+	border-bottom: solid 1px @gray-6;
+}
+
+.reports-list{
+	display: table !important;
+	width: 100%;
+
+	&>li{
+		width: 100%;
+		border-right: none !important;
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+		border-bottom: solid 1px @gray-4;
+		ul{
+			display: flex;
+
+			li{
+				width: 40%;
+				padding: 10px 20px 10px 20px !important;
+				float: left;
+				white-space: normal;
+				&:first-child{
+					width: 60%
+				}
+			}
+		}
+	}
+}
+
+.reports-sum{
+	padding: 30px !important;
+	font-size: 12px;
+	p{
+		margin: 0;
 	}
 }
