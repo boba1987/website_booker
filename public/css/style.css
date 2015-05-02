@@ -4471,6 +4471,12 @@ body {
 .full-width {
   width: 100%;
 }
+.border-34 {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: solid 1px #d3d7dd;
+}
 /* Modal styles */
 .modal-gray {
   -webkit-border-radius: 3px;
@@ -5898,6 +5904,84 @@ hr.gray {
 .table-total {
   background: #f7fcff;
   font-size: 16px;
+}
+.listing-item {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 20px 10px;
+  margin-bottom: 10px;
+  border: solid 2px #e4e7ed;
+}
+.listing-item:last-child {
+  margin-bottom: 0;
+}
+.listing-item .selected {
+  display: none;
+  padding-right: 30px;
+}
+.listing-item.gray.active {
+  border: solid 2px #9fa7b7;
+}
+.listing-item.orange.active {
+  border: solid 2px #ff8a00;
+}
+.listing-item.orange.active .selected-icon {
+  border: solid 1px #ffdcb3;
+}
+.listing-item.orange.active .selected-icon div {
+  background: #ff8a00;
+}
+.listing-item.orange .gray-button {
+  background: #ff8a00 !important;
+}
+.listing-item.orange .selected {
+  color: #ff8a00 !important;
+}
+.listing-item.blue.active {
+  border: solid 2px #0084ff;
+}
+.listing-item.blue.active .selected-icon {
+  border: solid 1px #b3daff;
+}
+.listing-item.blue.active .selected-icon div {
+  background: #0084ff;
+}
+.listing-item.blue .gray-button {
+  background: #0084ff !important;
+}
+.listing-item.blue .selected {
+  color: #0084ff !important;
+}
+.listing-item.active .selected {
+  display: block;
+}
+.listing-item.active .activate-button {
+  display: none;
+}
+.listing-item div p:last-child {
+  margin-bottom: 0;
+}
+.listing-item p {
+  margin-bottom: 5px;
+}
+.selected-icon {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: solid 1px #e4e7ed;
+  height: 55px;
+  width: 55px;
+  padding: 3px;
+}
+.selected-icon div {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #9fa7b7;
+  height: 47px;
+  width: 47px;
+  color: white;
 }
 /* Notifications page styles */
 .notifications-center-holder {
