@@ -4483,6 +4483,9 @@ body {
   border-radius: 5px;
   border: solid 1px #d3d7dd;
 }
+.border-bottom-gray {
+  border-bottom: solid 1px #c4c9d1;
+}
 /* Modal styles */
 .modal-gray {
   -webkit-border-radius: 3px;
@@ -5179,6 +5182,7 @@ body {
 }
 .scroll-container {
   overflow-y: scroll;
+  overflow-x: hidden;
   float: left;
 }
 .scroll-container .scroll-list .desc-1 {
@@ -5281,7 +5285,14 @@ body {
   color: #6e7882 !important;
   line-height: 1.5;
   text-transform: capitalize;
-  padding: 25px 30px;
+  padding: 25px 10px 25px 30px;
+}
+.scroll-container-title p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0;
+  text-transform: none;
 }
 .user-profile-link-holder {
   -webkit-border-radius: 10px;
@@ -6000,6 +6011,14 @@ hr.gray {
   width: 47px;
   color: white;
 }
+.dashboard-white-container {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: white;
+  padding: 10px;
+  border: solid 1px #c9d7d8;
+}
 /* Notifications page styles */
 .notifications-center-holder {
   -webkit-border-radius: 5px;
@@ -6085,7 +6104,8 @@ hr.gray {
 #dashboardNotes,
 #dashboardPropertyComments,
 #adminDashboardHistoryApprovals,
-#dashboardApprovals {
+#dashboardApprovals,
+#comment {
   padding-left: 240px;
 }
 /* Admin dashboard specific styles */

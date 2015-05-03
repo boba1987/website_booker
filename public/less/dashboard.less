@@ -755,6 +755,7 @@
 
 .scroll-container{
 	overflow-y: scroll;
+	overflow-x: hidden;
 	float: left;
 
 	.scroll-list{
@@ -862,7 +863,14 @@
 .scroll-container-title{
 	.getFont(14, @gray-27);
 	text-transform: capitalize;
-	padding: 25px 30px;
+	padding: 25px 10px 25px 30px;
+
+
+	p{
+		.text-ellipsis;
+		margin-bottom: 0;
+		text-transform: none;
+	}
 }
 
 .user-profile-link-holder{
@@ -1550,4 +1558,11 @@ hr.gray{
 		width: 47px;
 		color: white;
 	}
+}
+
+.dashboard-white-container{
+	.border-radius(5px);
+	background: white;
+	padding: 10px;
+	border: solid 1px @blue-3;
 }
