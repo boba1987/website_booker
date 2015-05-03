@@ -110,7 +110,7 @@
                                         <ul class="notificationsList">
                                             <li class="new">
                                                 <div>
-                                                    <span class="notificationIcon"></span>
+                                                    <span class="notificationIcon inbox"></span>
                                                     <p class="notificationName">
                                                         New message from&nbsp;<span class="notificationFrom">
                                                             <b>userName</b>
@@ -123,7 +123,7 @@
                                             </li>
                                             <li>
                                                 <div>
-                                                    <span class="notificationIcon"></span>
+                                                    <span class="notificationIcon tag"></span>
                                                     <p class="notificationName">
                                                         New message from&nbsp;<span class="notificationFrom">
                                                             <b>userName</b>
@@ -136,7 +136,59 @@
                                             </li>
                                             <li>
                                                 <div>
-                                                    <span class="notificationIcon"></span>
+                                                    <span class="notificationIcon alarm"></span>
+                                                    <p class="notificationName">
+                                                        New message from&nbsp;<span class="notificationFrom">
+                                                            <b>userName</b>
+                                                        </span>
+                                                    </p>
+                                                    <p class="notificationTime">
+                                                        Today at 12:00am
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <span class="notificationIcon x"></span>
+                                                    <p class="notificationName">
+                                                        New message from&nbsp;<span class="notificationFrom">
+                                                            <b>userName</b>
+                                                        </span>
+                                                    </p>
+                                                    <p class="notificationTime">
+                                                        Today at 12:00am
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <span class="notificationIcon chat"></span>
+                                                    <p class="notificationName">
+                                                        New message from&nbsp;<span class="notificationFrom">
+                                                            <b>userName</b>
+                                                        </span>
+                                                    </p>
+                                                    <p class="notificationTime">
+                                                        Today at 12:00am
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <span class="notificationIcon info"></span>
+                                                    <p class="notificationName">
+                                                        New message from&nbsp;<span class="notificationFrom">
+                                                            <b>userName</b>
+                                                        </span>
+                                                    </p>
+                                                    <p class="notificationTime">
+                                                        Today at 12:00am
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <span class="notificationIcon stats"></span>
                                                     <p class="notificationName">
                                                         New message from&nbsp;<span class="notificationFrom">
                                                             <b>userName</b>
@@ -166,19 +218,19 @@
                 <ul class="nav-items-holder">
                     <li>
                         <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-                        <a href="">
+                        <a href="" class="dashboard-icon">
                             <b>dashboard</b>
                         </a>
                     </li>
                     <li class="">
                         <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-                        <a href="">
+                        <a href="" class="deals-icon">
                             <b>deals</b>
                         </a>
                     </li>
                     <li class="has-notification" id="accordionBuy" class="collapsable-item" role="tablist" aria-multiselectable="true">
                         <div data-toggle="collapse" data-parent="#accordionBuy" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <a href="">
+                            <a href="" class="cart-icon">
                                 <b>buying</b>
                             </a>
                             <span class="icon"></span>
@@ -208,7 +260,7 @@
                     </li>
                     <li class="" id="accordionSell" role="tablist" aria-multiselectable="true">
                         <div data-toggle="collapse" data-parent="#accordionSell" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            <a href="">
+                            <a href="" class="shop-icon">
                                 <b>selling</b>
                             </a>
                             <span class="icon"></span>
@@ -232,7 +284,7 @@
                         </div>
                     </li>
                     <li class="">
-                        <a href="">
+                        <a href="" class="user-icon">
                             <b>my account</b>
                         </a>
                     </li>
@@ -251,8 +303,8 @@
                             <div class="table-head">
                                 <ul class="clearfix">
                                     <li class="width-10">submited</li>
-                                    <li class="width-10">status</li>
-                                    <li class="width-10">property</li>
+                                    <li class="width-10 text-center">status</li>
+                                    <li class="width-10 text-center">property</li>
                                     <li class="width-25">url</li>
                                     <li class="width-10">expires</li>
                                     <li class="width-10">price</li>
@@ -263,8 +315,26 @@
                             <div class="table-list">
                                 <ul class="clearfix">
                                     <li class="width-10">Today</li>
-                                    <li class="width-10"></li>
-                                    <li class="width-10"></li>
+                                    <li class="width-10 text-center">
+                                        <span class="status-active"></span>
+                                    </li>
+                                    <li class="width-10 text-center">
+                                        <a href="" class="domain"></a>
+                                    </li>
+                                    <li class="width-25">www.google.com</li>
+                                    <li class="width-10">Today</li>
+                                    <li class="width-10 price"><span class="pull-left">$</span><span class="pull-right">750</span></li>
+                                    <li class="width-10 price"><span class="pull-left"><b>$</b></span><span class="pull-right"><b>750</b></span></li>
+                                    <li class="width-15"></li>
+                                </ul>
+                                <ul class="clearfix">
+                                    <li class="width-10">Today</li>
+                                    <li class="width-10 text-center">
+                                        <span class="status-inactive"></span>
+                                    </li>
+                                    <li class="width-10 text-center">
+                                        <a href="" class="website"></a>
+                                    </li>
                                     <li class="width-25">www.google.com</li>
                                     <li class="width-10">Today</li>
                                     <li class="width-10 price"><span class="pull-left">$</span><span class="pull-right">750</span></li>

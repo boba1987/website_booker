@@ -161,6 +161,13 @@
 	  	overflow: hidden;
 		border: solid 1px;
 	}
+
+	.text-uppercase.gray-6-14{
+		&:before {
+			font-family: 'Glyphicons Halflings';
+  		content: "\e163";
+		}
+	}
 }
 
 .notificationsList{
@@ -186,7 +193,7 @@
 		min-height: 66px;
 
 		&.new{
-			background: lighten(@yellow-3, 49%);
+			background-color: lighten(@yellow-3, 49%);
 
 			.notificationIcon{
 				background: @yellow-3;
@@ -210,9 +217,56 @@
 			left: 15px;
 			background: @gray-6;
 			color: white;
-		  	height: 40px;
-		  	width: 40px;
-		  	top: 13px;
+	  	height: 35px;
+	  	width: 35px;
+	  	top: 15px;
+
+	  	&.inbox{
+	  		background-image: url('../img/icons/inbox-2.png');
+	  		background-repeat: no-repeat;
+	  		background-position: center;
+	  	}
+
+	  	&.tag{
+	  		color:white;
+	  		font-family: 'Glyphicons Halflings';
+	  		&:before {
+				  content: "\e042";
+				  position: absolute;
+				  top: 8px;
+				  right: 11px;
+				}
+	  	}
+
+	  	&.alarm{
+	  		background-image: url('../img/icons/alarm.png');
+	  		background-repeat: no-repeat;
+	  		background-position: center;
+	  	}
+
+	  	&.x{
+	  		background-image: url('../img/icons/close.png');
+	  		background-repeat: no-repeat;
+	  		background-position: center;	
+	  	}
+
+	  	&.chat{
+	  		background-image: url('../img/icons/chat.png');
+	  		background-repeat: no-repeat;
+	  		background-position: center;	
+	  	}
+
+	  	&.info{
+	  		background-image: url('../img/icons/info.png');
+	  		background-repeat: no-repeat;
+	  		background-position: center;		
+	  	}
+
+	  	&.stats{
+	  		background-image: url('../img/icons/stats.png');
+	  		background-repeat: no-repeat;
+	  		background-position: center;			
+	  	}
 		}
 	}
 }
@@ -451,7 +505,7 @@
 		-moz-border-radius-bottomleft: 5px;
 		border-top-left-radius: 5px;
 		border-bottom-left-radius: 5px;
-		background: @blue-9;
+		background-color: @blue-9;
 		border: solid 1px @blue-10;
 		border-right: none;
 		display: block;
@@ -826,7 +880,7 @@
 			position: absolute;
 			top: 10px;
 			right: 15px;
-			background: gray;
+			background: url('../img/icons/user-2.png') center no-repeat;
 			height: 15px;
 			width: 15px;
 			display: block;
@@ -904,9 +958,14 @@
 		position: absolute;
 		height: 20px;
 		width: 20px;
-		background: gray;
 		top: 20px;
 		right: 20px;
+		color: @gray-3;
+		font-family: 'Glyphicons Halflings';
+
+		&:before {
+		  content: "\e014";
+		}
 	}
 }
 
@@ -979,7 +1038,7 @@
 			display: block;
 			height: 15px;
 			width: 15px;
-			background: gray;
+			background: url('../img/icons/flag.png') center no-repeat;
 		}
 	}
 }
@@ -1565,4 +1624,85 @@ hr.gray{
 	background: white;
 	padding: 10px;
 	border: solid 1px @blue-3;
+}
+
+.dashboard-icon{
+	background: url('../img/icons/dash.png') 17px center no-repeat;
+}
+
+.deals-icon{
+	background: url('../img/icons/deal.png') 17px center no-repeat;
+}
+
+.cart-icon{
+	background: url('../img/icons/cart.png') 17px center no-repeat;	
+}
+
+.shop-icon{
+	background: url('../img/icons/shop.png') 17px center no-repeat;		
+}
+
+.user-icon{
+	background: url('../img/icons/user.png') 17px center no-repeat;			
+}
+
+.add-doc{
+	background-image: url('../img/icons/doc-add.png');
+	background-repeat: no-repeat;
+	background-position: center;				
+}
+
+.trend-icon{
+	background-image: url('../img/icons/trend.png');
+	background-repeat: no-repeat;
+	background-position: center;					
+}
+
+.time-icon{
+	background-image: url('../img/icons/time.png');
+	background-repeat: no-repeat;
+	background-position: center;					
+}
+
+.view-icon{
+	display: inline-block;
+	height: 16px;
+	width: 20px;
+	background: url('../img/icons/url.png') center no-repeat;
+}
+
+.view-2-icon{
+	display: inline-block;
+	height: 16px;
+	width: 20px;
+	background: url('../img/icons/inbox.png') center no-repeat;	
+}
+
+.status-active, .status-inactive{
+	.border-radius(50%);
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+}
+
+.status-active{
+	background: @green-1;
+}
+
+.status-inactive{
+	background: @red-1;
+}
+
+.domain, .website{
+	display: inline-block;
+	width: 20px;
+	height: 16px;
+}
+
+.domain{
+	background: url('../img/icons/domain.png') center no-repeat;
+}
+
+.website{
+	background: url('../img/icons/website.png') center no-repeat;
 }

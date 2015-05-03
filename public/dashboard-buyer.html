@@ -110,7 +110,7 @@
                                         <ul class="notificationsList">
                                             <li class="new">
                                                 <div>
-                                                    <span class="notificationIcon"></span>
+                                                    <span class="notificationIcon inbox"></span>
                                                     <p class="notificationName">
                                                         New message from&nbsp;<span class="notificationFrom">
                                                             <b>userName</b>
@@ -123,7 +123,7 @@
                                             </li>
                                             <li>
                                                 <div>
-                                                    <span class="notificationIcon"></span>
+                                                    <span class="notificationIcon tag"></span>
                                                     <p class="notificationName">
                                                         New message from&nbsp;<span class="notificationFrom">
                                                             <b>userName</b>
@@ -136,7 +136,59 @@
                                             </li>
                                             <li>
                                                 <div>
-                                                    <span class="notificationIcon"></span>
+                                                    <span class="notificationIcon alarm"></span>
+                                                    <p class="notificationName">
+                                                        New message from&nbsp;<span class="notificationFrom">
+                                                            <b>userName</b>
+                                                        </span>
+                                                    </p>
+                                                    <p class="notificationTime">
+                                                        Today at 12:00am
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <span class="notificationIcon x"></span>
+                                                    <p class="notificationName">
+                                                        New message from&nbsp;<span class="notificationFrom">
+                                                            <b>userName</b>
+                                                        </span>
+                                                    </p>
+                                                    <p class="notificationTime">
+                                                        Today at 12:00am
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <span class="notificationIcon chat"></span>
+                                                    <p class="notificationName">
+                                                        New message from&nbsp;<span class="notificationFrom">
+                                                            <b>userName</b>
+                                                        </span>
+                                                    </p>
+                                                    <p class="notificationTime">
+                                                        Today at 12:00am
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <span class="notificationIcon info"></span>
+                                                    <p class="notificationName">
+                                                        New message from&nbsp;<span class="notificationFrom">
+                                                            <b>userName</b>
+                                                        </span>
+                                                    </p>
+                                                    <p class="notificationTime">
+                                                        Today at 12:00am
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <span class="notificationIcon stats"></span>
                                                     <p class="notificationName">
                                                         New message from&nbsp;<span class="notificationFrom">
                                                             <b>userName</b>
@@ -163,21 +215,21 @@
             <!-- ASIDE NAVIGATION -->
             <aside class="dashboard-nav">
                 <ul class="nav-items-holder">
-                    <li>
+                    <li class="active">
                         <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-                        <a href="">
+                        <a href="" class="dashboard-icon">
                             <b>dashboard</b>
                         </a>
                     </li>
                     <li class="">
                         <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-                        <a href="">
+                        <a href="" class="deals-icon">
                             <b>deals</b>
                         </a>
                     </li>
                     <li class="has-notification" id="accordionBuy" class="collapsable-item" role="tablist" aria-multiselectable="true">
                         <div data-toggle="collapse" data-parent="#accordionBuy" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <a href="">
+                            <a href="" class="cart-icon">
                                 <b>buying</b>
                             </a>
                             <span class="icon"></span>
@@ -190,7 +242,7 @@
                                     <a href="">my offeres</a>
                                     <span class="notifications-submenu">888</span>
                                 </li>
-                                <li class="active">
+                                <li>
                                     <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
                                     <a href="">watching</a>
                                 </li>
@@ -207,7 +259,7 @@
                     </li>
                     <li class="" id="accordionSell" role="tablist" aria-multiselectable="true">
                         <div data-toggle="collapse" data-parent="#accordionSell" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            <a href="">
+                            <a href="" class="shop-icon">
                                 <b>selling</b>
                             </a>
                             <span class="icon"></span>
@@ -215,23 +267,31 @@
                         </div>
                         <div id="collapseTwo" class="collapse" role="tabpanel">
                             <ul class="submenu">
-                                <li>
+                                <li class="">
                                     <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-                                    <a href="">selling</a>
+                                    <a href="">received offeres</a>
                                 </li>
                                 <li>
                                     <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-                                    <a href="">selling</a>
+                                    <a href="">my properties</a>
                                 </li>
                                 <li>
                                     <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-                                    <a href="">selling</a>
+                                    <a href="">my drafts</a>
+                                </li>
+                                <li>
+                                    <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+                                    <a href="">property comments</a>
+                                </li>
+                                <li>
+                                    <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+                                    <a href="">domain parking</a>
                                 </li>
                             </ul>
                         </div>
                     </li>
                     <li class="">
-                        <a href="">
+                        <a href="" class="user-icon">
                             <b>my account</b>
                         </a>
                     </li>
@@ -260,7 +320,7 @@
                     <div class="margin-top-30">
                         <div class="col-xs-4">
                             <div class="dashboard-item-blue">
-                                <a href="" class="link-to"></a>
+                                <a href="" class="link-to add-doc"></a>
                                 <p class="item-header"><b>new listings today</b></p>                              
                                 <ul class="item-list">
                                     <li>
@@ -285,13 +345,13 @@
                                     </li>
                                 </ul> 
                                 <div class="item-footer">
-                                    <a href="">view all</a>
+                                    <a href="">view all &nbsp;<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-4">
                             <div class="dashboard-item-blue">
-                                <a href="" class="link-to"></a>
+                                <a href="" class="link-to trend-icon"></a>
                                 <p class="item-header"><b>trending</b></p>                              
                                 <ul class="item-list">
                                     <li>
@@ -316,13 +376,13 @@
                                     </li>
                                 </ul> 
                                 <div class="item-footer">
-                                    <a href="">view all</a>
+                                    <a href="">view all &nbsp;<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-4">
                             <div class="dashboard-item-blue">
-                                <a href="" class="link-to"></a>
+                                <a href="" class="link-to time-icon"></a>
                                 <p class="item-header"><b>expiring shortly</b></p>                              
                                 <ul class="item-list">
                                     <li>
@@ -347,7 +407,7 @@
                                     </li>
                                 </ul> 
                                 <div class="item-footer">
-                                    <a href="">view all</a>
+                                    <a href="">view all &nbsp;<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
                                 </div>
                             </div>
                         </div>    
@@ -378,7 +438,9 @@
                                     <li class="width-15 price-drop">-$570</li>
                                     <li class="width-15"><b>$100 000</b></li>
                                     <li class="width-15">Today</li>
-                                    <li class="width-5">View</li>
+                                    <li class="width-5">
+                                        <a href="" class="view-icon"></a>
+                                    </li>
                                 </ul>
                                 <ul class="clearfix">
                                     <li class="width-10">Today</li>
@@ -387,7 +449,9 @@
                                     <li class="width-15 price-increase">$570</li>
                                     <li class="width-15"><b>$100 000</b></li>
                                     <li class="width-15">Today</li>
-                                    <li class="width-5">View</li>
+                                    <li class="width-5">
+                                        <a href="" class="view-icon"></a>
+                                    </li>
                                 </ul>
                                 <ul class="clearfix">
                                     <li class="width-10">Today</li>
@@ -396,7 +460,9 @@
                                     <li class="width-15">some change</li>
                                     <li class="width-15"><b>$100 000</b></li>
                                     <li class="width-15">Today</li>
-                                    <li class="width-5">View</li>
+                                    <li class="width-5">
+                                        <a href="" class="view-icon"></a>
+                                    </li>
                                 </ul>
                                 <ul class="clearfix">
                                     <li class="width-10">Today</li>
@@ -405,7 +471,8 @@
                                     <li class="width-15">some change</li>
                                     <li class="width-15"><b>$100 000</b></li>
                                     <li class="width-15">Today</li>
-                                    <li class="width-5">View</li>
+                                    <li class="width-5">
+                                    <a href="" class="view-icon"></a></li>
                                 </ul>
                                 <ul class="clearfix">
                                     <li class="width-10">Today</li>
@@ -414,7 +481,9 @@
                                     <li class="width-15">some change</li>
                                     <li class="width-15"><b>$100 000</b></li>
                                     <li class="width-15">Today</li>
-                                    <li class="width-5">View</li>
+                                    <li class="width-5">
+                                        <a href="" class="view-icon"></a>
+                                    </li>
                                 </ul>
                                 <ul class="clearfix">
                                     <li class="width-10">Today</li>
@@ -423,7 +492,9 @@
                                     <li class="width-15">some change</li>
                                     <li class="width-15"><b>$100 000</b></li>
                                     <li class="width-15">Today</li>
-                                    <li class="width-5">View</li>
+                                    <li class="width-5">
+                                        <a href="" class="view-icon"></a>
+                                    </li>
                                 </ul>
                                 <ul class="clearfix">
                                     <li class="width-10">Today</li>
@@ -432,7 +503,9 @@
                                     <li class="width-15">some change</li>
                                     <li class="width-15"><b>$100 000</b></li>
                                     <li class="width-15">Today</li>
-                                    <li class="width-5">View</li>
+                                    <li class="width-5">
+                                        <a href="" class="view-icon"></a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -456,61 +529,81 @@
                                     <li class="width-15">Yesterday</li>
                                     <li class="width-40">www.google.com</li>
                                     <li class="width-35"><b>$100 000</b></li>
-                                    <li class="width-10">URL</li>
+                                    <li class="width-10">
+                                        <a href="" class="view-icon"></a>
+                                    </li>
                                 </ul>
                                 <ul class="clearfix">
                                     <li class="width-15">Yesterday</li>
                                     <li class="width-40">www.google.com</li>
                                     <li class="width-35"><b>$100 000</b></li>
-                                    <li class="width-10">URL</li>
+                                    <li class="width-10">
+                                        <a href="" class="view-icon"></a>
+                                    </li>
                                 </ul>
                                 <ul class="clearfix">
                                     <li class="width-15">Date4</li>
                                     <li class="width-40">URL</li>
                                     <li class="width-35"><b>Offer</b></li>
-                                    <li class="width-10">URL</li>
+                                    <li class="width-10">
+                                        <a href="" class="view-icon"></a>
+                                    </li>
                                 </ul>
                                 <ul class="clearfix">
                                     <li class="width-15">Date5</li>
                                     <li class="width-40">URL</li>
                                     <li class="width-35"><b>Offer</b></li>
-                                    <li class="width-10">URL</li>
+                                    <li class="width-10">
+                                        <a href="" class="view-icon"></a>
+                                    </li>
                                 </ul>
                                 <ul class="clearfix">
                                     <li class="width-15">Date6</li>
                                     <li class="width-40">URL</li>
                                     <li class="width-35"><b>Offer</b></li>
-                                    <li class="width-10">URL</li>
+                                    <li class="width-10">
+                                        <a href="" class="view-icon"></a>
+                                    </li>
                                 </ul>
                                 <ul class="clearfix">
                                     <li class="width-15">Date7</li>
                                     <li class="width-40">URL</li>
                                     <li class="width-35"><b>Offer</b></li>
-                                    <li class="width-10">URL</li>
+                                    <li class="width-10">
+                                        <a href="" class="view-icon"></a>
+                                    </li>
                                 </ul>
                                 <ul class="clearfix">
                                     <li class="width-15">Date8</li>
                                     <li class="width-40">URL</li>
                                     <li class="width-35"><b>Offer</b></li>
-                                    <li class="width-10">URL</li>
+                                    <li class="width-10">
+                                        <a href="" class="view-icon"></a>
+                                    </li>
                                 </ul>
                                 <ul class="clearfix">
                                     <li class="width-15">Date9</li>
                                     <li class="width-40">URL</li>
                                     <li class="width-35"><b>Offer</b></li>
-                                    <li class="width-10">URL</li>
+                                    <li class="width-10">
+                                        <a href="" class="view-icon"></a>
+                                    </li>
                                 </ul>
                                 <ul class="clearfix">
                                     <li class="width-15">Date10</li>
                                     <li class="width-40">URL</li>
                                     <li class="width-35"><b>Offer</b></li>
-                                    <li class="width-10">URL</li>
+                                    <li class="width-10">
+                                        <a href="" class="view-icon"></a>
+                                    </li>
                                 </ul>
                                 <ul class="clearfix">
                                     <li class="width-15">Date11</li>
                                     <li class="width-40">URL</li>
                                     <li class="width-35"><b>Offer</b></li>
-                                    <li class="width-10">URL</li>
+                                    <li class="width-10">
+                                        <a href="" class="view-icon"></a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -534,61 +627,81 @@
                                     <li class="width-15">Yesterday</li>
                                     <li class="width-40">www.google.com</li>
                                     <li class="width-35"><b>$100 000</b></li>
-                                    <li class="width-10">URL</li>
+                                    <li class="width-10">
+                                        <a href="" class="view-icon"></a>
+                                    </li>
                                 </ul>
                                 <ul class="clearfix">
                                     <li class="width-15">Yesterday</li>
                                     <li class="width-40">www.google.com</li>
                                     <li class="width-35"><b>$100 000</b></li>
-                                    <li class="width-10">URL</li>
+                                    <li class="width-10">
+                                        <a href="" class="view-icon"></a>
+                                    </li>
                                 </ul>
                                 <ul class="clearfix">
                                     <li class="width-15">Date4</li>
                                     <li class="width-40">URL</li>
                                     <li class="width-35"><b>Offer</b></li>
-                                    <li class="width-10">URL</li>
+                                    <li class="width-10">
+                                        <a href="" class="view-icon"></a>
+                                    </li>
                                 </ul>
                                 <ul class="clearfix">
                                     <li class="width-15">Date5</li>
                                     <li class="width-40">URL</li>
                                     <li class="width-35"><b>Offer</b></li>
-                                    <li class="width-10">URL</li>
+                                    <li class="width-10">
+                                        <a href="" class="view-icon"></a>
+                                    </li>
                                 </ul>
                                 <ul class="clearfix">
                                     <li class="width-15">Date6</li>
                                     <li class="width-40">URL</li>
                                     <li class="width-35"><b>Offer</b></li>
-                                    <li class="width-10">URL</li>
+                                    <li class="width-10">
+                                        <a href="" class="view-icon"></a>
+                                    </li>
                                 </ul>
                                 <ul class="clearfix">
                                     <li class="width-15">Date7</li>
                                     <li class="width-40">URL</li>
                                     <li class="width-35"><b>Offer</b></li>
-                                    <li class="width-10">URL</li>
+                                    <li class="width-10">
+                                        <a href="" class="view-icon"></a>
+                                    </li>
                                 </ul>
                                 <ul class="clearfix">
                                     <li class="width-15">Date8</li>
                                     <li class="width-40">URL</li>
                                     <li class="width-35"><b>Offer</b></li>
-                                    <li class="width-10">URL</li>
+                                    <li class="width-10">
+                                        <a href="" class="view-icon"></a>
+                                    </li>
                                 </ul>
                                 <ul class="clearfix">
                                     <li class="width-15">Date9</li>
                                     <li class="width-40">URL</li>
                                     <li class="width-35"><b>Offer</b></li>
-                                    <li class="width-10">URL</li>
+                                    <li class="width-10">
+                                        <a href="" class="view-icon"></a>
+                                    </li>
                                 </ul>
                                 <ul class="clearfix">
                                     <li class="width-15">Date10</li>
                                     <li class="width-40">URL</li>
                                     <li class="width-35"><b>Offer</b></li>
-                                    <li class="width-10">URL</li>
+                                    <li class="width-10">
+                                        <a href="" class="view-icon"></a>
+                                    </li>
                                 </ul>
                                 <ul class="clearfix">
                                     <li class="width-15">Date11</li>
                                     <li class="width-40">URL</li>
                                     <li class="width-35"><b>Offer</b></li>
-                                    <li class="width-10">URL</li>
+                                    <li class="width-10">
+                                        <a href="" class="view-icon"></a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>

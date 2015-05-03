@@ -56,7 +56,9 @@
     /**
     Carousel init
     */
-    $('.carousel').carousel();
+    $('.carousel').carousel({
+        interval: false
+    });
     /**
     Highcharts init and settings
     */

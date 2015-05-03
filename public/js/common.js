@@ -23,26 +23,29 @@ $('.custom-checkbox label').on('click', function(){
 	$(this).toggleClass('checked');
 });
 
-/* Set max height on scroll sections( e.g. Deals page ) */
-var mainSectionHeight = $(window).height() - $('header').outerHeight();
 
 function dealsMain(){
+	/* Set max height on scroll sections( e.g. Deals page ) */
+	var mainSectionHeight = $(window).outerHeight() - $('header').outerHeight();
+
 	var min = 850;
 	if(mainSectionHeight > 850){
 		min = mainSectionHeight;
 	}
 
-	$('.scroll-container').css({
-		'max-height': mainSectionHeight - $('.dashboard-page-tittle').outerHeight(),
-		'min-height' : min 
-	});
+	setTimeout(function() {
+		$('.scroll-container').css({
+			'max-height': mainSectionHeight - $('.dashboard-page-tittle').outerHeight(),
+			'min-height' : min 
+		});
 
-	/* Set min height on .main */
-	$('.main').css('min-height', min);
+		/* Set min height on .main */
+		$('.main').css('min-height', min);
 
-	$('.scroll-container').css('min-height', min - 55);
+		$('.scroll-container').css('min-height', min - 55);
 
-	$('#dashboardApprovals .approvals').css('min-height', $(document).height() - 55);
+		$('#dashboardApprovals .approvals').css('min-height', $(document).height() - 55);
+	}, 100);
 }
 
 dealsMain();
