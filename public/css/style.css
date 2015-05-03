@@ -5126,6 +5126,9 @@ body {
 .paging-table .table-list > ul:last-child {
   border-bottom: solid 1px #e2eeef;
 }
+.paging-table .table-list > ul.highlight {
+  background: #f2f6fc;
+}
 .bg-gray {
   position: absolute;
   width: 100%;
