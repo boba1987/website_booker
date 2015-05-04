@@ -355,7 +355,7 @@
                             <a href="" class="tab-left active-tab ">
                                 <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>
                             </a>
-                            <a href="" class="tab-right">
+                            <a href="" class="tab-right" data-toggle="modal" data-target="#listing-flag-modal">
                                 <span class="glyphicon glyphicon-flag" aria-hidden="true"></span>
                             </a>
                         </div>
@@ -789,14 +789,182 @@
                             <div class="col-xs-12">
                                 <div class="col-xs-12">
                                     <div class="white-container margin-top-50">
-                                        <a href="" class="red-button">decline</a>
-                                        <button type="submit" class="green-button pull-right">approve</button>
-                                        <span class="gray-6-14 pull-right margin-top-10 padding-0-40">ON HOLD</span>
+                                        <a href="" class="red-button" data-toggle="modal" data-target="#listing-decline-modal">decline</a>
+                                        <a href="" class="green-button pull-right" data-toggle="modal" data-target="#listing-confirm-modal">approve</a>
+                                        <a href="" class="gray-6-14 pull-right margin-top-10 padding-0-40" data-toggle="modal" data-target="#listing-on-hold-modal">ON HOLD</a>
                                     </div>
                                 </div>
                             </div>
                         </form>
                     </div>    
+                </div>
+            </div>
+        </div>
+
+        <!-- approve listing Modal -->
+        <div class="modal fade dashboard-modal" id="listing-confirm-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content modal-gray">
+                    <div class="info-icon-gray-large">
+                        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                    </div>
+                    <p class="gray-7-18 text-center margin-top-20">
+                        Confirm Approval
+                    </p>
+                    <form action="" class="clearfix">
+                        <div class="input-holder col-lg-12 col-md-12">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <label for="">
+                                        Admin Notes
+                                    </label>
+                                </div>
+                                <div class="col-lg-12">
+                                    <textarea id="approval-notes" type="text" class="text-input medium"></textarea>
+                                </div>
+                            </div>
+                            <p class="gray-7-12 margin-top-10">
+                                <b>Are you sure you want to approve this listing?</b>
+                            </p>
+                            <button type="submit" class="blue-button pull-right margin-top-10 prevent-default" data-dismiss="modal" aria-label="Close">
+                                approve
+                            </button>
+                            <a href="" class="gray-button margin-top-10 prevent-default" data-dismiss="modal" aria-label="Close">
+                                cancel
+                            </a>
+                            </form>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- decline listing Modal -->
+        <div class="modal fade dashboard-modal" id="listing-decline-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content modal-gray">
+                    <div class="info-icon-gray-large">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </div>
+                    <p class="gray-7-18 text-center margin-top-20">
+                        Confirm Decline
+                    </p>
+                    <form action="" class="clearfix">
+                        <div class="input-holder col-lg-12 col-md-12">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <label for="">
+                                        Internal Notes - Reasons For Decline 
+                                    </label>
+                                </div>
+                                <div class="col-lg-12">
+                                    <textarea id="approval-notes" type="text" class="text-input small"></textarea>
+                                </div>
+                                <div class="col-lg-12">
+                                    <label for="">
+                                        Reasons For Decline - Will Be Sent to Seller!
+                                    </label>
+                                </div>
+                                <div class="col-lg-12">
+                                    <textarea id="approval-notes" type="text" class="text-input small"></textarea>
+                                </div>
+                            </div>
+                            <p class="gray-7-12 margin-top-10">
+                                <b>Are you sure you want to decline this listing?</b>
+                            </p>
+                            <button type="submit" class="blue-button pull-right margin-top-10 prevent-default" data-dismiss="modal" aria-label="Close">
+                                decline
+                            </button>
+                            <a href="" class="gray-button margin-top-10 prevent-default" data-dismiss="modal" aria-label="Close">
+                                cancel
+                            </a>
+                            </form>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- flag listing Modal -->
+        <div class="modal fade dashboard-modal" id="listing-flag-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content modal-gray">
+                    <div class="info-icon-gray-large">
+                        <span class="glyphicon glyphicon-flag" aria-hidden="true"></span>
+                    </div>
+                    <p class="gray-7-18 text-center margin-top-20">
+                        Add A Flag To This Listing
+                    </p>
+                    <form action="" class="clearfix">
+                        <div class="input-holder col-lg-12 col-md-12">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <label for="">
+                                        Add a flag to this listing for internal purposes
+                                    </label>
+                                </div>
+                                <div class="col-lg-12">
+                                    <textarea id="approval-notes" type="text" class="text-input medium"></textarea>
+                                </div>
+                            </div>
+                            <p class="gray-7-12 margin-top-10">
+                                <b>User will not be notified of this flag.</b>
+                            </p>
+                            <button type="submit" class="blue-button pull-right margin-top-10 prevent-default" data-dismiss="modal" aria-label="Close">
+                                submit
+                            </button>
+                            <a href="" class="gray-button margin-top-10 prevent-default" data-dismiss="modal" aria-label="Close">
+                                cancel
+                            </a>
+                            </form>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- decline listing Modal -->
+        <div class="modal fade dashboard-modal" id="listing-on-hold-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content modal-gray">
+                    <div class="info-icon-gray-large">
+                        <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+                    </div>
+                    <p class="gray-7-18 text-center margin-top-20">
+                        Confirm On-Hold
+                    </p>
+                    <form action="" class="clearfix">
+                        <div class="input-holder col-lg-12 col-md-12">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <label for="">
+                                        Internal Notes - Reasons For On-Hold Placement 
+                                    </label>
+                                </div>
+                                <div class="col-lg-12">
+                                    <textarea id="approval-notes" type="text" class="text-input small"></textarea>
+                                </div>
+                                <div class="col-lg-12">
+                                    <label for="">
+                                        Reasons For On-Hold - Will Be Sent to Seller!
+                                    </label>
+                                </div>
+                                <div class="col-lg-12">
+                                    <textarea id="approval-notes" type="text" class="text-input small"></textarea>
+                                </div>
+                            </div>
+                            <p class="gray-7-12 margin-top-10">
+                                <b>Are you sure you want to put this listing on hold?</b>
+                            </p>
+                            <button type="submit" class="blue-button pull-right margin-top-10 prevent-default" data-dismiss="modal" aria-label="Close">
+                                on-hold
+                            </button>
+                            <a href="" class="gray-button margin-top-10 prevent-default" data-dismiss="modal" aria-label="Close">
+                                cancel
+                            </a>
+                            </form>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

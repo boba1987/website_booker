@@ -3533,6 +3533,9 @@ body {
   font-size: 18px;
   color: #3e6372;
 }
+.comments-list.nested li {
+  border-bottom: none !important;
+}
 .comments-list li {
   padding-left: 80px;
   position: relative;
@@ -4889,6 +4892,25 @@ body {
   height: 100%;
   min-height: 850px;
   background: #354052;
+  -webkit-transition: all 0.5s;
+  /* Safari */
+  transition: all 0.5s;
+}
+@media (max-width: 1000px) {
+  .dashboard-nav {
+    left: 0px;
+  }
+  .dashboard-nav .glyphicon-triangle-left {
+    right: -3px !important;
+  }
+  .dashboard-nav.collapsed {
+    left: -226px;
+  }
+}
+@media (min-width: 1001px) {
+  .dashboard-nav {
+    left: 0px !important;
+  }
 }
 .dashboard-nav .nav-items-holder li {
   position: relative;
@@ -5430,7 +5452,6 @@ body {
   overflow: hidden;
   height: 40px;
   width: 40px;
-  border: solid 1px;
   float: left;
   margin-right: 10px;
 }
@@ -5481,7 +5502,6 @@ body {
   margin-top: 20px;
   height: 115px;
   width: 115px;
-  border: solid 1px;
   overflow: hidden;
 }
 .user-profile-link-holder .blue-button {
@@ -5816,7 +5836,7 @@ body {
   width: 400px;
 }
 .dashboard-modal .modal-dialog .modal-content {
-  padding: 30px;
+  padding: 20px;
 }
 .credit-cards-list {
   margin-bottom: 80px;
@@ -5852,12 +5872,12 @@ body {
   width: 200px;
 }
 .credit-cards-list li .expires {
-  right: 30px;
+  right: 47px;
   bottom: 30px;
 }
 .credit-cards-list li .card-num {
-  right: 30px;
-  top: 85px;
+  right: 39px;
+  top: 83px;
 }
 .credit-cards-list li .def-card,
 .credit-cards-list li .make-def {
@@ -5883,7 +5903,10 @@ body {
   -moz-border-radius: 5px;
   border-radius: 5px;
   cursor: pointer;
-  background: #e6e9ed;
+  background-color: #e6e9ed;
+  background-image: url('../img/uplaod.png');
+  background-position: center;
+  background-repeat: no-repeat;
   border: dashed 2px #c9d7d8;
   color: #c9d7d8;
   text-align: center;
@@ -6491,6 +6514,12 @@ hr.gray {
   width: 60px;
   left: 20px;
   top: 30px;
+}
+.visa {
+  background: url('../img/card-visa.png') center no-repeat !important;
+}
+.master {
+  background: url('../img/card-master-card.png') center no-repeat !important;
 }
 /* Notifications page styles */
 .notifications-center-holder {

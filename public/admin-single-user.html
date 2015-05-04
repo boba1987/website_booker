@@ -323,8 +323,8 @@
                                                         <span class="gray-7-12">100% rating | <span class="green-1-12"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> &nbsp; Verified</span></span>  
                                                     </div>
                                                     <div class="col-xs-6">
-                                                        <a href="" class="red-button pull-right">suspend</a>
-                                                        <a href="" class="gray-button pull-right">flag</a>
+                                                        <a href="" class="red-button pull-right" data-toggle="modal" data-target="#user-decline-modal">suspend</a>
+                                                        <a href="" class="gray-button pull-right" data-toggle="modal" data-target="#listing-flag-modal">flag</a>
                                                         <a href="" class="gray-6-14 gray-link pull-right">RESET PASSWORD</a>
                                                     </div>
                                                 </div>
@@ -492,8 +492,8 @@
                                                         <span class="gray-7-12">100% rating | <span class="green-1-12"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> &nbsp; Verified</span></span>
                                                     </div>
                                                     <div class="col-xs-6">
-                                                        <a href="" class="red-button pull-right">suspend</a>
-                                                        <a href="" class="gray-button pull-right">flag</a>
+                                                        <a href="" class="red-button pull-right" data-toggle="modal" data-target="#user-decline-modal">suspend</a>
+                                                        <a href="" class="gray-button pull-right" data-toggle="modal" data-target="#listing-flag-modal">flag</a>
                                                         <a href="" class="gray-6-14 gray-link pull-right">RESET PASSWORD</a>
                                                     </div>
                                                 </div>
@@ -591,8 +591,8 @@
                                                         <span class="gray-7-12">100% rating | <span class="green-1-12"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> &nbsp; Verified</span></span>
                                                     </div>
                                                     <div class="col-xs-6">
-                                                        <a href="" class="red-button pull-right">suspend</a>
-                                                        <a href="" class="gray-button pull-right">flag</a>
+                                                        <a href="" class="red-button pull-right" data-toggle="modal" data-target="#user-decline-modal">suspend</a>
+                                                        <a href="" class="gray-button pull-right" data-toggle="modal" data-target="#listing-flag-modal">flag</a>
                                                         <a href="" class="gray-6-14 gray-link pull-right">RESET PASSWORD</a>
                                                     </div>
                                                 </div>
@@ -641,35 +641,36 @@
             </div>
         </div>
 
-        <!-- change email Modal -->
-        <div class="modal fade dashboard-modal" id="email-change-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <!-- flag listing Modal -->
+        <div class="modal fade dashboard-modal" id="listing-flag-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content modal-gray">
                     <div class="info-icon-gray-large">
-                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-flag" aria-hidden="true"></span>
                     </div>
-                    <p class="gray-7-14 text-center margin-top-30">
-                        <i>
-                            Please enter your password to verify email change.
-                        </i>
+                    <p class="gray-7-18 text-center margin-top-20">
+                        Add A Flag To This Listing
                     </p>
                     <form action="" class="clearfix">
                         <div class="input-holder col-lg-12 col-md-12">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <label for="email-change">
-                                        Please enter account password to confirm
+                                    <label for="">
+                                        Add a flag to this listing for internal purposes
                                     </label>
                                 </div>
                                 <div class="col-lg-12">
-                                    <input id="email-change" type="password" class="text-input">
+                                    <textarea id="approval-notes" type="text" class="text-input medium"></textarea>
                                 </div>
                             </div>
-                            <button type="submit" class="blue-button pull-right margin-top-20 prevent-default" data-dismiss="modal" aria-label="Close">
-                                yes
+                            <p class="gray-7-12 margin-top-10">
+                                <b>User will not be notified of this flag.</b>
+                            </p>
+                            <button type="submit" class="blue-button pull-right margin-top-10 prevent-default" data-dismiss="modal" aria-label="Close">
+                                submit
                             </button>
-                            <a href="" class="gray-button margin-top-20 prevent-default" data-dismiss="modal" aria-label="Close">
-                                no
+                            <a href="" class="gray-button margin-top-10 prevent-default" data-dismiss="modal" aria-label="Close">
+                                cancel
                             </a>
                             </form>
                         </div>
@@ -678,78 +679,44 @@
             </div>
         </div>
 
-        <!-- change security question Modal -->
-        <div class="modal fade dashboard-modal" id="question-change-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <!-- decline user Modal -->
+        <div class="modal fade dashboard-modal" id="user-decline-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content modal-gray">
                     <div class="info-icon-gray-large">
-                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                     </div>
-                    <p class="gray-7-14 text-center margin-top-30">
-                        <i>
-                            Please enter your password to verify security change.
-                        </i>
+                    <p class="gray-7-18 text-center margin-top-20">
+                        Confirm User Suspension
                     </p>
                     <form action="" class="clearfix">
                         <div class="input-holder col-lg-12 col-md-12">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <label for="sec-question-change">
-                                        Please enter account password to confirm
+                                    <label for="">
+                                        Internal Notes - Reasons For Suspension Decline 
                                     </label>
                                 </div>
                                 <div class="col-lg-12">
-                                    <input id="sec-question-change" type="password" class="text-input">
+                                    <textarea id="approval-notes" type="text" class="text-input small"></textarea>
                                 </div>
-                            </div>
-                            <button type="submit" class="blue-button pull-right margin-top-20 prevent-default" data-dismiss="modal" aria-label="Close">
-                                yes
-                            </button>
-                            <a href="" class="gray-button margin-top-20 prevent-default" data-dismiss="modal" aria-label="Close">
-                                no
-                            </a>
-                            </form>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <!-- phone verification Modal -->
-        <div class="modal fade dashboard-modal" id="phone-verification-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content modal-gray">
-                    <div class="info-icon-gray-large">
-                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                    </div>
-                    <p class="gray-7-20 text-center text-capitalize margin-top-20">
-                        Phone Verification
-                    </p>
-                    <p class="gray-7-14 text-center">
-                        <i>
-                            You will receive 4 digit PIN on number you provided as yours.
-                        </i>
-                    </p>
-                    <form action="" class="clearfix">
-                        <div class="input-holder col-lg-12 col-md-12">
-                            <div class="row">
                                 <div class="col-lg-12">
-                                    <label for="sec-question-change">
-                                        Please enter PIN to confirm
+                                    <label for="">
+                                        Reasons For Suspension Decline - Will Be Sent to Seller!
                                     </label>
                                 </div>
-                                <div class="col-lg-12 pin-input-holder">
-                                    <input id="pin-1" type="password" maxlength="1" class="text-input">
-                                    <input id="pin-2" type="password" maxlength="1" class="text-input">
-                                    <input id="pin-3" type="password" maxlength="1" class="text-input">
-                                    <input id="pin-4" type="password" maxlength="1" class="text-input">
+                                <div class="col-lg-12">
+                                    <textarea id="approval-notes" type="text" class="text-input small"></textarea>
                                 </div>
                             </div>
-                            <button type="submit" class="blue-button pull-right margin-top-20 prevent-default" data-dismiss="modal" aria-label="Close">
-                                yes
+                            <p class="gray-7-12 margin-top-10">
+                                <b>Are you sure you want to Suspension this user?</b>
+                            </p>
+                            <button type="submit" class="blue-button pull-right margin-top-10 prevent-default" data-dismiss="modal" aria-label="Close">
+                                suspend
                             </button>
-                            <a href="" class="gray-button margin-top-20 prevent-default" data-dismiss="modal" aria-label="Close">
-                                no
+                            <a href="" class="gray-button margin-top-10 prevent-default" data-dismiss="modal" aria-label="Close">
+                                cancel
                             </a>
                             </form>
                         </div>
