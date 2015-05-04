@@ -1968,3 +1968,47 @@ hr.gray{
 .master{
 	background: url('../img/card-master-card.png') center no-repeat !important;
 }
+
+.add-package-modal{
+	.blue-button, .gray-button{
+		padding: 8px 15px;
+  	min-width: 0;
+  }
+
+	.modal-head{
+		background-color: white;
+		border-bottom: solid 1px @gray-24;
+	}
+
+	.modal-body{
+		padding: 0;
+		background: @blue-2;
+
+		.categories{
+			li{
+				width: 50%;
+				float: left;
+				border: solid 1px @gray-24;
+				border-top: none;
+				background: white;
+				text-align: center;
+				color: @gray-2;
+				padding: 10px;
+
+				&:first-child{
+					border-left: none;
+				}
+
+				&:last-child{
+					border-right: none;	
+				}
+
+				&.active{
+					color: @blue-1;
+					border: none;
+					background: transparent;
+				}
+			}
+		}
+	}
+}

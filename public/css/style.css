@@ -1944,8 +1944,10 @@ label {
 .custom-text-input-holder .icon {
   display: block;
   height: 37px;
-  width: 40px;
+  width: 44px;
   position: absolute;
+  line-height: 38px;
+  text-align: center;
 }
 .custom-text-input-holder.right .icon {
   right: 0;
@@ -1953,7 +1955,7 @@ label {
   border-left: solid 1px #c9d7d8;
 }
 .custom-text-input-holder.right input {
-  padding-right: 42px;
+  padding-right: 45px;
 }
 .custom-text-input-holder.left .icon {
   left: 0;
@@ -1961,7 +1963,7 @@ label {
   border-right: solid 1px #c9d7d8;
 }
 .custom-text-input-holder.left input {
-  padding-left: 42px;
+  padding-left: 45px;
 }
 #carousel-example-generic {
   background: url('../img/macbook-inner-page.png') center no-repeat;
@@ -6520,6 +6522,40 @@ hr.gray {
 }
 .master {
   background: url('../img/card-master-card.png') center no-repeat !important;
+}
+.add-package-modal .blue-button,
+.add-package-modal .gray-button {
+  padding: 8px 15px;
+  min-width: 0;
+}
+.add-package-modal .modal-head {
+  background-color: white;
+  border-bottom: solid 1px #d5e2f5;
+}
+.add-package-modal .modal-body {
+  padding: 0;
+  background: #f2f4f7;
+}
+.add-package-modal .modal-body .categories li {
+  width: 50%;
+  float: left;
+  border: solid 1px #d5e2f5;
+  border-top: none;
+  background: white;
+  text-align: center;
+  color: #a8afba;
+  padding: 10px;
+}
+.add-package-modal .modal-body .categories li:first-child {
+  border-left: none;
+}
+.add-package-modal .modal-body .categories li:last-child {
+  border-right: none;
+}
+.add-package-modal .modal-body .categories li.active {
+  color: #0084ff;
+  border: none;
+  background: transparent;
 }
 /* Notifications page styles */
 .notifications-center-holder {

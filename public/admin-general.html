@@ -319,7 +319,7 @@
                             <div class="row row-correction">
                                 <div class="col-xs-12">
                                     <p class="gray-27-18 pull-left">Free Domain Listings</p>
-                                    <a href="" class="blue-button pull-right">
+                                    <a href="" class="blue-button pull-right" data-toggle="modal" data-target="#add-package-domain-modal">
                                         create package
                                     </a>
                                 </div>
@@ -659,7 +659,7 @@
                             <div class="row row-correction">
                                 <div class="col-xs-12">
                                     <p class="gray-27-18 pull-left">Free Website Listings</p>
-                                    <a href="" class="blue-button pull-right">
+                                    <a href="" class="blue-button pull-right" data-toggle="modal" data-target="#add-package-website-modal">
                                         create package
                                     </a>
                                 </div>
@@ -1570,7 +1570,6 @@
                             <a href="" class="gray-button margin-top-20 prevent-default" data-dismiss="modal" aria-label="Close">
                                 no
                             </a>
-                            </form>
                         </div>
                     </form>
                 </div>
@@ -1634,6 +1633,122 @@
                             </form>
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- add package Modal -->
+        <div class="modal fade dashboard-modal add-package-modal" id="add-package-domain-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content modal-gray padding-0">
+                    <div class="modal-head padding-20">
+                        <img src="img/box-modal.png" class="center" alt="">
+                        <p class="gray-7-16 text-center margin-top-10">Add A New Package</p>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="categories clearfix">
+                            <li><b>Website</b></li>
+                            <li class="active"><b>Domain</b></li>
+                        </ul>
+                        <form action="" class="clearfix margin-top-20">
+                            <div class="input-holder col-lg-12 col-md-12">
+                                <div class="row margin-bottom-20">
+                                    <div class="col-lg-12">
+                                        <label for="email-change">
+                                            Select a package
+                                        </label>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <select name="" id="" class="chosen-select">
+                                            <option value="">Lorem ipsum</option>
+                                            <option value="">dolor sit amet</option>
+                                            <option value="">Laboriosam ducimus</option>
+                                            <option value="">Illum, facere.</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div class="custom-text-input-holder left">
+                                            <span class="icon"><b>$</b></span>
+                                            <input type="text" id="date-from" class="text-input">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div class="custom-text-input-holder right">
+                                            <span class="icon"><b>Days</b></span>
+                                            <input type="text" id="date-to" class="text-input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="blue-button margin-left-10 pull-right prevent-default margin-bottom-20" data-dismiss="modal" aria-label="Close">
+                                    save & activate
+                                </button>
+                                <a href="" class="blue-button pull-right prevent-default" data-dismiss="modal" aria-label="Close">
+                                    save
+                                </a>
+                                <a href="" class="gray-button prevent-default" data-dismiss="modal" aria-label="Close">
+                                    cancel
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- add package website Modal -->
+        <div class="modal fade dashboard-modal add-package-modal" id="add-package-website-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content modal-gray padding-0">
+                    <div class="modal-head padding-20">
+                        <img src="img/box-modal.png" class="center" alt="">
+                        <p class="gray-7-16 text-center margin-top-10">Add A New Package</p>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="categories clearfix">
+                            <li class="active"><b>Website</b></li>
+                            <li><b>Domain</b></li>
+                        </ul>
+                        <form action="" class="clearfix margin-top-20">
+                            <div class="input-holder col-lg-12 col-md-12">
+                                <div class="row margin-bottom-20">
+                                    <div class="col-lg-12">
+                                        <label for="email-change">
+                                            Select a package
+                                        </label>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <select name="" id="" class="chosen-select">
+                                            <option value="">Lorem ipsum</option>
+                                            <option value="">dolor sit amet</option>
+                                            <option value="">Laboriosam ducimus</option>
+                                            <option value="">Illum, facere.</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div class="custom-text-input-holder left">
+                                            <span class="icon"><b>$</b></span>
+                                            <input type="text" id="date-from" class="text-input">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div class="custom-text-input-holder right">
+                                            <span class="icon"><b>Days</b></span>
+                                            <input type="text" id="date-to" class="text-input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="blue-button margin-left-10 pull-right prevent-default margin-bottom-20" data-dismiss="modal" aria-label="Close">
+                                    save & activate
+                                </button>
+                                <a href="" class="blue-button pull-right prevent-default" data-dismiss="modal" aria-label="Close">
+                                    save
+                                </a>
+                                <a href="" class="gray-button prevent-default" data-dismiss="modal" aria-label="Close">
+                                    cancel
+                                </a>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
