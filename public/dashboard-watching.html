@@ -218,19 +218,19 @@
                 <ul class="nav-items-holder">
                     <li>
                         <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-                        <a href="">
+                        <a href="" class="dashboard-icon">
                             <b>dashboard</b>
                         </a>
                     </li>
                     <li class="">
                         <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-                        <a href="">
+                        <a href="" class="deals-icon">
                             <b>deals</b>
                         </a>
                     </li>
                     <li class="has-notification" id="accordionBuy" class="collapsable-item" role="tablist" aria-multiselectable="true">
                         <div data-toggle="collapse" data-parent="#accordionBuy" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <a href="">
+                            <a href="" class="cart-icon">
                                 <b>buying</b>
                             </a>
                             <span class="icon"></span>
@@ -260,7 +260,7 @@
                     </li>
                     <li class="" id="accordionSell" role="tablist" aria-multiselectable="true">
                         <div data-toggle="collapse" data-parent="#accordionSell" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            <a href="">
+                            <a href="" class="shop-icon">
                                 <b>selling</b>
                             </a>
                             <span class="icon"></span>
@@ -292,7 +292,7 @@
                         </div>
                     </li>
                     <li class="">
-                        <a href="">
+                        <a href="" class="user-icon">
                             <b>my account</b>
                         </a>
                     </li>
@@ -302,6 +302,7 @@
 
             <div class="dashboard-page-tittle clearfix">
                 watching
+                <a href="" class="blue-button filter-btn pull-right prevent-default">filter</a>
             </div>
             
             <div id="dashboardMyOffer" class="dashboard-container dashboard-main-holder margin-top-30">
@@ -310,8 +311,8 @@
                         <div class="paging-table">
                             <div class="table-head">
                                 <ul class="clearfix">
-                                    <li class="width-10">property</li>
-                                    <li class="width-15">status</li>
+                                    <li class="width-10 text-center">property</li>
+                                    <li class="width-15 text-center">status</li>
                                     <li class="width-30">url</li>
                                     <li class="width-15">expires</li>
                                     <li class="width-15">price</li>
@@ -320,13 +321,20 @@
                             </div>
                             <div class="table-list">
                                 <ul class="clearfix">
-                                    <li class="width-10"></li>
-                                    <li class="width-15"></li>
+                                    <li class="width-10 text-center">
+                                        <a href="" class="domain"></a>
+                                    </li>
+                                    <li class="width-15 text-center">
+                                        <span class="status-active"></span>
+                                    </li>
                                     <li class="width-30">www.google.com</li>
-                                    <li class="width-15"></li>
+                                    <li class="width-15">
+                                        10-12-2014
+                                    </li>
                                     <li class="width-15 price"><span class="pull-left"><b>$</b></span><span class="pull-right"><b>750</b></span></li>
                                     <li class="width-15">
-                                        <a href="" data-toggle="modal" data-target="#stop-watching-modal">del</a>
+                                        <a href="" class="paper"></a>
+                                        <a href="" class="delete-icon" data-toggle="modal" data-target="#stop-watching-modal"></a>
                                     </li>
                                 </ul>
                             </div>
