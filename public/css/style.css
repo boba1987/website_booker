@@ -6243,18 +6243,18 @@ hr.gray {
 .dashboard-notes-list li .paper-bg {
   position: absolute;
   height: 90px;
-  width: 110.5%;
+  width: 110.3%;
   z-index: 1;
   background-size: 100%;
-  left: -7%;
+  left: -6.9%;
 }
 .dashboard-notes-list li .note-top {
   position: absolute;
   height: 90px;
-  width: 110.5%;
+  width: 110.3%;
   z-index: 1;
   background-size: 100%;
-  left: -7%;
+  left: -6.9%;
   top: 0;
 }
 .dashboard-notes-list li .note-top img {
@@ -6265,10 +6265,10 @@ hr.gray {
 .dashboard-notes-list li .note-bottom {
   position: absolute;
   height: 90px;
-  width: 110.5%;
+  width: 110.3%;
   z-index: 1;
   background-size: 100%;
-  left: -7%;
+  left: -6.9%;
   bottom: -13px;
   left: -5%;
 }
