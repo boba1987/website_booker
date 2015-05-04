@@ -218,69 +218,69 @@
             <aside class="dashboard-nav">
                 <ul class="nav-items-holder">
                     <li>
-                    	<span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-                        <a href="">
-                        	<b>dashboard</b>
-                    	</a>
+                        <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+                        <a href="" class="dashboard-icon">
+                            <b>dashboard</b>
+                        </a>
                     </li>
                     <li class="">
-                    	<span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-                        <a href="">
+                        <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+                        <a href="" class="deals-icon">
                             <b>deals</b>
                         </a>
                     </li>
                     <li class="has-notification" id="accordionBuy" class="collapsable-item" role="tablist" aria-multiselectable="true">
                         <div data-toggle="collapse" data-parent="#accordionBuy" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        	<a href="">
-                        		<b>buying</b>
-                        	</a>
+                            <a href="" class="cart-icon">
+                                <b>buying</b>
+                            </a>
                             <span class="icon"></span>
                             <span class="notifications-indicator"></span>
                         </div>
                         <div id="collapseOne" class="collapse" role="tabpanel">
                             <ul class="submenu">
-                                <li>
-                                	<span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+                                <li class="">
+                                    <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
                                     <a href="">my offeres</a>
                                     <span class="notifications-submenu">888</span>
                                 </li>
                                 <li>
-                                	<span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-                                	<a href="">watching</a>
-                            	</li>
-                                <li>
-                                	<span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-                                	<a href="">following</a>
+                                    <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+                                    <a href="">watching</a>
                                 </li>
                                 <li>
-                                	<span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-                                	<a href="">notes</a>
+                                    <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+                                    <a href="">following</a>
+                                </li>
+                                <li>
+                                    <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+                                    <a href="">notes</a>
                                 </li>
                             </ul>
                         </div>
                     </li>
                     <li class="" id="accordionSell" role="tablist" aria-multiselectable="true">
                         <div data-toggle="collapse" data-parent="#accordionSell" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                        	<a href="">
-                        		<b>selling</b>
-                        	</a>
+                            <a href="" class="shop-icon">
+                                <b>selling</b>
+                            </a>
                             <span class="icon"></span>
                             <span class="notifications-indicator"></span>
                         </div>
                         <div id="collapseTwo" class="collapse in" role="tabpanel">
                             <ul class="submenu">
+                                <li class="">
+                                    <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+                                    <a href="">received offeres</a>
+                                </li>
+                                <li class="">
+                                    <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+                                    <a href="">my properties</a>
+                                </li>
                                 <li>
-                                	<span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-                                	<a href="">received offeres</a>
-                            	</li>
-                                <li>
-                                	<span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-                                	<a href="">my properties</a>
-                            	</li>
-                                <li>
-                                	<span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-                                	<a href="">my drafts</a>
-                            	</li>
+                                    <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+                                    <a href="">my drafts</a>
+                                </li>
                                 <li>
                                     <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
                                     <a href="">property comments</a>
@@ -293,7 +293,7 @@
                         </div>
                     </li>
                     <li class="">
-                        <a href="">
+                        <a href="" class="user-icon">
                             <b>my account</b>
                         </a>
                     </li>
@@ -314,7 +314,7 @@
                             <div class="table-head">
                                 <ul class="clearfix">
                                     <li class="width-10 text-center">listed</li>
-                                    <li class="width-15">property</li>
+                                    <li class="width-15 text-center">property</li>
                                     <li class="width-20">url</li>
                                     <li class="width-15">amount</li>
                                     <li class="width-15">expires</li>
@@ -325,16 +325,53 @@
                             <div class="table-list">
                                 <ul class="clearfix">
                                     <li class="width-10 text-center">Today</li>
-                                    <li class="width-15"></li>
-                                    <li class="width-20"></li>
-                                    <li class="width-15"></li>
-                                    <li class="width-15"></li>
+                                    <li class="width-15 text-center">
+                                        <span class="website"></span>
+                                    </li>
+                                    <li class="width-20">
+                                        www.google.com
+                                    </li>
+                                    <li class="width-15">
+                                        <span class="pull-left"><b>$</b></span><span class="pull-right font-normal"><b>750</b></span>
+                                    </li>
+                                    <li class="width-15">
+                                        11-11-2015
+                                    </li>
                                     <li class="width-15">
                                         <div class="small-switch">
                                             <input data-off-text="False" data-on-text="True" type="checkbox" name="dash-checkbox" checked>
                                         </div>
                                     </li>
-                                    <li class="width-10"></li>
+                                    <li class="width-10">
+                                        <span class="gray-2-12">
+                                            Processing
+                                        </span>
+                                    </li>
+                                </ul>
+                                <ul class="clearfix">
+                                    <li class="width-10 text-center">Today</li>
+                                    <li class="width-15 text-center">
+                                        <span class="domain"></span>
+                                    </li>
+                                    <li class="width-20">
+                                        www.google.com
+                                    </li>
+                                    <li class="width-15">
+                                        <span class="pull-left"><b>$</b></span><span class="pull-right font-normal"><b>750</b></span>
+                                    </li>
+                                    <li class="width-15">
+                                        11-11-2015
+                                    </li>
+                                    <li class="width-15">
+                                        <div class="small-switch">
+                                            <input data-off-text="False" data-on-text="True" type="checkbox" name="dash-checkbox" checked>
+                                        </div>
+                                    </li>
+                                    <li class="width-10">
+                                        <span class="green-1-12">
+                                            Launched
+                                        </span>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="table-footer table-navigation clearfix">
