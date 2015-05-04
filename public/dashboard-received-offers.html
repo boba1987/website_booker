@@ -165,69 +165,69 @@
             <aside class="dashboard-nav">
                 <ul class="nav-items-holder">
                     <li>
-                    	<span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-                        <a href="">
-                        	<b>dashboard</b>
-                    	</a>
+                        <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+                        <a href="" class="dashboard-icon">
+                            <b>dashboard</b>
+                        </a>
                     </li>
                     <li class="">
-                    	<span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-                        <a href="">
+                        <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+                        <a href="" class="deals-icon">
                             <b>deals</b>
                         </a>
                     </li>
                     <li class="has-notification" id="accordionBuy" class="collapsable-item" role="tablist" aria-multiselectable="true">
                         <div data-toggle="collapse" data-parent="#accordionBuy" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        	<a href="">
-                        		<b>buying</b>
-                        	</a>
+                            <a href="" class="cart-icon">
+                                <b>buying</b>
+                            </a>
                             <span class="icon"></span>
                             <span class="notifications-indicator"></span>
                         </div>
                         <div id="collapseOne" class="collapse" role="tabpanel">
                             <ul class="submenu">
-                                <li>
-                                	<span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+                                <li class="active">
+                                    <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
                                     <a href="">my offeres</a>
                                     <span class="notifications-submenu">888</span>
                                 </li>
                                 <li>
-                                	<span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-                                	<a href="">watching</a>
-                            	</li>
-                                <li>
-                                	<span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-                                	<a href="">following</a>
+                                    <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+                                    <a href="">watching</a>
                                 </li>
                                 <li>
-                                	<span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-                                	<a href="">notes</a>
+                                    <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+                                    <a href="">following</a>
+                                </li>
+                                <li>
+                                    <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+                                    <a href="">notes</a>
                                 </li>
                             </ul>
                         </div>
                     </li>
                     <li class="" id="accordionSell" role="tablist" aria-multiselectable="true">
                         <div data-toggle="collapse" data-parent="#accordionSell" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                        	<a href="">
-                        		<b>selling</b>
-                        	</a>
+                            <a href="">
+                                <b>selling</b>
+                            </a>
                             <span class="icon"></span>
                             <span class="notifications-indicator"></span>
                         </div>
                         <div id="collapseTwo" class="collapse in" role="tabpanel">
                             <ul class="submenu">
                                 <li class="active">
-                                	<span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-                                	<a href="">received offeres</a>
-                            	</li>
+                                    <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+                                    <a href="">received offeres</a>
+                                </li>
                                 <li>
-                                	<span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-                                	<a href="">my properties</a>
-                            	</li>
+                                    <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+                                    <a href="">my properties</a>
+                                </li>
                                 <li>
-                                	<span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-                                	<a href="">my drafts</a>
-                            	</li>
+                                    <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+                                    <a href="">my drafts</a>
+                                </li>
                                 <li>
                                     <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
                                     <a href="">property comments</a>
@@ -240,7 +240,7 @@
                         </div>
                     </li>
                     <li class="">
-                        <a href="">
+                        <a href="" class="user-icon">
                             <b>my account</b>
                         </a>
                     </li>
@@ -249,7 +249,10 @@
             </aside>
 
             <div class="dashboard-page-tittle clearfix">
-                received offers
+                <div class="dashboard-title-container">
+                    received offers
+                <a href="" class="blue-button filter-btn pull-right prevent-default">filter</a>
+                </div>
             </div>
             
             <div id="dashboardMyOffer" class="dashboard-container dashboard-main-holder margin-top-30">
@@ -261,7 +264,7 @@
                                     <li class="width-15">received</li>
                                     <li class="width-25">url</li>
                                     <li class="width-20">buyer</li>
-                                    <li class="width-10">verified</li>
+                                    <li class="width-10 text-center">verified</li>
                                     <li class="width-10">price</li>
                                     <li class="width-10">offered</li>
                                     <li class="width-10">actions</li>
@@ -274,15 +277,48 @@
                                     <li class="width-20">
                                         <span class="blue-1-12">vladimirBabic</span>
                                     </li>
-                                    <li class="width-10"></li>
+                                    <li class="width-10 text-center">
+                                        <div class="verified-icon">
+                                            <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+                                        </div>
+                                    </li>
                                     <li class="width-10">
                                         <span class="pull-left">$</span><span class="pull-right font-normal">750</span>
                                     </li>
                                     <li class="width-10 price">
-                                        <span class="pull-left">$</span><span class="pull-right">750</span>
+                                        <span class="pull-left"><b>$</span><span class="pull-right">750</b></span>
                                     </li>
                                     <li class="width-10 price">
-                                        <a href="" data-toggle="modal" data-target="#delete-offer-modal">del</a>
+                                        <a href="" class="gray-icon">
+                                            <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
+                                        </a>
+                                        &nbsp;
+                                        <a href="" class="delete-icon" data-toggle="modal" data-target="#delete-offer-modal"></a>
+                                    </li>
+                                </ul>
+                                <ul class="clearfix">
+                                    <li class="width-15">Today</li>
+                                    <li class="width-25">www.gooogle.com</li>
+                                    <li class="width-20">
+                                        <span class="blue-1-12">vladimirBabic</span>
+                                    </li>
+                                    <li class="width-10 text-center">
+                                        <div class="not-verified-icon">
+                                            <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+                                        </div>
+                                    </li>
+                                    <li class="width-10">
+                                        <span class="pull-left">$</span><span class="pull-right font-normal">750</span>
+                                    </li>
+                                    <li class="width-10 price">
+                                        <span class="pull-left"><b>$</span><span class="pull-right">750</b></span>
+                                    </li>
+                                    <li class="width-10 price">
+                                        <a href="" class="gray-icon">
+                                            <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
+                                        </a>
+                                        &nbsp;
+                                        <a href="" class="delete-icon" data-toggle="modal" data-target="#delete-offer-modal"></a>
                                     </li>
                                 </ul>
                             </div>
