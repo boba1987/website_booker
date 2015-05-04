@@ -5124,7 +5124,7 @@ body {
   background: white;
   border: solid 1px #e2eeef;
   overflow: hidden;
-  max-height: 394px;
+  max-height: 414px;
 }
 .dashboard-table-holder .table-head-title,
 .paging-table .table-head-title {
@@ -5162,7 +5162,7 @@ body {
 }
 .dashboard-table-holder .table-list,
 .paging-table .table-list {
-  max-height: 293px;
+  max-height: 311px;
   overflow-y: scroll;
   padding: 0 20px;
   font-size: 12px !important;
@@ -5931,6 +5931,9 @@ body {
 .dashboard-comment-list li .flaged {
   color: #88929b;
 }
+.dashboard-comment-list li .flaged span {
+  height: 10px;
+}
 .approvals {
   padding: 0 30px;
 }
@@ -5940,8 +5943,13 @@ body {
 }
 .approvals .tabs-holder .tab-left,
 .approvals .tabs-holder .tab-right {
+  padding-top: 7px;
+  padding-left: 10px;
   width: 30px;
   height: 30px;
+}
+.approvals .tabs-holder .tab-right {
+  padding-left: 5px;
 }
 .image-with-shadow {
   -webkit-border-radius: 50%;
@@ -6114,6 +6122,18 @@ hr.gray {
 .listing-item:last-child {
   margin-bottom: 0;
 }
+.listing-item.active .selected-icon {
+  font-family: 'Glyphicons Halflings';
+  position: relative;
+}
+.listing-item.active .selected-icon:before {
+  content: "\e013";
+  position: absolute;
+  font-size: 23px;
+  color: white;
+  left: 14px;
+  top: 10px;
+}
 .listing-item .selected {
   display: none;
   padding-right: 30px;
@@ -6204,6 +6224,30 @@ hr.gray {
 .user-icon {
   background: url('../img/icons/user.png') 17px center no-repeat;
 }
+.approval-icon {
+  background: url('../img/icons/approval.png') 17px center no-repeat;
+}
+.moderation-icon {
+  background: url('../img/icons/pen.png') 17px center no-repeat;
+}
+.listings-icon {
+  background: url('../img/icons/listings.png') 17px center no-repeat;
+}
+.search-icon {
+  background: url('../img/icons/search.png') 17px center no-repeat;
+}
+.users-icon {
+  background: url('../img/icons/users.png') 17px center no-repeat;
+}
+.report-icon {
+  background: url('../img/icons/report.png') 17px center no-repeat;
+}
+.settings-icon {
+  background: url('../img/icons/settings.png') 17px center no-repeat;
+}
+.support-icon {
+  background: url('../img/icons/support.png') 17px center no-repeat;
+}
 .add-doc {
   background-image: url('../img/icons/doc-add.png');
   background-repeat: no-repeat;
@@ -6280,6 +6324,20 @@ hr.gray {
   width: 20px;
   height: 16px;
   background: url('../img/icons/trash.png') center no-repeat;
+}
+.pen-icon {
+  display: inline-block;
+  width: 20px;
+  height: 16px;
+  background: url('../img/icons/pen.png') center no-repeat;
+  height: 18px;
+}
+.flag-icon {
+  display: inline-block;
+  width: 20px;
+  height: 16px;
+  background: url('../img/icons/flag.png') center no-repeat;
+  height: 17px;
 }
 .filter-btn {
   padding-left: 30px !important;

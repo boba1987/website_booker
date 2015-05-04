@@ -571,7 +571,7 @@
 	background: white;
 	border: solid 1px @gray-4;
 	overflow: hidden;
-	max-height: 394px;
+	max-height: 414px;
 
 	.table-head-title{
 		padding: 20px;
@@ -603,7 +603,7 @@
 	}
 
 	.table-list{
-		max-height: 293px;
+		max-height: 311px;
 		overflow-y: scroll;
 		padding: 0 20px;
 		.getFont(12, @gray-7);
@@ -1311,6 +1311,9 @@
 
 		.flaged{
 			color: lighten(@gray-27, 10%);
+			span{
+				height: 10px;
+			}
 		}
 	}
 }
@@ -1323,9 +1326,15 @@
 		margin: 0 auto;
 
 		.tab-left, .tab-right{
+			padding-top: 7px;
+  		padding-left: 10px;
 			width: 30px;
 			height: 30px;
 		} 
+
+		.tab-right{
+			padding-left: 5px;
+		}
 	}
 }
 
@@ -1530,6 +1539,22 @@ hr.gray{
 		margin-bottom: 0;
 	}
 
+	&.active{
+		.selected-icon{
+			font-family: 'Glyphicons Halflings';
+			position: relative;
+
+			&:before {
+			  content: "\e013";
+			  position: absolute;
+			  font-size: 23px;
+			  color: white;
+			  left: 14px;
+			  top: 10px;
+			}
+		}
+	}
+
 	.selected{
 		display: none;
 		padding-right: 30px;
@@ -1646,6 +1671,38 @@ hr.gray{
 	background: url('../img/icons/user.png') 17px center no-repeat;			
 }
 
+.approval-icon{
+	background: url('../img/icons/approval.png') 17px center no-repeat;				
+}
+
+.moderation-icon{
+	background: url('../img/icons/pen.png') 17px center no-repeat;				
+}
+
+.listings-icon{
+	background: url('../img/icons/listings.png') 17px center no-repeat;				
+}
+
+.search-icon{
+	background: url('../img/icons/search.png') 17px center no-repeat;				
+}
+
+.users-icon{
+	background: url('../img/icons/users.png') 17px center no-repeat;				
+}
+
+.report-icon{
+	background: url('../img/icons/report.png') 17px center no-repeat;				
+}
+
+.settings-icon{
+	background: url('../img/icons/settings.png') 17px center no-repeat;					
+}
+
+.support-icon{
+	background: url('../img/icons/support.png') 17px center no-repeat;						
+}
+
 .add-doc{
 	background-image: url('../img/icons/doc-add.png');
 	background-repeat: no-repeat;
@@ -1722,6 +1779,18 @@ hr.gray{
 .delete-icon{
 	.dash-icon;
 	background: url('../img/icons/trash.png') center no-repeat;	
+}
+
+.pen-icon{
+	.dash-icon;
+	background: url('../img/icons/pen.png') center no-repeat;		
+	height: 18px;
+}
+
+.flag-icon{
+	.dash-icon;
+	background: url('../img/icons/flag.png') center no-repeat;		
+	height: 17px;
 }
 
 .filter-btn{
