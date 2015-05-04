@@ -6479,6 +6479,19 @@ hr.gray {
 .modal {
   overflow-x: scroll !important;
 }
+.moderation-comment .note-holder {
+  padding-left: 90px !important;
+  padding-top: 40px !important;
+}
+.moderation-comment .note-holder img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  width: 60px;
+  left: 20px;
+  top: 30px;
+}
 /* Notifications page styles */
 .notifications-center-holder {
   -webkit-border-radius: 5px;
