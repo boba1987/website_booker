@@ -68,12 +68,13 @@
 .white-button{
   .border-radius(20px);
   background: white;
-  padding: 9px 20px;
+  padding: 7px 20px;
   color: @gray-6;
   border: solid 2px @gray-6;
   text-align: center;
   display: inline-block;
   text-transform: uppercase;
+  cursor: pointer;
 
   &:hover, &:active, &:focus{
     text-decoration: none;
@@ -107,10 +108,32 @@
 
 .blue-button-fb{
   .button-common;
-  background: @blue-7;
+  background-color: @blue-7;
+  padding-left: 30px;
+  background-image: url('../img/icons/fb.png');
+  background-repeat: no-repeat;
+  background-position: 15px center;
 }
 
 .blue-button-li{
   .button-common;
   background: @blue-12;
+}
+
+.blue-transparent-button{
+  .white-button;
+  background: transparent;
+  color: @blue-1;
+  border: solid 2px @blue-1;
+
+  &:hover, &:active, &:focus{
+    text-decoration: none;
+    color: @blue-1;
+  }
+}
+
+.blue-button-round{
+  .blue-button;
+  padding: 8px;
+  min-width: 40px;
 }

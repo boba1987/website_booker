@@ -1731,6 +1731,11 @@ hr.gray{
 	background-repeat: no-repeat;		
 }
 
+.print-icon{
+	.dash-icon;
+	background: url('../img/icons/print.png') center no-repeat;	
+}
+
 .watching-active{
 	color: @blue-1;
 }
@@ -1844,4 +1849,21 @@ hr.gray{
 .dashboard-title-container{
 	max-width: 1150px;
 	min-width: 0;
+}
+
+#billing-invoice-modal{
+	border-radius: 0;
+	.modal-content{
+		border-radius: 0;
+		padding: 0;
+	}
+
+	.modal-dialog{
+		border-radius: 0;
+		min-width: 870px;
+	}
+
+	.invoice-modal-top{
+		background: @gray-24;
+	}
 }
