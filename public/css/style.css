@@ -272,7 +272,7 @@ ul {
   text-transform: uppercase;
   background-color: #0084ff;
   padding: 8px;
-  min-width: 40px;
+  min-width: 38px;
 }
 .blue-button-round:hover,
 .blue-button-round:active,
@@ -6414,6 +6414,12 @@ hr.gray {
 }
 #billing-invoice-modal .invoice-modal-top {
   background: #d5e2f5;
+}
+#billing-invoice-modal .modal-backdrop {
+  min-width: 900px;
+}
+.modal {
+  overflow-x: scroll !important;
 }
 /* Notifications page styles */
 .notifications-center-holder {
