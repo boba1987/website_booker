@@ -11,6 +11,10 @@
 
 .dashboard-header, .dashboard-container{
 	min-width: 1000px;
+
+	@media (max-width:1000px){
+		min-width: 745px;
+	}
 }
 
 .dashboard-main-holder{
@@ -18,7 +22,8 @@
 	min-width: 1000px;
 
 	@media (max-width:1000px){
-		//padding-left: 60px;
+		padding-left: 60px;
+		min-width: 748px;
 	}
 }
 
@@ -283,14 +288,14 @@
   transition: all 0.5s;
 
 	@media (max-width: 1000px){
-		left: 0px;
+		left: -226px;
 
 		.glyphicon-triangle-left{
 			right: -3px !important;
 		}
 
-		&.collapsed{
-	  	left: -226px;
+		&.opened{
+	  	left: 0px;
 	  }
 	}
 
@@ -446,6 +451,10 @@
 	background: @gray-24;
 	position: relative;
 	min-width: 1000px;
+
+	@media(max-width:1000px){
+		min-width: 748px;
+	}
 
 	ul{
 		li{
@@ -762,6 +771,10 @@
 	height: 100%;
 	min-height: 850px;
 	background: @gray-5;
+
+	@media(max-width: 1000px){
+		min-width: 748px;
+	}
 }
 
 .dashboard-page-tittle{
@@ -784,22 +797,37 @@
 		font-size: 14px !important;
 		padding: 5px 20px;
 	}
+
+	@media (max-width: 1000px){
+		display: block;
+		padding-left: 100px;
+		min-width: 783px;
+	}
 }
 
 .mobile-navigation{
 	height: 100%;
-	width: 40px;
-	right: -40px;
+	width: 45px;
+	right: -45px;
 	position: absolute;
 	background: @gray-19;
 	display: none;
+	border-top: none;
 
 	.icon-bar{
 		background: white;
 	}
 
 	.navbar-toggle{
-		padding: 8px;
+		padding: 5px;
+		margin: 0;
+		margin-top: 15px;
+  		margin-right: 5px;
+  		background: white;
+
+  		@media (max-width: 1000px){
+			display: block !important;
+		}
 	}
 
 	@media (max-width: 1000px){

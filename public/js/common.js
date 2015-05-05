@@ -49,3 +49,8 @@ function dealsMain(){
 }
 
 dealsMain();
+
+/* Dashboard mobile navigation */
+$('.dashboard-nav .navbar-toggle').on('click', function(){
+	$('.dashboard-nav').toggleClass('opened');
+});
