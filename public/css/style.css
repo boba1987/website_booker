@@ -4958,11 +4958,19 @@ body {
   text-decoration: none;
 }
 .dashboard-nav .nav-items-holder li.active {
-  color: white;
   background: #29313e;
+}
+.dashboard-nav .nav-items-holder li.active a {
+  color: white !important;
 }
 .dashboard-nav .nav-items-holder li.active .glyphicon {
   display: block;
+}
+.dashboard-nav .nav-items-holder li.active .dashboard-icon {
+  background: url('../img/icons/dash_active.png') 17px center no-repeat;
+}
+.dashboard-nav .nav-items-holder li.active .deals-icon {
+  background: url('../img/icons/deal_active.png') 17px center no-repeat;
 }
 .dashboard-nav .nav-items-holder li:hover {
   background: #29313e;
