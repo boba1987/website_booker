@@ -17,6 +17,7 @@ ul {
   border: none;
   display: inline-block;
   text-transform: uppercase;
+  font-weight: bold;
 }
 .button-common:hover,
 .button-common:active,
@@ -33,6 +34,7 @@ ul {
   text-transform: capitalize;
   padding: 5px 12px;
   line-height: 25px;
+  font-weight: bold;
 }
 .small-button-common .glyphicon {
   margin-right: 5px;
@@ -48,6 +50,7 @@ ul {
   border: none;
   display: inline-block;
   text-transform: uppercase;
+  font-weight: bold;
   background-color: #0084ff;
 }
 .blue-button:hover,
@@ -67,6 +70,7 @@ ul {
   border: none;
   display: inline-block;
   text-transform: uppercase;
+  font-weight: bold;
   background-color: #df4a32;
 }
 .red-button:hover,
@@ -86,6 +90,7 @@ ul {
   border: none;
   display: inline-block;
   text-transform: uppercase;
+  font-weight: bold;
   background-color: #23d200;
 }
 .green-button:hover,
@@ -105,6 +110,7 @@ ul {
   border: none;
   display: inline-block;
   text-transform: uppercase;
+  font-weight: bold;
   background-color: #a8afba;
 }
 .gray-button:hover,
@@ -141,6 +147,7 @@ ul {
   display: inline-block;
   text-transform: uppercase;
   cursor: pointer;
+  font-weight: bold;
 }
 .white-button:hover,
 .white-button:active,
@@ -170,6 +177,7 @@ ul {
   text-transform: capitalize;
   padding: 5px 12px;
   line-height: 25px;
+  font-weight: bold;
   background: #c9d7d8;
 }
 .gray-notification-button .glyphicon {
@@ -184,6 +192,7 @@ ul {
   text-transform: capitalize;
   padding: 5px 12px;
   line-height: 25px;
+  font-weight: bold;
   background: #0084ff;
 }
 .blue-notification-button .glyphicon {
@@ -200,6 +209,7 @@ ul {
   border: none;
   display: inline-block;
   text-transform: uppercase;
+  font-weight: bold;
   background-color: #3b5998;
   padding-left: 30px;
   background-image: url('../img/icons/fb.png');
@@ -223,6 +233,7 @@ ul {
   border: none;
   display: inline-block;
   text-transform: uppercase;
+  font-weight: bold;
   background: #0077b5;
 }
 .blue-button-li:hover,
@@ -243,6 +254,7 @@ ul {
   display: inline-block;
   text-transform: uppercase;
   cursor: pointer;
+  font-weight: bold;
   background: transparent;
   color: #0084ff;
   border: solid 2px #0084ff;
@@ -270,6 +282,7 @@ ul {
   border: none;
   display: inline-block;
   text-transform: uppercase;
+  font-weight: bold;
   background-color: #0084ff;
   padding: 8px;
   min-width: 38px;
