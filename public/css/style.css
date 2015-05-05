@@ -5401,6 +5401,7 @@ body {
   background: #354052;
   display: none;
   border-top: none;
+  border-bottom: none;
 }
 .mobile-navigation .icon-bar {
   background: white;
@@ -6708,6 +6709,16 @@ hr.gray {
 #dashboardApprovals,
 #comment {
   padding-left: 240px;
+}
+@media (max-width: 1000px) {
+  #dashboardDeals,
+  #dashboardNotes,
+  #dashboardPropertyComments,
+  #adminDashboardHistoryApprovals,
+  #dashboardApprovals,
+  #comment {
+    padding-left: 59px;
+  }
 }
 /* Admin dashboard specific styles */
 .admin-overview-table {
