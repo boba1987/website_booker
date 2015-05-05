@@ -13,9 +13,3 @@ Server boilerplate
 Notes:
 -use Bower to install third party
 -set third party location for those instaled via Bower in .bowerrc
-
-Missing modals: 
-  -My Account
-  	-> email-settings-modal
-  	-> identity-verification
-  	-> billing-invoices
