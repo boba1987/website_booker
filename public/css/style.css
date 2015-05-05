@@ -6144,6 +6144,17 @@ hr.gray {
   margin-bottom: 10px;
   border: solid 2px #e4e7ed;
 }
+@media (max-width: 992px) {
+  .listing-item div {
+    text-align: center !important;
+  }
+  .listing-item .selected-icon {
+    position: relative;
+    left: 50%;
+    margin-left: -27px;
+    margin-bottom: 10px;
+  }
+}
 .listing-item:last-child {
   margin-bottom: 0;
 }
