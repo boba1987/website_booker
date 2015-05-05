@@ -4972,6 +4972,30 @@ body {
 .dashboard-nav .nav-items-holder li.active .deals-icon {
   background: url('../img/icons/deal_active.png') 17px center no-repeat;
 }
+.dashboard-nav .nav-items-holder li.active .users-icon {
+  background: url('../img/icons/users_active.png') 17px center no-repeat;
+}
+.dashboard-nav .nav-items-holder li.active .search-icon {
+  background: url('../img/icons/search_active.png') 17px center no-repeat;
+}
+.dashboard-nav .nav-items-holder li.active .approval-icon {
+  background: url('../img/icons/approval_active.png') 17px center no-repeat;
+}
+.dashboard-nav .nav-items-holder li.active .moderation-icon {
+  background: url('../img/icons/pen_active.png') 17px center no-repeat;
+}
+.dashboard-nav .nav-items-holder li.active .listings-icon {
+  background: url('../img/icons/listings_active.png') 17px center no-repeat;
+}
+.dashboard-nav .nav-items-holder li.active .report-icon {
+  background: url('../img/icons/report_active.png') 17px center no-repeat;
+}
+.dashboard-nav .nav-items-holder li.active .settings-icon {
+  background: url('../img/icons/settings_active.png') 17px center no-repeat;
+}
+.dashboard-nav .nav-items-holder li.active .support-icon {
+  background: url('../img/icons/support_active.png') 17px center no-repeat;
+}
 .dashboard-nav .nav-items-holder li:hover {
   background: #29313e;
 }
