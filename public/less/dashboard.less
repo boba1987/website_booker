@@ -173,6 +173,21 @@
   		content: "\e163";
 		}
 	}
+
+	.col-xs-9 .text-uppercase.gray-6-14{
+		&:before{
+			margin-right: 5px;
+		}
+	}
+
+	.col-xs-6 .text-uppercase.blue-1-12{
+		&:before{
+			font-family: 'Glyphicons Halflings';
+  		content: "\e092";
+  		right: 10px;
+  		position: absolute;
+		}	
+	}
 }
 
 .notificationsList{
@@ -291,7 +306,7 @@
 		left: -226px;
 
 		.glyphicon-triangle-left{
-			right: -3px !important;
+			right: -4px !important;
 		}
 
 		&.opened{
@@ -529,6 +544,7 @@
 					text-decoration: none;
 					color: @blue-1;
 					border-bottom: solid 3px @blue-1;
+					height: 40px;
 				}
 			}
 		}

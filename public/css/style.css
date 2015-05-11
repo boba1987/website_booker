@@ -4824,6 +4824,15 @@ body {
   font-family: 'Glyphicons Halflings';
   content: "\e163";
 }
+.user-dropdown .col-xs-9 .text-uppercase.gray-6-14:before {
+  margin-right: 5px;
+}
+.user-dropdown .col-xs-6 .text-uppercase.blue-1-12:before {
+  font-family: 'Glyphicons Halflings';
+  content: "\e092";
+  right: 10px;
+  position: absolute;
+}
 .notificationsList {
   margin-bottom: -15px;
 }
@@ -4928,7 +4937,7 @@ body {
     left: -226px;
   }
   .dashboard-nav .glyphicon-triangle-left {
-    right: -3px !important;
+    right: -4px !important;
   }
   .dashboard-nav.opened {
     left: 0px;
@@ -5121,6 +5130,7 @@ body {
   text-decoration: none;
   color: #0084ff;
   border-bottom: solid 3px #0084ff;
+  height: 40px;
 }
 .row-correction {
   margin-right: 0;
