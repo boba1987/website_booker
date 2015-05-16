@@ -13,7 +13,7 @@
 	min-width: 1000px;
 
 	@media (max-width:1000px){
-		min-width: 745px;
+		min-width: 475px;
 	}
 }
 
@@ -23,7 +23,7 @@
 
 	@media (max-width:1000px){
 		padding-left: 60px;
-		min-width: 748px;
+		min-width: 465px;
 	}
 }
 
@@ -114,6 +114,11 @@
 .notifications-holder{
 	.dropdown-menu{
 		right: 24px;
+
+		@media (max-width:767px){
+			right: 40%;
+			margin-right: -146px;
+		}
 	}
 }
 
@@ -122,19 +127,28 @@
 	border: solid 1px @gray-1;
 	width: 330px;
 	right: -1px;
-  	left: auto;
+  left: auto;
 	-webkit-box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.2) !important;
 	-moz-box-shadow:    0px 3px 6px 0px rgba(50, 50, 50, 0.2) !important;
 	box-shadow:         0px 3px 6px 0px rgba(50, 50, 50, 0.2) !important;
+
+	@media (max-width:767px){
+		right: 40%;
+		margin-right: -166px;
+	}	
 	
 	.peak{
 		background: url('../img/peak-gray.png') center no-repeat;
 		display: block;
 		position: absolute;
 		width: 20px;
-	  	height: 20px;
-	  	top: -13px;
-	  	right: 20px;
+  	height: 20px;
+  	top: -13px;
+  	right: 20px;
+
+  	@media (max-width:767px){
+  		display: none;
+  	}
 	}
 
 	hr{
@@ -831,7 +845,7 @@
 	background: @gray-5;
 
 	@media(max-width: 1000px){
-		min-width: 748px;
+		min-width: 480px;
 	}
 }
 
@@ -859,7 +873,7 @@
 	@media (max-width: 1000px){
 		display: block;
 		padding-left: 100px;
-		min-width: 783px;
+		min-width: 515px;
 	}
 }
 
