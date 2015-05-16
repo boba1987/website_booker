@@ -6981,6 +6981,24 @@ hr.gray {
   border: none;
   background: transparent;
 }
+@media (max-width: 1000px) {
+  .tablet-only .dashboard-header,
+  .tablet-only .dashboard-container {
+    min-width: 745px;
+  }
+  .tablet-only .dashboard-main-holder {
+    padding-left: 60px;
+    min-width: 748px;
+  }
+  .tablet-only .bg-gray {
+    min-width: 748px;
+  }
+  .tablet-only .dashboard-page-tittle {
+    display: block;
+    padding-left: 100px;
+    min-width: 783px;
+  }
+}
 /* Notifications page styles */
 .notifications-center-holder {
   -webkit-border-radius: 5px;
