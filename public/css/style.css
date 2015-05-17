@@ -5420,7 +5420,7 @@ body {
 }
 @media (max-width: 1000px) {
   .dashboard-menu-items {
-    min-width: 748px;
+    min-width: 480px;
   }
 }
 .dashboard-menu-items ul li {
@@ -6984,19 +6984,22 @@ hr.gray {
 @media (max-width: 1000px) {
   .tablet-only .dashboard-header,
   .tablet-only .dashboard-container {
-    min-width: 745px;
+    min-width: 763px;
   }
   .tablet-only .dashboard-main-holder {
     padding-left: 60px;
-    min-width: 748px;
+    min-width: 763px;
   }
   .tablet-only .bg-gray {
-    min-width: 748px;
+    min-width: 768px;
   }
   .tablet-only .dashboard-page-tittle {
     display: block;
     padding-left: 100px;
-    min-width: 783px;
+    min-width: 803px;
+  }
+  .tablet-only .dashboard-menu-items {
+    min-width: 763px;
   }
 }
 /* Notifications page styles */
