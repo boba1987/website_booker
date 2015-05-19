@@ -1758,7 +1758,7 @@ label {
 .custom-checkbox label {
   cursor: pointer;
   text-transform: capitalize;
-  padding: 5px 0 10px 30px;
+  padding: 5px 0 5px 30px;
   background: url('../img/checkbox-unchecked.png') no-repeat center left;
 }
 .custom-checkbox label.checked {
