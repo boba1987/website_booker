@@ -333,7 +333,7 @@
                                                     <div class="col-xs-6">
                                                         <a href="" class="red-button pull-right" data-toggle="modal" data-target="#user-decline-modal">suspend</a>
                                                         <a href="" class="gray-button pull-right" data-toggle="modal" data-target="#listing-flag-modal">flag</a>
-                                                        <a href="" class="gray-6-14 gray-link pull-right">RESET PASSWORD</a>
+                                                        <a href="" class="gray-6-14 gray-link pull-right" data-toggle="modal" data-target="#reset-pass-modal">RESET PASSWORD</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -502,7 +502,7 @@
                                                     <div class="col-xs-6">
                                                         <a href="" class="red-button pull-right" data-toggle="modal" data-target="#user-decline-modal">suspend</a>
                                                         <a href="" class="gray-button pull-right" data-toggle="modal" data-target="#listing-flag-modal">flag</a>
-                                                        <a href="" class="gray-6-14 gray-link pull-right">RESET PASSWORD</a>
+                                                        <a href="" class="gray-6-14 gray-link pull-right" data-toggle="modal" data-target="#reset-pass-modal">RESET PASSWORD</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -601,7 +601,7 @@
                                                     <div class="col-xs-6">
                                                         <a href="" class="red-button pull-right" data-toggle="modal" data-target="#user-decline-modal">suspend</a>
                                                         <a href="" class="gray-button pull-right" data-toggle="modal" data-target="#listing-flag-modal">flag</a>
-                                                        <a href="" class="gray-6-14 gray-link pull-right">RESET PASSWORD</a>
+                                                        <a href="" class="gray-6-14 gray-link pull-right" data-toggle="modal" data-target="#reset-pass-modal">RESET PASSWORD</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -722,6 +722,44 @@
                             </p>
                             <button type="submit" class="blue-button pull-right margin-top-10 prevent-default" data-dismiss="modal" aria-label="Close">
                                 suspend
+                            </button>
+                            <a href="" class="gray-button margin-top-10 prevent-default" data-dismiss="modal" aria-label="Close">
+                                cancel
+                            </a>
+                            </form>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- delete comment Modal -->
+        <div class="modal fade dashboard-modal" id="reset-pass-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content modal-gray">
+                    <div class="info-icon-gray-large">
+                        <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+                    </div>
+                    <p class="gray-7-18 text-center margin-top-20">
+                        Reset Password
+                    </p>
+                    <form action="" class="clearfix">
+                        <div class="input-holder col-lg-12 col-md-12">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <label for="">
+                                        Admin Notes
+                                    </label>
+                                </div>
+                                <div class="col-lg-12">
+                                    <textarea id="approval-notes" type="text" class="text-input medium"></textarea>
+                                </div>
+                            </div>
+                            <p class="gray-7-12 margin-top-10">
+                                <b>Are you sure you want to reset password?</b>
+                            </p>
+                            <button type="submit" class="blue-button pull-right margin-top-10 prevent-default" data-dismiss="modal" aria-label="Close">
+                                reset
                             </button>
                             <a href="" class="gray-button margin-top-10 prevent-default" data-dismiss="modal" aria-label="Close">
                                 cancel

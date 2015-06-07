@@ -56,6 +56,16 @@
 	}
 }
 
+.user-flyout + div{
+	right: 40%;
+	margin-right: -85px;
+
+	@media (max-width:767px){
+		left: 0;
+		right: auto;
+	}	
+}
+
 .user-flyout{
 	padding: 15px;
 	cursor: pointer;
@@ -131,11 +141,6 @@
 	-webkit-box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.2) !important;
 	-moz-box-shadow:    0px 3px 6px 0px rgba(50, 50, 50, 0.2) !important;
 	box-shadow:         0px 3px 6px 0px rgba(50, 50, 50, 0.2) !important;
-
-	@media (max-width:767px){
-		right: 40%;
-		margin-right: -166px;
-	}	
 	
 	.peak{
 		background: url('../img/peak-gray.png') center no-repeat;
@@ -651,7 +656,6 @@
 	.border-radius(5px);
 	background: white;
 	border: solid 1px @gray-4;
-	overflow: hidden;
 	max-height: 414px;
 
 	.table-head-title{
@@ -793,6 +797,10 @@
 .paging-table{
 	max-height: none;
 
+	.paging-navigation{
+		margin-right: 50px;
+	}
+
 	.newspaper-layout-3 {
 		li{
 			position: relative;
@@ -913,6 +921,10 @@
 	overflow-x: hidden;
 	float: left;
 
+	.back{
+		display: none;
+	}
+
 	.scroll-list{
 		.desc-1{
 			.getFont(12, @gray-27);
@@ -929,20 +941,21 @@
 
 		li{
 			position: relative;
-			p{
-				.text-ellipsis;
-			}
-			border-top: solid 1px @gray-29;
-			padding: 20px 30px;
-			cursor: pointer;
 
-			&:hover{
+			&.active, &:hover{
 				background: @gray-5;
 
 				.notifications-num{
 					background: @gray-26;
 				}
 			}
+
+			p{
+				.text-ellipsis;
+			}
+			border-top: solid 1px @gray-29;
+			padding: 20px 30px;
+			cursor: pointer;
 
 			&:last-child{
 				border-bottom: solid 1px @gray-29;
@@ -970,6 +983,23 @@
 
 	&.gray-5{
 		background: @gray-5;
+	}
+}
+
+.scroll-container-holder.responsive{
+	.scroll-container{
+		@media (max-width: 768px){
+			display: none;
+
+			&.selected{
+				display: block;
+				width: 100%;
+
+				.back{
+					display: block;
+				}
+			}
+		}
 	}
 }
 
@@ -1052,19 +1082,19 @@
 		margin-top: 20px;
 		display: table;
 	}
+}
 
-	.close{
-		position: absolute;
-		height: 20px;
-		width: 20px;
-		top: 20px;
-		right: 20px;
-		color: @gray-3;
-		font-family: 'Glyphicons Halflings';
+.close{
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	top: 20px;
+	right: 20px;
+	color: @gray-3;
+	font-family: 'Glyphicons Halflings';
 
-		&:before {
-		  content: "\e014";
-		}
+	&:before {
+	  content: "\e014";
 	}
 }
 
@@ -1577,7 +1607,9 @@ hr.gray{
 
 .grid-report{
 	.table-top{
-		
+		.filter-dropdown{
+			top: 55px;
+		}
 	}
 }
 
@@ -2033,6 +2065,11 @@ hr.gray{
 .dashboard-title-container{
 	max-width: 1150px;
 	min-width: 0;
+	position: relative;
+
+	.dropdown-menu{
+		right: 20px;
+	}
 }
 
 #billing-invoice-modal{
@@ -2152,5 +2189,30 @@ hr.gray{
    	.dashboard-menu-items {
 		  min-width: 768px;
 		}
+	}
+}
+
+.filter-dropdown{
+	top: 40px;
+	z-index: 1;
+
+	.close{
+		top: 5px;
+		z-index: 2;
+	}
+
+	@media (max-width: 768px){
+
+	}
+}
+
+.datepicker-dropdown{
+	width: 200px;
+	padding: 10px 20px;
+	cursor: pointer;
+
+	.active{
+		background-color: @blue-1;
+		color: white;
 	}
 }

@@ -212,5 +212,7 @@
     $('.switch-holder [name="off-switch"]').on('click', function(){
         $(this).next().find('input').bootstrapSwitch('state', false)
     });
+    /* Init datepicker */
+    $('#date-from, #date-to').datepicker();
 }());
 // Place any jQuery/helper plugins in here.

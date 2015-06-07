@@ -50,7 +50,24 @@ function dealsMain(){
 
 dealsMain();
 
+/* Step indicator - select a step before active one*/
+$('.verified').last().css('display', 'block');
+
+
 /* Dashboard mobile navigation */
 $('.dashboard-nav .navbar-toggle').on('click', function(){
-	$('.dashboard-nav').toggleClass('opened');
+	$(this).siblings('.dashboard-nav').toggleClass('opened');
+});
+
+/* Open filter dropdown */
+$('.filter-btn, .advanced-search').on('click', function(){
+	$(this).parent('div').toggleClass('open');
+});
+/* Close filter dropdown */
+$('.filter-dropdown .close').on('click', function(){
+	$(this).parents('div').toggleClass('open');
+});
+/* Dashboard mobile navigation toggle */
+$('aside .navbar-toggle').on('click', function(){
+  $(this).parents('aside').toggleClass('opened');
 });

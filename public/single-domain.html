@@ -93,7 +93,7 @@
                                 <a href="" class="favorite tab-left"></a>
                                 <a href="" class="popout tab-right"></a>
                             </div>
-                            <p class="price h1-blue-1"><b>$2,500</b></p>
+                            <p class="price h1-blue-1"><b>2,500</b></p>
                             <p class="left"><b>19 days left</b></p>
                         </div>
                     </div>
@@ -117,7 +117,7 @@
                         	</div>
                         	<div class="col-lg-4 col-md-4 col-xs-12">
                         		<div class="place-offer clearfix">
-	                              <button type="submit" class="button-white-large pull-right">
+	                              <button type="submit" class="button-white-large pull-right prevent-default" data-toggle="modal" data-target="#place-offer-modal">
 	                                place offer
 	                              </button>
 	                              <div class="offer-holder pull-right">
@@ -342,14 +342,56 @@
             </div>
         </footer>
 
+        <!-- place an offer Modal -->
+        <div class="modal fade dashboard-modal" id="place-offer-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content modal-gray">
+                    <div class="info-icon-gray-large">
+                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                    </div>
+                    <p class="gray-7-18 text-center margin-top-20">
+                        Place Offer
+                    </p>
+                    <form action="" class="clearfix">
+                        <div class="input-holder col-lg-12 col-md-12">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <label for="">
+                                        Send message to seller
+                                    </label>
+                                </div>
+                                <div class="col-lg-12">
+                                    <textarea id="approval-notes" type="text" class="text-input medium"></textarea>
+                                </div>
+                            </div>
+                            <p class="gray-7-12 margin-top-10">
+                                <b>Are you sure you want to offer? Please confirm to continue.</b>
+                            </p>
+                            <button type="submit" class="blue-button pull-right margin-top-10 prevent-default" data-dismiss="modal" aria-label="Close">
+                                yes
+                            </button>
+                            <a href="" class="gray-button margin-top-10 prevent-default" data-dismiss="modal" aria-label="Close">
+                                no
+                            </a>
+                            </form>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
         <!-- Lib scripts -->
         <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="bower_components/jqueryui/jquery-ui.min.js"></script>
         <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="bower_components/bootstrap-switch/dist/js/bootstrap-switch.js"></script>
         <script type="text/javascript" src="js/vendor/chosen/chosen.js"></script>
         <script type="text/javascript" src="bower_components/highcharts/highcharts.js"></script>
 
         <!-- Plugin init script -->
-        <script type="text/javascript" src="js/plugins.js"></script>        
+        <script type="text/javascript" src="js/plugins.js"></script>      
+
+        <!-- Custom scripts -->
+        <script type="text/javascript" src="js/common.js"></script>
     </body>
 </html>

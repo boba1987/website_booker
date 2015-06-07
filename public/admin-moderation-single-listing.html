@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="css/jquery-ui-theme.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
+    <body class="tablet-only">
         <!-- HEADER -->
         <header class="clearfix dashboard-header">
             <div class="row">
@@ -509,8 +509,8 @@
                                                     <div class="dashboard-white-container">
                                                         <p class="gray-3-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta illum sit, eaque ducimus, iure doloribus excepturi quas in adipisci officia explicabo quidem odio rem, veritatis tempora debitis autem modi incidunt.</p>
                                                     </div>
-                                                    <a href="" class="gray-button pull-left margin-top-20">it's all good</a>
-                                                    <a href="" class="blue-button pull-right margin-top-20">delete comment</a>
+                                                    <a href="" class="gray-button pull-left margin-top-20" data-toggle="modal" data-target="#approve-comment-modal">it's all good</a>
+                                                    <a href="" class="blue-button pull-right margin-top-20" data-toggle="modal" data-target="#delete-comment-modal">delete comment</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -519,6 +519,82 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- delete comment Modal -->
+        <div class="modal fade dashboard-modal" id="delete-comment-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content modal-gray">
+                    <div class="info-icon-gray-large">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </div>
+                    <p class="gray-7-18 text-center margin-top-20">
+                        Delete Comment
+                    </p>
+                    <form action="" class="clearfix">
+                        <div class="input-holder col-lg-12 col-md-12">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <label for="">
+                                        Admin Notes
+                                    </label>
+                                </div>
+                                <div class="col-lg-12">
+                                    <textarea id="approval-notes" type="text" class="text-input medium"></textarea>
+                                </div>
+                            </div>
+                            <p class="gray-7-12 margin-top-10">
+                                <b>Are you sure you want to delete comment?</b>
+                            </p>
+                            <button type="submit" class="blue-button pull-right margin-top-10 prevent-default" data-dismiss="modal" aria-label="Close">
+                                delete
+                            </button>
+                            <a href="" class="gray-button margin-top-10 prevent-default" data-dismiss="modal" aria-label="Close">
+                                cancel
+                            </a>
+                            </form>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- approve comment Modal -->
+        <div class="modal fade dashboard-modal" id="approve-comment-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content modal-gray">
+                    <div class="info-icon-gray-large">
+                        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                    </div>
+                    <p class="gray-7-18 text-center margin-top-20">
+                        Approve Comment
+                    </p>
+                    <form action="" class="clearfix">
+                        <div class="input-holder col-lg-12 col-md-12">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <label for="">
+                                        Admin Notes
+                                    </label>
+                                </div>
+                                <div class="col-lg-12">
+                                    <textarea id="approval-notes" type="text" class="text-input medium"></textarea>
+                                </div>
+                            </div>
+                            <p class="gray-7-12 margin-top-10">
+                                <b>Are you sure you want to approve comment?</b>
+                            </p>
+                            <button type="submit" class="blue-button pull-right margin-top-10 prevent-default" data-dismiss="modal" aria-label="Close">
+                                approve
+                            </button>
+                            <a href="" class="gray-button margin-top-10 prevent-default" data-dismiss="modal" aria-label="Close">
+                                cancel
+                            </a>
+                            </form>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

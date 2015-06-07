@@ -32,19 +32,26 @@
 }
 
 .socials-list{
-	.border-radius(5px);
 	overflow: hidden;
-	width: 100%;
+
+	ul{
+		.border-radius(5px);
+		display: table;
+		margin: 0 auto;
+		overflow: hidden;
+	}
 
 	li{
 		float: left;
 		width: 33.33%;
 		text-align: center;
+		display: inline-table;
 
 		&.facebook{
 			background: @blue-7;
 			a{
 				background: url('../img/icons/fb.png') 15px center no-repeat;
+				padding-left: 30px;
 			}
 		}
 
@@ -59,13 +66,14 @@
 			background: @red-1;
 			a{
 				background: url('../img/icons/g+.png') 15px center no-repeat;
+				padding-left: 40px;
 			}
 		}
 
 		a{
 			color: white;
 			padding: 10px 20px;
-  			display: block;
+  		display: block;
 			text-transform: capitalize;
 			text-decoration: none !important;
 		}
