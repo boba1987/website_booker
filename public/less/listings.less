@@ -1,6 +1,5 @@
 /* Buy page styles */
 #listing-sort-by{
-  width: 150px;
   text-transform: uppercase;
 
   .chosen-container{
@@ -21,17 +20,31 @@
     position: relative;
 
     .item-image{
-      .border-radius(10px);
-      height: 115px;
-      width: 25%;
-      background: @gray-3;
+      width: 20%;
       float: left;
+
+      img{
+        .border-radius(10px);
+        max-width: 120px;
+      }
+
+      @media (max-width: 768px){
+        display: none;
+      }
     }
 
     .item-description{
-      width: 50%;
+      width: 55%;
       float: left;
       padding-left: 20px;
+
+      @media (max-width: 768px){
+        width: 80%;
+      }
+
+      @media (max-width: 480px){
+        width: 100%;
+      }
     }
 
     .item-pricing{
@@ -39,6 +52,16 @@
       float: left;
       padding: 27px 0;
       padding-right: 20px;
+
+      @media (max-width: 768px){
+        width: 20%;
+      }
+
+      @media (max-width: 480px){
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+      }
     }
 
     .item-title{
@@ -111,6 +134,10 @@
       top: 50%;
       margin-top: -20px;
       cursor: pointer;
+
+      @media (max-width: 768px){
+        display: none;
+      }
     }
   }
 
@@ -133,6 +160,10 @@
       width: 25%;
       padding: 8px 0;
       padding-right: 20px;
+
+      @media (max-width: 768px){
+        padding-right: 0;
+      }
     }
 
     .item-desc{
@@ -205,6 +236,10 @@
       top: 50%;
       margin-top: -20px;
       cursor: pointer;
+
+      @media (max-width: 768px){
+        display: none;
+      }
     }
   }
 
@@ -234,6 +269,10 @@
       top: 50%;
       margin-top: -20px;
       cursor: pointer; 
+
+      @media (max-width: 768px){
+        display: none;
+      }
     }
 
     .item-title{
