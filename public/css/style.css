@@ -59,6 +59,9 @@ ul {
   text-decoration: none;
   color: white;
 }
+.blue-button:hover {
+  background-color: #339dff;
+}
 .red-button {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -78,6 +81,9 @@ ul {
 .red-button:focus {
   text-decoration: none;
   color: white;
+}
+.red-button:hover {
+  background-color: #e6715e;
 }
 .green-button {
   -webkit-border-radius: 20px;
@@ -99,6 +105,9 @@ ul {
   text-decoration: none;
   color: white;
 }
+.green-button:hover {
+  background-color: #30ff06;
+}
 .gray-button {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -118,6 +127,9 @@ ul {
 .gray-button:focus {
   text-decoration: none;
   color: white;
+}
+.gray-button:hover {
+  background-color: #c4c9d1;
 }
 .button-white-large {
   white-space: nowrap;
@@ -292,6 +304,9 @@ ul {
 .blue-button-round:focus {
   text-decoration: none;
   color: white;
+}
+.blue-button-round:hover {
+  background-color: #339dff;
 }
 /* Common mixin styles */
 .text-ellipsis {
