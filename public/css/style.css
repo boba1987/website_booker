@@ -17,7 +17,6 @@ ul {
   border: none;
   display: inline-block;
   text-transform: uppercase;
-  font-weight: bold;
 }
 .button-common:hover,
 .button-common:active,
@@ -50,7 +49,6 @@ ul {
   border: none;
   display: inline-block;
   text-transform: uppercase;
-  font-weight: bold;
   background-color: #0084ff;
 }
 .blue-button:hover,
@@ -73,7 +71,6 @@ ul {
   border: none;
   display: inline-block;
   text-transform: uppercase;
-  font-weight: bold;
   background-color: #df4a32;
 }
 .red-button:hover,
@@ -96,7 +93,6 @@ ul {
   border: none;
   display: inline-block;
   text-transform: uppercase;
-  font-weight: bold;
   background-color: #23d200;
 }
 .green-button:hover,
@@ -119,7 +115,6 @@ ul {
   border: none;
   display: inline-block;
   text-transform: uppercase;
-  font-weight: bold;
   background-color: #a8afba;
 }
 .gray-button:hover,
@@ -221,7 +216,6 @@ ul {
   border: none;
   display: inline-block;
   text-transform: uppercase;
-  font-weight: bold;
   background-color: #3b5998;
   padding-left: 30px;
   background-image: url('../img/icons/fb.png');
@@ -245,7 +239,6 @@ ul {
   border: none;
   display: inline-block;
   text-transform: uppercase;
-  font-weight: bold;
   background: #0077b5;
 }
 .blue-button-li:hover,
@@ -294,7 +287,6 @@ ul {
   border: none;
   display: inline-block;
   text-transform: uppercase;
-  font-weight: bold;
   background-color: #0084ff;
   padding: 8px;
   min-width: 38px;
@@ -3385,11 +3377,6 @@ body {
   line-height: 1;
   display: block;
 }
-@media (max-width: 991px) {
-  .title-desc span {
-    text-align: center;
-  }
-}
 .breadcrumb-holder {
   font-size: 10px;
   margin-top: 5px;
@@ -3453,8 +3440,12 @@ body {
 }
 @media (max-width: 767px) {
   .tabs-holder {
-    float: left;
     margin-top: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .tabs-holder {
+    float: left;
   }
 }
 .tabs-holder a {
@@ -3561,6 +3552,7 @@ body {
   .single-desc-price .price {
     float: left;
     text-align: left;
+    display: none;
   }
 }
 .single-desc-price .left {
@@ -3575,6 +3567,9 @@ body {
     float: left;
     text-align: left;
     font-size: 12px;
+    width: auto;
+    margin-top: 30px;
+    margin-left: 20px;
   }
 }
 .domain-offer {
@@ -3738,6 +3733,11 @@ body {
 .website-carusel-preview {
   background: #f2f4f7;
   padding: 60px 0;
+}
+@media (max-width: 480px) {
+  .website-carusel-preview {
+    padding-top: 0;
+  }
 }
 .carousel {
   position: relative;
